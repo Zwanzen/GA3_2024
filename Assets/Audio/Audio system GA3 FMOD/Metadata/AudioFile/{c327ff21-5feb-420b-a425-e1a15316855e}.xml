@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{c327ff21-5feb-420b-a425-e1a15316855e}">
+		<property name="assetPath">
+			<value>FX/FX - Gas Vent (Loop) 2.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>10.041270833333334</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{74ba8585-fa76-48b8-aa0e-8de6c6c76323}</destination>
+		</relationship>
+	</object>
+</objects>

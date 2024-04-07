@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{48c417cb-e0f2-418e-8646-6142e9ba6b8b}">
+		<property name="assetPath">
+			<value>FX/FX - Pickup.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.40464583333333332</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{74ba8585-fa76-48b8-aa0e-8de6c6c76323}</destination>
+		</relationship>
+	</object>
+</objects>

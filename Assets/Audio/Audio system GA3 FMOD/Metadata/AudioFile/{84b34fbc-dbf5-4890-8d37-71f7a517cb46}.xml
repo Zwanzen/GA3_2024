@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{84b34fbc-dbf5-4890-8d37-71f7a517cb46}">
+		<property name="assetPath">
+			<value>FX/Footsteps/FTMET_P3.WAV</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>22.0499992</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.72739229024943308</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{74ba8585-fa76-48b8-aa0e-8de6c6c76323}</destination>
+		</relationship>
+	</object>
+</objects>
