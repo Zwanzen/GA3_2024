@@ -162,6 +162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 836e9338584f482439b87a3030b555f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSoundEvent: event:/Props Interaction/FX - Door Sliding Up
+  doorCloseSoundEvent: event:/Props Interaction/FX - Door Sliding Down
 --- !u!1 &1543695114780030
 GameObject:
   m_ObjectHideFlags: 0

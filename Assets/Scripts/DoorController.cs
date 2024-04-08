@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using FMODUnity;
 
 public class DoorController : MonoBehaviour
 {
@@ -7,6 +8,10 @@ public class DoorController : MonoBehaviour
     private Light doorLight;
     private bool isOpen = false;
     private bool isPlayerInRange = false;
+
+    [Header("FMOD Sound Events")]
+    public string doorOpenSoundEvent;
+    public string doorCloseSoundEvent;
 
     void Start()
     {
@@ -30,6 +35,9 @@ public class DoorController : MonoBehaviour
 
                 // Start the coroutine to handle light deactivation
                 StartCoroutine(ToggleLightCoroutine(true));
+
+                // Play the door open sound
+                FMODUnity.RuntimeManager.PlayOneShot(doorOpenSoundEvent, GetComponent<Transform>().position);
             }
         }
         else
@@ -42,6 +50,9 @@ public class DoorController : MonoBehaviour
 
                 // Start the coroutine to handle light reactivation
                 StartCoroutine(ToggleLightCoroutine(false));
+
+                // Play the door close sound
+                FMODUnity.RuntimeManager.PlayOneShot(doorCloseSoundEvent, GetComponent<Transform>().position);
             }
         }
     }
