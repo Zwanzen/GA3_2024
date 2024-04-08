@@ -250,12 +250,18 @@ Transform:
   m_GameObject: {fileID: 143803897}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.65, y: 1.7, z: 5.13}
-  m_LocalScale: {x: 2, y: 2, z: 2}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: -5.28, y: 1.7, z: 5.13}
+  m_LocalScale: {x: 1.4405274, y: 2.068, z: 6.2317114}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &172754613 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4187927464226949511, guid: d5627e146faf30f42a5da7e3e4114e23,
+    type: 3}
+  m_PrefabInstance: {fileID: 1128718065}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &226479046
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,7 +381,7 @@ GameObject:
   - component: {fileID: 264139250}
   - component: {fileID: 264139249}
   - component: {fileID: 264139253}
-  m_Layer: 3
+  m_Layer: 1
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -462,7 +468,7 @@ Transform:
   m_GameObject: {fileID: 264139248}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.82, y: 0.67, z: 0.28}
+  m_LocalPosition: {x: -2.92, y: 0.67, z: 6.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1093,6 +1099,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 13400000, guid: 768106a742fb4184fad6e23241e5a0f7,
         type: 2}
+    - target: {fileID: 9159565770960890314, guid: d5627e146faf30f42a5da7e3e4114e23,
+        type: 3}
+      propertyPath: attenuationObject
+      value: 
+      objectReference: {fileID: 172754613}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1244,7 +1255,8 @@ GameObject:
   - component: {fileID: 1307423197}
   - component: {fileID: 1307423196}
   - component: {fileID: 1307423195}
-  m_Layer: 3
+  - component: {fileID: 1307423200}
+  m_Layer: 1
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1364,6 +1376,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1307423200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307423194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 210e04439cc818c4ab1051ef6d2c7468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio:
+    Guid:
+      Data1: 182410831
+      Data2: 1289422395
+      Data3: 1867798944
+      Data4: 593811747
+    Path: event:/Props Looping/FX - Turret
+  SoundOcclusionWidening: 1
+  PlayerOcclusionWidening: 1
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 9
 --- !u!1 &1523220776
 GameObject:
   m_ObjectHideFlags: 0
