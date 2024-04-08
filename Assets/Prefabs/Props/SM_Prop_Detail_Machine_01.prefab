@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 23910770469095676}
   - component: {fileID: 6647905515890739423}
   - component: {fileID: 4567688117290959956}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Prop_Detail_Machine_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5611712174030140858}
   - component: {fileID: 6044824811737364026}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}

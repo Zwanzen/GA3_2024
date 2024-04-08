@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33577268583745622}
   - component: {fileID: 23691355031350864}
   - component: {fileID: 3826785807629695218}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Prop_EscapePod_Hatch_Small_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

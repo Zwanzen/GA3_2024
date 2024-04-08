@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33390823335187796}
   - component: {fileID: 23162891886233830}
   - component: {fileID: 201311021704079120}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Prop_FoodPacket_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}

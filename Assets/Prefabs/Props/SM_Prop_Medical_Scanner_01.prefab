@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33705346528146120}
   - component: {fileID: 23498337168046824}
   - component: {fileID: 5891198164637506282}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Prop_Medical_Scanner_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

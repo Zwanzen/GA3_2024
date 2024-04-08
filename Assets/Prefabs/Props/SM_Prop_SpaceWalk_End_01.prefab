@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33666124392947908}
   - component: {fileID: 23359580859437750}
   - component: {fileID: -7943452000176485911}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Prop_SpaceWalk_End_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

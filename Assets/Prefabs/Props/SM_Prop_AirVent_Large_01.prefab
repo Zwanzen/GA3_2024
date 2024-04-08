@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33830635012318576}
   - component: {fileID: 23617657258015076}
   - component: {fileID: 3651765596583405570}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Prop_AirVent_Large_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5708924523156090389}
   - component: {fileID: 8060359741017490559}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33526574054130838}
   - component: {fileID: 23928983878520918}
   - component: {fileID: 5796297122355849054}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Prop_Detail_Vent_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7389816641200717122}
   - component: {fileID: 3177550678058103757}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}

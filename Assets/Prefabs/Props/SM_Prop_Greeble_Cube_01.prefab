@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33450538040129220}
   - component: {fileID: 23462908433781230}
   - component: {fileID: -8042651222985518481}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Prop_Greeble_Cube_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

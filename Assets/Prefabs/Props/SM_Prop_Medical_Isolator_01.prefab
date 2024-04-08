@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4002334577395884}
   - component: {fileID: 33210038552138510}
   - component: {fileID: 23065861003822604}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Prop_Medical_Isolator_Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 33552215725181194}
   - component: {fileID: 23593374711808298}
   - component: {fileID: -2347015298508781624}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Prop_Medical_Isolator_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

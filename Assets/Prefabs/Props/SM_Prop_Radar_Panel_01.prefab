@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33354645085556618}
   - component: {fileID: 23133501764014586}
   - component: {fileID: 3751761937142135762}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Prop_Radar_Panel_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

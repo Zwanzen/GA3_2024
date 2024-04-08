@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33400335363236294}
   - component: {fileID: 23669826629044716}
   - component: {fileID: 3419111905955489407}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Prop_CornerSeat_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

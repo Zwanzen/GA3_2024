@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33134165261205646}
   - component: {fileID: 23987963776126432}
   - component: {fileID: 3411449090129890463}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Prop_Chr_Male_Cryo_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

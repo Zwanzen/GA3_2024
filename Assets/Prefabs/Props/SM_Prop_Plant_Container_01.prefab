@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33023116156280990}
   - component: {fileID: 23763686721953082}
   - component: {fileID: 724511058904414820}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Prop_Plant_Container_Shelf_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 33737093384705614}
   - component: {fileID: 23270545524358966}
   - component: {fileID: 3025237910096100127}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Prop_Plant_Container_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

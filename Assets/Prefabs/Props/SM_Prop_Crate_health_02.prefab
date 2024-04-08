@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33558792581634452}
   - component: {fileID: 23829881824936714}
   - component: {fileID: 3805402105307807032}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Prop_Crate_health_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}

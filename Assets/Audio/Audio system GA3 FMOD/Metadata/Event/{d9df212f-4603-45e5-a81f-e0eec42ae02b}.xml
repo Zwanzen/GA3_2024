@@ -112,6 +112,7 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{80738eab-9adb-4d74-9a8f-d199faae53ff}">
 		<relationship name="effects">
+			<destination>{5a609674-d46b-4ed2-8859-050c31377a09}</destination>
 			<destination>{7961bc11-2f79-46b2-83ff-6f123c2e2032}</destination>
 			<destination>{3817c3f2-a501-4ef6-a03f-ca62d4382615}</destination>
 		</relationship>
@@ -124,7 +125,45 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{efb87078-708a-444e-b4ab-f61585ab2a2d}" />
+	<object class="LowpassEffect" id="{5a609674-d46b-4ed2-8859-050c31377a09}">
+		<relationship name="automators">
+			<destination>{ad61ff1c-8f62-49bc-bc5d-d35120999923}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{7961bc11-2f79-46b2-83ff-6f123c2e2032}" />
 	<object class="SpatialiserEffect" id="{3817c3f2-a501-4ef6-a03f-ca62d4382615}" />
 	<object class="MixerBusFader" id="{3dc0d7c8-1e36-4095-bd0b-f86a6e8aa56a}" />
+	<object class="Automator" id="{ad61ff1c-8f62-49bc-bc5d-d35120999923}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>cutoff</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{ccc8509a-2806-4507-9eef-51b650c44057}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationCurve" id="{ccc8509a-2806-4507-9eef-51b650c44057}">
+		<relationship name="parameter">
+			<destination>{f682362b-0793-4ae3-8135-a1bf18ff854e}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{2201c1dd-981d-4196-bc01-69ade997daef}</destination>
+			<destination>{0672e418-0550-4b3f-b0ea-e82133691401}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationPoint" id="{2201c1dd-981d-4196-bc01-69ade997daef}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>22000</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{0672e418-0550-4b3f-b0ea-e82133691401}">
+		<property name="position">
+			<value>1</value>
+		</property>
+		<property name="value">
+			<value>60</value>
+		</property>
+	</object>
 </objects>

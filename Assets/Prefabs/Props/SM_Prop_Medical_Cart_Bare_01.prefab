@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33816255222630490}
   - component: {fileID: 23391867983746652}
   - component: {fileID: -1652379320917075721}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Prop_Medical_Cart_Bare_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

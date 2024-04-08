@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33254309928644764}
   - component: {fileID: 23454908672057844}
   - component: {fileID: 774710760276698928}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Prop_Light_Small_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2195293333777228759}
   - component: {fileID: 1206572172136319780}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}

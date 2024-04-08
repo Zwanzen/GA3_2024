@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33814775255407228}
   - component: {fileID: 23031606427234490}
   - component: {fileID: 8045627367217410310}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Prop_EnergyPort_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4455843973560069247}
   - component: {fileID: 7014271462146318823}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33563801124935792}
   - component: {fileID: 23676936457413316}
   - component: {fileID: -1398655793840228785}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Prop_Detail_Pipe_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3758193268198099084}
   - component: {fileID: 9032537458561842705}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}

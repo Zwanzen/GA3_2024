@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33028156716684962}
   - component: {fileID: 23588469815017886}
   - component: {fileID: 7642709540087692646}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Prop_Detail_Tank_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6865915782281056145}
   - component: {fileID: 8983253746661908395}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}

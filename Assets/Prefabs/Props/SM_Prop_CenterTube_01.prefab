@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4008791470536838}
   - component: {fileID: 33100909069751342}
   - component: {fileID: 23705488945695220}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Prop_CenterTube_Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 33287095619272274}
   - component: {fileID: 23067068383380888}
   - component: {fileID: 5788391064773245853}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Prop_CenterTube_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
