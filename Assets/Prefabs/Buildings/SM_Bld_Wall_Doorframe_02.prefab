@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 23755734973451154}
   - component: {fileID: 38878408691393560}
   - component: {fileID: 1567459930561638292}
+  - component: {fileID: 6403407391755934556}
+  - component: {fileID: 4795373246496998384}
   m_Layer: 0
   m_Name: SM_Bld_Wall_Door_01
   m_TagString: Untagged
@@ -127,6 +129,39 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.6098664, y: 3.058591, z: 0.18863678}
   m_Center: {x: 0, y: 1.4423761, z: -0.00000071525574}
+--- !u!65 &6403407391755934556
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182285933139604}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5, y: 8, z: 3}
+  m_Center: {x: 0, y: 1.5, z: 0}
+--- !u!114 &4795373246496998384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182285933139604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836e9338584f482439b87a3030b555f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1543695114780030
 GameObject:
   m_ObjectHideFlags: 0
