@@ -68,6 +68,11 @@ public class CharacterController : MonoBehaviour
     private TextMeshProUGUI stopForceText;
     [SerializeField]
     private TextMeshProUGUI magText;
+    
+    private Vector3 debugMoveDir;
+    private Vector3 debugMoveInput;
+    private Vector3 storedRBVel;
+    private Vector3 counterMoveDir;
 
     // Start is called before the first frame update
     void Start()
@@ -118,7 +123,7 @@ public class CharacterController : MonoBehaviour
     {
         // Get dir & vel
         Vector3 moveDir = MoveVector();
-        Vector3 rbVel = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+        Vector3 rbVel = new(rb.velocity.x, 0, rb.velocity.z);
 
         // Rotate dir based on camera
         moveDir = Quaternion.AngleAxis(cameraHolder.rotation.eulerAngles.y, Vector3.up) * moveDir;
@@ -126,7 +131,7 @@ public class CharacterController : MonoBehaviour
         // If move, counter vel for better control
         if (MoveVector().normalized.magnitude <= 1 && Vector3.Dot(moveDir, rbVel) > 0.2f)
         {
-            moveDir = -Vector3.Reflect(rbVel, moveDir);
+            moveDir = -Vector3.Reflect(rbVel, moveDir.normalized);
         }
 
         // Normalize, get dirVel, then project onto normal
@@ -135,13 +140,19 @@ public class CharacterController : MonoBehaviour
         moveDir = Vector3.ProjectOnPlane(moveDir, GetSurfaceNormal());
 
         // Calculate gradual force depending on current speed
-        float gradualForce = Mathf.Lerp(moveForce, 0, rbVel.magnitude / maxSpeed);
+        float gradualForce = Mathf.Lerp(moveForce, 0, dirVel / maxSpeed);
 
         // Apply force only if we are not at max speed
         if (dirVel < maxSpeed)
         {
             rb.AddForce(moveDir * gradualForce * AirMultiplier(airMultiplier));
         }
+
+        // Remove
+        debugMoveDir = moveDir;
+        debugMoveInput = MoveVector();
+        debugMoveInput = Quaternion.AngleAxis(cameraHolder.rotation.eulerAngles.y, Vector3.up) * debugMoveInput;
+        debugMoveInput.Normalize();
     }
 
     // When not inputting any movement, and on the ground, apply a gradual force to stop the player
@@ -282,17 +293,25 @@ public class CharacterController : MonoBehaviour
     {
         
         Gizmos.color = Color.yellow;
-
-        Gizmos.DrawSphere(transform.position + checkerPosition, checkerRadius);
-
         /*
-        Gizmos.DrawLine(transform.position, transform.position + rb.velocity);
+        Gizmos.DrawSphere(transform.position + checkerPosition, checkerRadius);
+        */
+        if (rb.velocity.magnitude > 0.1f)
+        {
+            storedRBVel = rb.velocity;
+        }
+
+        Gizmos.DrawLine(transform.position, transform.position + storedRBVel.normalized * 1.5f);
 
         Gizmos.color = Color.green;
-        Gizmos.DrawLine(transform.position, transform.position + dir * 1.5f);
+        Gizmos.DrawLine(transform.position, transform.position + debugMoveDir * 1.5f);
 
         Gizmos.color = Color.red;
-        Gizmos.DrawLine(transform.position, transform.position + MoveVector().normalized * 1.5f);
+        Gizmos.DrawLine(transform.position, transform.position + debugMoveInput * 1.5f);
+
+        /*
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawLine(transform.position, transform.position + counterMoveDir.normalized * 1.5f);
         */
     }
 }
