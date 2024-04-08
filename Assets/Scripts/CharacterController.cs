@@ -1,6 +1,6 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
-
 
 public class CharacterController : MonoBehaviour
 {
@@ -12,6 +12,10 @@ public class CharacterController : MonoBehaviour
     [SerializeField]
     private float maxSpeed = 10f;
     [SerializeField]
+    private float stopForce = 5f;
+    [SerializeField, Range(0,1)]
+    private float airMultiplier = 0.5f;
+    [SerializeField]
     private float rotationSpeed = 720;
     [SerializeField]
     private float jumpForce = 10f;
@@ -22,6 +26,8 @@ public class CharacterController : MonoBehaviour
 
     public bool jumping;
     public bool canJump;
+
+    private float jumpTimer;
 
     [Space(20)]
     [Header("Ground Check")]
@@ -53,7 +59,15 @@ public class CharacterController : MonoBehaviour
     public Transform cameraHolder;
 
     private float dirVel;
-    private Vector3 dir;
+
+    [Space(20)]
+    [Header("Debugging")]
+    [SerializeField]
+    private TextMeshProUGUI moveForceText;
+    [SerializeField]
+    private TextMeshProUGUI stopForceText;
+    [SerializeField]
+    private TextMeshProUGUI magText;
 
     // Start is called before the first frame update
     void Start()
@@ -77,7 +91,7 @@ public class CharacterController : MonoBehaviour
 
     public void FixedUpdate()
     {
-        Walking();
+        HandleMovement();
     }
 
     private Vector3 MoveVector()
@@ -88,41 +102,68 @@ public class CharacterController : MonoBehaviour
         return new Vector3(moveX, 0, moveZ);
     }
 
-    private void Walking()
+    private void HandleMovement()
     {
-        //get dir
+        if(MoveVector() != Vector3.zero)
+        {
+            Moving();
+        }
+        else
+        {
+            Stopping();
+        }
+    }
+
+    private void Moving()
+    {
+        // Get dir & vel
         Vector3 moveDir = MoveVector();
-        //get vel
         Vector3 rbVel = new Vector3(rb.velocity.x, 0, rb.velocity.z);
 
+        // Rotate dir based on camera
         moveDir = Quaternion.AngleAxis(cameraHolder.rotation.eulerAngles.y, Vector3.up) * moveDir;
 
-        //if move, counter vel for better control
+        // If move, counter vel for better control
         if (MoveVector().normalized.magnitude <= 1 && Vector3.Dot(moveDir, rbVel) > 0.2f)
         {
             moveDir = -Vector3.Reflect(rbVel, moveDir);
         }
 
-        //normalize before force
+        // Normalize, get dirVel, then project onto normal
         moveDir.Normalize();
-
-        //get vel based on dir
         dirVel = Vector3.Dot(rbVel, moveDir);
-
-        //Project onto normal
         moveDir = Vector3.ProjectOnPlane(moveDir, GetSurfaceNormal());
 
-        //Store something for later
-        dir = moveDir;
+        // Calculate gradual force depending on current speed
+        float gradualForce = Mathf.Lerp(moveForce, 0, rbVel.magnitude / maxSpeed);
 
-        //decide if i can apply force in air vs grounded
-        if (dirVel < maxSpeed && !IsGrounded())
+        // Apply force only if we are not at max speed
+        if (dirVel < maxSpeed)
         {
-            rb.AddForce(moveDir * moveForce / 5);
+            rb.AddForce(moveDir * gradualForce * AirMultiplier(airMultiplier));
         }
-        else if (dirVel < maxSpeed)
+    }
+
+    // When not inputting any movement, and on the ground, apply a gradual force to stop the player
+    // This is intended to make the player feel more responsive and less floaty
+    private void Stopping()
+    {
+        // Get vel, mag, dir
+        Vector3 rbVel = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+        float rbMag = rbVel.magnitude;
+        Vector3 stopDir = -rbVel.normalized;
+
+        // Only apply stopping force if the player is moving
+        if (rbMag > 0.1f)
         {
-            rb.AddForce(moveDir * moveForce);
+            // Calculate gradual stop force depending on current speed
+            float stopVel = Mathf.Lerp(0, stopForce, rbMag / maxSpeed);
+
+            // Decide if we should add airMultiplier, currently not
+            if (dirVel < maxSpeed)
+            {
+                rb.AddForce(AirMultiplier(1) * stopVel * stopDir);
+            }
         }
     }
 
@@ -130,7 +171,11 @@ public class CharacterController : MonoBehaviour
     {
         if (IsGrounded() && !jumping)
         {
-            canJump = true;
+            jumpTimer += Time.deltaTime;
+            if(jumpTimer >= jumpDelay)
+            {
+                canJump = true;
+            }
         }
         else
         {
@@ -139,6 +184,7 @@ public class CharacterController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space) && canJump)
         {
+            jumpTimer = 0;
             jumping = true;
             canJump = false;
             rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
@@ -151,7 +197,7 @@ public class CharacterController : MonoBehaviour
 
     private IEnumerator JumpDelay()
     {
-        yield return new WaitForSeconds(jumpDelay * 2.8f);
+        yield return new WaitForSeconds(jumpDelay);
         jumping = false;
     }
 
@@ -186,6 +232,20 @@ public class CharacterController : MonoBehaviour
         }
     }
 
+    //Find Better Name
+    private float AirMultiplier(float multiplier)
+    {
+        if(IsGrounded())
+        {
+            return 1;
+        }
+        else
+        {
+            return multiplier;
+        }
+    }
+
+    //WTF is this?
     private void FollowPlayer()
     {
         Vector3 targetPosition = Vector3.Lerp(transform.position, targetTransform.position, Time.deltaTime / followSpeed);
@@ -220,11 +280,12 @@ public class CharacterController : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        /*
+        
         Gizmos.color = Color.yellow;
 
-        //Gizmos.DrawSphere(transform.position + checkerPosition, checkerRadius);
+        Gizmos.DrawSphere(transform.position + checkerPosition, checkerRadius);
 
+        /*
         Gizmos.DrawLine(transform.position, transform.position + rb.velocity);
 
         Gizmos.color = Color.green;

@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6a69e48e8e6496040873c954299d9de1, type: 2}
+  - {fileID: 2100000, guid: e011b9633429d9546b9effdc526cdf4b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -544,7 +544,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6a69e48e8e6496040873c954299d9de1, type: 2}
+  - {fileID: 2100000, guid: e011b9633429d9546b9effdc526cdf4b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -598,11 +598,11 @@ GameObject:
   - component: {fileID: 7324607569681117033}
   - component: {fileID: 4261768886286777194}
   - component: {fileID: 3549703033533248764}
-  - component: {fileID: 1015785606454891810}
   - component: {fileID: 4141307155866019053}
   - component: {fileID: 7179019158158126448}
   - component: {fileID: 1998734696404937483}
   - component: {fileID: 4561381579902362709}
+  - component: {fileID: 8934745174840296585}
   m_Layer: 9
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -669,8 +669,8 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
+  m_HDR: 0
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -684,50 +684,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4187927464226949511}
   m_Enabled: 1
---- !u!114 &1015785606454891810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4187927464226949511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 1
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
-  m_TaaSettings:
-    quality: 3
-    frameInfluence: 0.1
-    jitterScale: 1
-    mipBias: 0
-    varianceClampScale: 0.9
-    contrastAdaptiveSharpening: 0
 --- !u!114 &4141307155866019053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -740,17 +696,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7ddb1086ccd0942bdd0050cd2da1fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GrabLayer:
-    serializedVersion: 2
-    m_Bits: 2304
-  CablebLayer:
-    serializedVersion: 2
-    m_Bits: 9
-  ConnectorLayer:
-    serializedVersion: 2
-    m_Bits: 1024
   GrabLenght: 2
   HoldPos: {x: 0, y: 0, z: 0}
+  GrabLayer:
+    serializedVersion: 2
+    m_Bits: 0
   rotationSpeed: 5
   grabbing: 0
   springForce: 200
@@ -759,7 +709,6 @@ MonoBehaviour:
   maxDist: 0.1
   tolarance: 0.02
   lookedAtTransform: {fileID: 0}
-  ConnectorCheckDist: 0.08
   grabFeedback: {fileID: 7562150723349197598}
 --- !u!114 &7179019158158126448
 MonoBehaviour:
@@ -1121,6 +1070,135 @@ MonoBehaviour:
   Channel: 0
   MMChannelDefinition: {fileID: 0}
   CooldownBetweenShakes: 0
+--- !u!114 &8934745174840296585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4187927464226949511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23c1ce4fb46143f46bc5cb5224c934f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clearColorMode: 0
+  backgroundColorHDR: {r: 0.025, g: 0.07, b: 0.19, a: 0}
+  clearDepth: 1
+  volumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  volumeAnchorOverride: {fileID: 0}
+  antialiasing: 0
+  SMAAQuality: 2
+  dithering: 0
+  stopNaNs: 0
+  taaSharpenStrength: 0.5
+  TAAQuality: 1
+  taaHistorySharpening: 0.35
+  taaAntiFlicker: 0.5
+  taaMotionVectorRejection: 0
+  taaAntiHistoryRinging: 0
+  taaBaseBlendFactor: 0.875
+  taaJitterScale: 1
+  physicalParameters:
+    m_Iso: 200
+    m_ShutterSpeed: 0.005
+    m_Aperture: 16
+    m_FocusDistance: 10
+    m_BladeCount: 5
+    m_Curvature: {x: 2, y: 11}
+    m_BarrelClipping: 0.25
+    m_Anamorphism: 0
+  flipYMode: 0
+  xrRendering: 1
+  fullscreenPassthrough: 0
+  allowDynamicResolution: 0
+  customRenderingSettings: 0
+  invertFaceCulling: 0
+  probeLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  hasPersistentHistory: 0
+  screenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  screenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  allowDeepLearningSuperSampling: 1
+  deepLearningSuperSamplingUseCustomQualitySettings: 0
+  deepLearningSuperSamplingQuality: 0
+  deepLearningSuperSamplingUseCustomAttributes: 0
+  deepLearningSuperSamplingUseOptimalSettings: 1
+  deepLearningSuperSamplingSharpening: 0
+  fsrOverrideSharpness: 0
+  fsrSharpness: 0.92
+  exposureTarget: {fileID: 0}
+  materialMipBias: 0
+  m_RenderingPathCustomFrameSettings:
+    bitDatas:
+      data1: 140666587840333
+      data2: 13763000512783810584
+    lodBias: 1
+    lodBiasMode: 0
+    lodBiasQualityLevel: 0
+    maximumLODLevel: 0
+    maximumLODLevelMode: 0
+    maximumLODLevelQualityLevel: 0
+    sssQualityMode: 0
+    sssQualityLevel: 0
+    sssCustomSampleBudget: 20
+    msaaMode: 1
+    materialQuality: 0
+  renderingPathCustomFrameSettingsOverrideMask:
+    mask:
+      data1: 0
+      data2: 0
+  defaultFrameSettings: 0
+  m_Version: 9
+  m_ObsoleteRenderingPath: 0
+  m_ObsoleteFrameSettings:
+    overrides: 0
+    enableShadow: 0
+    enableContactShadows: 0
+    enableShadowMask: 0
+    enableSSR: 0
+    enableSSAO: 0
+    enableSubsurfaceScattering: 0
+    enableTransmission: 0
+    enableAtmosphericScattering: 0
+    enableVolumetrics: 0
+    enableReprojectionForVolumetrics: 0
+    enableLightLayers: 0
+    enableExposureControl: 1
+    diffuseGlobalDimmer: 0
+    specularGlobalDimmer: 0
+    shaderLitMode: 0
+    enableDepthPrepassWithDeferredRendering: 0
+    enableTransparentPrepass: 0
+    enableMotionVectors: 0
+    enableObjectMotionVectors: 0
+    enableDecals: 0
+    enableRoughRefraction: 0
+    enableTransparentPostpass: 0
+    enableDistortion: 0
+    enablePostprocess: 0
+    enableOpaqueObjects: 0
+    enableTransparentObjects: 0
+    enableRealtimePlanarReflection: 0
+    enableMSAA: 0
+    enableAsyncCompute: 0
+    runLightListAsync: 0
+    runSSRAsync: 0
+    runSSAOAsync: 0
+    runContactShadowsAsync: 0
+    runVolumeVoxelizationAsync: 0
+    lightLoopSettings:
+      overrides: 0
+      enableDeferredTileAndCluster: 0
+      enableComputeLightEvaluation: 0
+      enableComputeLightVariants: 0
+      enableComputeMaterialVariants: 0
+      enableFptlForForwardOpaque: 0
+      enableBigTilePrepass: 0
+      isFptlEnabled: 0
 --- !u!1 &5552562331630665014
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,7 +1290,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5552562331630665014}
-  m_Material: {fileID: 13400000, guid: ab7539a575f33e54fa47370522880af1, type: 2}
+  m_Material: {fileID: 13400000, guid: 8e5e75c4452d72b4dba0e6cbb9df4f16, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1297,7 +1375,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 69828cf2a6c486345beedf47ad6d33c2, type: 2}
+  - {fileID: 2100000, guid: 5c120567bd4641940b384e65472c39e4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1326,7 +1404,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8131245276204440826}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 768106a742fb4184fad6e23241e5a0f7, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1381,19 +1459,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e154f0f0b42d3b440992bd3d9daffe01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveForce: 12
-  maxSpeed: 2.8
+  moveForce: 20
+  maxSpeed: 5
+  stopForce: 20
+  airMultiplier: 0.5
   rotationSpeed: 720
-  jumpForce: 4
-  jumpDelay: 0.45
-  jumpLeway: 0.5
+  jumpForce: 4.5
+  jumpDelay: 0.1
+  jumpLeway: 0.3
   jumping: 0
   canJump: 0
-  checkerPosition: {x: 0, y: -0.73, z: 0}
+  checkerPosition: {x: 0, y: -0.45, z: 0}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 264
-  checkerRadius: 0.51
+    m_Bits: 8
+  checkerRadius: 0.35
   targetTransform: {fileID: 5417701870550479281}
   cameraPivotTransform: {fileID: 7324607569681117033}
   followSpeed: 1
@@ -1402,3 +1482,6 @@ MonoBehaviour:
   lookAngle: 180
   rb: {fileID: 5130979554302077211}
   cameraHolder: {fileID: 5417701870550479281}
+  moveForceText: {fileID: 0}
+  stopForceText: {fileID: 0}
+  magText: {fileID: 0}
