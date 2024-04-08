@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4035240748447630}
   - component: {fileID: 33646379313235452}
   - component: {fileID: 23203843482259346}
+  - component: {fileID: -9160559178699228122}
   m_Layer: 0
   m_Name: SM_Bld_Wall_Doorframe_04
   m_TagString: Untagged
@@ -84,6 +85,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-9160559178699228122
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193256753639204}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 184b9152a676cf04bac10a32e5c5644c, type: 3}
 --- !u!1 &1932278615020720
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,6 +119,7 @@ GameObject:
   - component: {fileID: 33778523960237548}
   - component: {fileID: 23224193602351940}
   - component: {fileID: 5666220168646373722}
+  - component: {fileID: 7101612048632793900}
   m_Layer: 0
   m_Name: SM_Bld_Wall_Door_01
   m_TagString: Untagged
@@ -189,3 +213,25 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!64 &7101612048632793900
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932278615020720}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300002, guid: 184b9152a676cf04bac10a32e5c5644c, type: 3}

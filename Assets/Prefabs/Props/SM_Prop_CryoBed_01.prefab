@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4941851166254248}
   - component: {fileID: 33166603938469478}
   - component: {fileID: 23182890679614710}
+  - component: {fileID: 4872510441554235187}
   m_Layer: 0
   m_Name: SM_Prop_CryoBed_Lid_01
   m_TagString: Untagged
@@ -84,6 +85,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4872510441554235187
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351424546392352}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300002, guid: 866092752c876c94cb8e57fbdd1e1df7, type: 3}
 --- !u!1 &1719742860921462
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,6 +118,7 @@ GameObject:
   - component: {fileID: 4592234601349518}
   - component: {fileID: 33406709773732902}
   - component: {fileID: 23552661165548832}
+  - component: {fileID: 6474036785465627892}
   m_Layer: 0
   m_Name: SM_Prop_CryoBed_01
   m_TagString: Untagged
@@ -169,6 +193,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6474036785465627892
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719742860921462}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 866092752c876c94cb8e57fbdd1e1df7, type: 3}
 --- !u!1 &1720283840842562
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,6 +226,7 @@ GameObject:
   - component: {fileID: 4185858467476928}
   - component: {fileID: 33024449946140274}
   - component: {fileID: 23051797163878468}
+  - component: {fileID: 5461584787392271828}
   m_Layer: 0
   m_Name: SM_Prop_CryoBed_Lid_Glass_01
   m_TagString: Untagged
@@ -252,6 +299,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5461584787392271828
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720283840842562}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300004, guid: 866092752c876c94cb8e57fbdd1e1df7, type: 3}
 --- !u!1 &7210607045160015585
 GameObject:
   m_ObjectHideFlags: 0

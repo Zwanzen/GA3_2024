@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4997712868620684}
   - component: {fileID: 33352240408988308}
   - component: {fileID: 23705198448581520}
+  - component: {fileID: 5834966343735844054}
   m_Layer: 0
   m_Name: SM_Bld_Lift_Wall_Door_01
   m_TagString: Untagged
@@ -83,6 +84,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5834966343735844054
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090067787318178}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9807892, y: 2.3541303, z: 0.0734956}
+  m_Center: {x: 0, y: -0.000000059604645, z: 0.000000018626451}
 --- !u!1 &1245762855502432
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,6 +117,7 @@ GameObject:
   - component: {fileID: 33917010903000776}
   - component: {fileID: 23228477755354204}
   - component: {fileID: 95814042206016258}
+  - component: {fileID: 2812082193006050733}
   m_Layer: 0
   m_Name: SM_Bld_Lift_Wall_01
   m_TagString: Untagged
@@ -190,6 +213,28 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!64 &2812082193006050733
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245762855502432}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 0c71ba21b3ffebb4188d15c7b1d33f7e, type: 3}
 --- !u!1 &1496441230401456
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,6 +246,7 @@ GameObject:
   - component: {fileID: 4454580006987200}
   - component: {fileID: 33295203230086532}
   - component: {fileID: 23869539967279716}
+  - component: {fileID: 1227082496821497951}
   m_Layer: 0
   m_Name: SM_Bld_Lift_Wall_Door_02
   m_TagString: Untagged
@@ -273,3 +319,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1227082496821497951
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496441230401456}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.97707623, y: 2.3541303, z: 0.07348944}
+  m_Center: {x: -0.00000014901161, y: -0.000000059604645, z: 0.0000000055879354}

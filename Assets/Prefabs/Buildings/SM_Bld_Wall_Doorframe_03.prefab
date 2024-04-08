@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33822868889198022}
   - component: {fileID: 23190110615309976}
   - component: {fileID: 4645172960693759626}
+  - component: {fileID: 6278221293560961110}
   m_Layer: 0
   m_Name: SM_Bld_Wall_Door_01
   m_TagString: Untagged
@@ -105,6 +106,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &6278221293560961110
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131071754574210}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 7.113147, y: 3.9094415, z: 0.3225647}
+  m_Center: {x: 0, y: 0.000000059604645, z: 0}
 --- !u!1 &1725943820791880
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,6 +138,7 @@ GameObject:
   - component: {fileID: 4493012822559008}
   - component: {fileID: 33891211877466460}
   - component: {fileID: 23120495007714900}
+  - component: {fileID: 6478082450453798233}
   m_Layer: 0
   m_Name: SM_Bld_Wall_Doorframe_03
   m_TagString: Untagged
@@ -189,3 +212,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6478082450453798233
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725943820791880}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 3670b37c2bfdfdf44a413bdf812b6521, type: 3}

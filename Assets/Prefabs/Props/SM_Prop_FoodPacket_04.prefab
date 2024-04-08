@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4931972518995806}
   - component: {fileID: 33023420092170512}
   - component: {fileID: 23965447966463716}
+  - component: {fileID: -7040935372405748673}
   m_Layer: 0
   m_Name: SM_Prop_FoodPacket_04
   m_TagString: Untagged
@@ -83,3 +84,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &-7040935372405748673
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273525844116046}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.3143222, y: 0.047183763, z: 0.17516142}
+  m_Center: {x: -0.06611496, y: 0.023591904, z: -0.0000001527369}

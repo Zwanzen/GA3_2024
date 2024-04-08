@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4665952197380254}
   - component: {fileID: 33971926336773752}
   - component: {fileID: 23786001169437174}
+  - component: {fileID: -5735159665662831330}
   m_Layer: 0
   m_Name: SM_Prop_Engine_Construction_01
   m_TagString: Untagged
@@ -84,6 +85,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-5735159665662831330
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512183729368740}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 9db39f6fc0199fd4db24bfab80e66f15, type: 3}
 --- !u!1 &4823400076733447301
 GameObject:
   m_ObjectHideFlags: 0

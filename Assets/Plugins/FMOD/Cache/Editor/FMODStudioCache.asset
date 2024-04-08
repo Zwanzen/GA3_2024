@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638481076689927162
+  lastModified: 638481311271454780
   FileSizes:
   - Name: Desktop
-    Value: 1654
+    Value: 1762
   Exists: 1
 --- !u!114 &-8950893212002603677
 MonoBehaviour:
@@ -35,7 +35,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638481076689911938
+  lastModified: 638481311271439661
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -94,6 +94,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8186
+--- !u!114 &-7555475267200934695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FX - Door Opening/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2825366834
+    data2: 541712142
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-7261297685694872440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,7 +268,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank
   Name: Prop Ambience
   StudioPath: bank:/Prop Ambience
-  lastModified: 638481076691016208
+  lastModified: 638481295335337260
   FileSizes:
   - Name: Desktop
     Value: 1522080
@@ -330,6 +354,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6920
+--- !u!114 &-1233395192234925074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Interaction/FX - Door Opening
+  m_EditorClassIdentifier: 
+  Path: event:/Props Interaction/FX - Door Opening
+  Guid:
+    Data1: 1819222302
+    Data2: 1333712214
+    Data3: 839871415
+    Data4: 2102198321
+  Banks:
+  - {fileID: -1016182208735009663}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -7555475267200934695}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-1016182208735009663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,10 +397,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Props Interaction.bank
   Name: Props Interaction
   StudioPath: bank:/Props Interaction
-  lastModified: 638481030962287950
+  lastModified: 638481312346726927
   FileSizes:
   - Name: Desktop
-    Value: 17472
+    Value: 28448
   Exists: 1
 --- !u!114 &-888084885912303689
 MonoBehaviour:
@@ -412,12 +464,13 @@ MonoBehaviour:
   - {fileID: 7452445576320695263}
   - {fileID: -1829165614399600650}
   - {fileID: 8111448070985113584}
+  - {fileID: -1233395192234925074}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8950893212002603677}
   StringsBanks:
   - {fileID: -9159263077006114786}
-  cacheTime: 638481076691016208
+  cacheTime: 638481312346726927
   cacheVersion: 131617
 --- !u!114 &1065810116750121637
 MonoBehaviour:

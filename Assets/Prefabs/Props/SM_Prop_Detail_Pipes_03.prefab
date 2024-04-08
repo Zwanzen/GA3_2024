@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4726450285780632}
   - component: {fileID: 33013177076163426}
   - component: {fileID: 23371715372901338}
+  - component: {fileID: 4423277950734155903}
   m_Layer: 0
   m_Name: SM_Prop_Detail_Pipes_03
   m_TagString: Untagged
@@ -84,6 +85,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4423277950734155903
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886026427669742}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 8d42d87e8a94b9c44adb435ca7de7683, type: 3}
 --- !u!1 &7899995070705413865
 GameObject:
   m_ObjectHideFlags: 0

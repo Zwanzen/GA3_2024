@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4573840353889760}
   - component: {fileID: 33273389021257004}
   - component: {fileID: 23098708853619466}
+  - component: {fileID: -4596778169168552339}
   m_Layer: 0
   m_Name: SM_Prop_Light_Panel_01
   m_TagString: Untagged
@@ -84,6 +85,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &-4596778169168552339
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107281013672346}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5125613, y: 0.101997346, z: 1.2063233}
+  m_Center: {x: 0.00000014901161, y: 0.050998673, z: 0}
 --- !u!1 &8984099619087562152
 GameObject:
   m_ObjectHideFlags: 0

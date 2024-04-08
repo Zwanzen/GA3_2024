@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4227881491088518}
   - component: {fileID: 33270564811832610}
   - component: {fileID: 23532235117688892}
+  - component: {fileID: 3283056437584434736}
   m_Layer: 0
   m_Name: SM_Prop_ControlPanel_01
   m_TagString: Untagged
@@ -84,6 +85,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3283056437584434736
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278828291484514}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 83d377e38906d8c479b494ef23c9a4a6, type: 3}
 --- !u!1 &8131818018677490833
 GameObject:
   m_ObjectHideFlags: 0

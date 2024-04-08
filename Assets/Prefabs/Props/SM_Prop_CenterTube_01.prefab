@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 4092527404436736}
   - component: {fileID: 33287095619272274}
   - component: {fileID: 23067068383380888}
+  - component: {fileID: 5788391064773245853}
   m_Layer: 0
   m_Name: SM_Prop_CenterTube_01
   m_TagString: Untagged
@@ -167,3 +168,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5788391064773245853
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737161984944088}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: e19ea463faef7494480b9c6020d71082, type: 3}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4883453663035450}
   - component: {fileID: 33522117443032886}
   - component: {fileID: 23941005293392380}
+  - component: {fileID: -600883086103689497}
   m_Layer: 0
   m_Name: SM_Prop_Test_Tube_01
   m_TagString: Untagged
@@ -84,6 +85,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-600883086103689497
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641824455757700}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 7c4dfc530f860154bb4dead4f7a3be9a, type: 3}
 --- !u!1 &1836917545835696
 GameObject:
   m_ObjectHideFlags: 0

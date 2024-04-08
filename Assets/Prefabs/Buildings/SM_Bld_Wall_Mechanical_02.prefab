@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4336824843761612}
   - component: {fileID: 33110339224103872}
   - component: {fileID: 23204478006578294}
+  - component: {fileID: -5316330657039805742}
   m_Layer: 0
   m_Name: SM_Bld_Wall_Mechanical_02
   m_TagString: Untagged
@@ -85,6 +86,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-5316330657039805742
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333463619848804}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: f510059860b7c0a43badf35c489b49ec, type: 3}
 --- !u!1 &909438296281733381
 GameObject:
   m_ObjectHideFlags: 0

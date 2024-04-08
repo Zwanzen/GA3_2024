@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4902180137491024}
   - component: {fileID: 33275475394323582}
   - component: {fileID: 23262289355852306}
+  - component: {fileID: 4996955397612663964}
   m_Layer: 0
   m_Name: SM_Prop_MapTable_Top_01
   m_TagString: Untagged
@@ -84,6 +85,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4996955397612663964
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398643495048306}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: bc18e631688c54a4ab2cbdd89f921fff, type: 3}
 --- !u!1 &1181808189671385131
 GameObject:
   m_ObjectHideFlags: 0

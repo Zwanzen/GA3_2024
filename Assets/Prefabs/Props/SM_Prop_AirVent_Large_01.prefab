@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4778811995332320}
   - component: {fileID: 33830635012318576}
   - component: {fileID: 23617657258015076}
+  - component: {fileID: 3651765596583405570}
   m_Layer: 0
   m_Name: SM_Prop_AirVent_Large_01
   m_TagString: Untagged
@@ -84,6 +85,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3651765596583405570
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535177252734026}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: bf24818f50790fb4089a8bb2dd19d3a0, type: 3}
 --- !u!1 &3986409330662780098
 GameObject:
   m_ObjectHideFlags: 0
