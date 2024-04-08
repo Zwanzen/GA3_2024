@@ -567,7 +567,8 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: -1452052540386179620}
   MinDistance: 1
   MaxDistance: 20
   Length: 6358
@@ -586,7 +587,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Props Interaction.bank
   Name: Props Interaction
   StudioPath: bank:/Props Interaction
-  lastModified: 638481898392022225
+  lastModified: 638481922473232121
   FileSizes:
   - Name: Desktop
     Value: 109984
@@ -645,6 +646,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6920
+--- !u!114 &-1452052540386179620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FX - Turret/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3871982834
+    data2: 2785124848
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-1233395192234925074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -817,7 +842,7 @@ MonoBehaviour:
   - {fileID: 4677152490814659433}
   StringsBanks:
   - {fileID: 4038073233029663505}
-  cacheTime: 638481898392087519
+  cacheTime: 638481922473232121
   cacheVersion: 131617
 --- !u!114 &475843691984646049
 MonoBehaviour:
@@ -888,10 +913,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank
   Name: Prop Ambience
   StudioPath: bank:/Prop Ambience
-  lastModified: 638481810015227592
+  lastModified: 638481922471956476
   FileSizes:
   - Name: Desktop
-    Value: 1522080
+    Value: 1523072
   Exists: 1
 --- !u!114 &1065810116750121637
 MonoBehaviour:
@@ -1067,10 +1092,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638481898392087519
+  lastModified: 638481922462155908
   FileSizes:
   - Name: Desktop
-    Value: 1830
+    Value: 1882
   Exists: 1
 --- !u!114 &4419139349261637467
 MonoBehaviour:
@@ -1114,7 +1139,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638481898392072452
+  lastModified: 638481922462125059
   FileSizes:
   - Name: Desktop
     Value: 670
