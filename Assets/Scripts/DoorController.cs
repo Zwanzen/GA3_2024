@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using System.Collections;
 
@@ -21,17 +19,30 @@ public class DoorController : MonoBehaviour
 
     void Update()
     {
-        // Check for input to open the door only if the player is in range
-        if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
+        // Check if the door should open or close based on the player's proximity
+        if (isPlayerInRange)
         {
-            // Toggle the door state
-            isOpen = !isOpen;
+            if (!isOpen)
+            {
+                // Update the Animator parameter to trigger the door animation
+                doorAnimator.SetBool("doorActivate", true);
+                isOpen = true;
 
-            // Update the Animator parameter to trigger the door animation
-            doorAnimator.SetBool("doorActivate", isOpen);
+                // Start the coroutine to handle light deactivation
+                StartCoroutine(ToggleLightCoroutine(true));
+            }
+        }
+        else
+        {
+            if (isOpen)
+            {
+                // Update the Animator parameter to trigger the door animation
+                doorAnimator.SetBool("doorActivate", false);
+                isOpen = false;
 
-            // Start the coroutine to handle light deactivation/activation
-            StartCoroutine(ToggleLightCoroutine(isOpen));
+                // Start the coroutine to handle light reactivation
+                StartCoroutine(ToggleLightCoroutine(false));
+            }
         }
     }
 
@@ -39,8 +50,8 @@ public class DoorController : MonoBehaviour
     {
         if (openState)
         {
-            // Wait for 0.15 seconds before deactivating the light
-            yield return new WaitForSeconds(0.15f);
+            // Wait for 0.2 seconds before deactivating the light
+            yield return new WaitForSeconds(0.2f);
 
             // Deactivate the light when the door opens if there is a light component
             if (doorLight != null)
@@ -50,8 +61,8 @@ public class DoorController : MonoBehaviour
         }
         else
         {
-            // Wait for 0.85 seconds before reactivating the light
-            yield return new WaitForSeconds(0.85f);
+            // Wait for 0.8 seconds before reactivating the light
+            yield return new WaitForSeconds(0.8f);
 
             // Reactivate the light when the door closes if there is a light component
             if (doorLight != null)

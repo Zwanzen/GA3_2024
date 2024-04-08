@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{ea26cf3a-e8c5-4513-ae8e-321cfc28af8b}">
+		<property name="assetPath">
+			<value>FX/FX - Door Closing.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.82210416666666664</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d43037b8-6550-4082-ad65-b5b16eaec78b}</destination>
+		</relationship>
+	</object>
+</objects>
