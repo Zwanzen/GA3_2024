@@ -1459,9 +1459,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e154f0f0b42d3b440992bd3d9daffe01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveForce: 20
-  maxSpeed: 5
-  stopForce: 20
+  moveForce: 50
+  maxSpeed: 4.5
+  stopForce: 50
   airMultiplier: 0.5
   rotationSpeed: 720
   jumpForce: 4.5

@@ -125,27 +125,37 @@ public class CharacterController : MonoBehaviour
         Vector3 moveDir = MoveVector();
         Vector3 rbVel = new(rb.velocity.x, 0, rb.velocity.z);
 
+
         // Rotate dir based on camera
         moveDir = Quaternion.AngleAxis(cameraHolder.rotation.eulerAngles.y, Vector3.up) * moveDir;
+        dirVel = Vector3.Dot(rbVel, moveDir.normalized);
+        float dot = Vector3.Dot(moveDir.normalized, rbVel.normalized);
 
-        // If move, counter vel for better control
-        if (MoveVector().normalized.magnitude <= 1 && Vector3.Dot(moveDir, rbVel) > 0.2f)
+
+        // Counter vel for better control
+        if (dot > 0.1f)
         {
-            moveDir = -Vector3.Reflect(rbVel, moveDir.normalized);
+            moveDir = -Vector3.Reflect(rbVel.normalized, moveDir.normalized);
+            moveDir -= (rbVel.normalized / 2);
         }
 
-        // Normalize, get dirVel, then project onto normal
+        // Normalize and project
         moveDir.Normalize();
-        dirVel = Vector3.Dot(rbVel, moveDir);
         moveDir = Vector3.ProjectOnPlane(moveDir, GetSurfaceNormal());
 
         // Calculate gradual force depending on current speed
-        float gradualForce = Mathf.Lerp(moveForce, 0, dirVel / maxSpeed);
+        // Dot multiplier is temporary, it tries to increase the speed when hard turning
+        float dotMultiplier = Mathf.Lerp(2, 1, dot);
+        float gradualForce = Mathf.Lerp(moveForce * dotMultiplier, 0, dirVel / maxSpeed);
 
         // Apply force only if we are not at max speed
         if (dirVel < maxSpeed)
         {
             rb.AddForce(moveDir * gradualForce * AirMultiplier(airMultiplier));
+        }
+        else
+        {
+            Debug.Log("over max speed: " + (dirVel - maxSpeed));
         }
 
         // Remove

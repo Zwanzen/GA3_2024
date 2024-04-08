@@ -944,7 +944,7 @@ PrefabInstance:
     - target: {fileID: 3562102463701349846, guid: d5627e146faf30f42a5da7e3e4114e23,
         type: 3}
       propertyPath: maxSpeed
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3562102463701349846, guid: d5627e146faf30f42a5da7e3e4114e23,
         type: 3}
@@ -959,12 +959,12 @@ PrefabInstance:
     - target: {fileID: 3562102463701349846, guid: d5627e146faf30f42a5da7e3e4114e23,
         type: 3}
       propertyPath: moveForce
-      value: 20
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3562102463701349846, guid: d5627e146faf30f42a5da7e3e4114e23,
         type: 3}
       propertyPath: stopForce
-      value: 20
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3562102463701349846, guid: d5627e146faf30f42a5da7e3e4114e23,
         type: 3}
