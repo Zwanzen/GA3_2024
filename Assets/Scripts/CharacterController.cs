@@ -17,6 +17,12 @@ public class CharacterController : MonoBehaviour
     private float airMultiplier = 0.5f;
     [SerializeField]
     private float rotationSpeed = 720;
+
+    [Space(20)]
+    [Header("Counter Movement")]
+
+    [Space(20)]
+    [Header("Jump Variables")]
     [SerializeField]
     private float jumpForce = 10f;
     [SerializeField]
@@ -59,6 +65,7 @@ public class CharacterController : MonoBehaviour
     public Transform cameraHolder;
 
     private float dirVel;
+    private Vector3 right;
 
     [Space(20)]
     [Header("Debugging")]
@@ -113,7 +120,7 @@ public class CharacterController : MonoBehaviour
         {
             Moving();
         }
-        else
+        else if(IsGrounded())
         {
             Stopping();
         }
@@ -125,27 +132,25 @@ public class CharacterController : MonoBehaviour
         Vector3 moveDir = MoveVector();
         Vector3 rbVel = new(rb.velocity.x, 0, rb.velocity.z);
 
-
-        // Rotate dir based on camera
+        // Rotate dir based on camera, then find the relative velocity in that direction
+        // We use this to determine how fast we are moving in the wanted direction
         moveDir = Quaternion.AngleAxis(cameraHolder.rotation.eulerAngles.y, Vector3.up) * moveDir;
         dirVel = Vector3.Dot(rbVel, moveDir.normalized);
+
+        // Find the dot product between the moveDir and the rbVel to determine if we are moving forward or backward
+        // This is used to calculate the counter movement direction
         float dot = Vector3.Dot(moveDir.normalized, rbVel.normalized);
+        moveDir = CalculateCounterMovement(moveDir, rbVel, dot);
 
-
-        // Counter vel for better control
-        if (dot > 0.1f)
-        {
-            moveDir = -Vector3.Reflect(rbVel.normalized, moveDir.normalized);
-            moveDir -= (rbVel.normalized / 2);
-        }
-
-        // Normalize and project
+        // Normalize and project onto the surface normal
+        // This is to make sure we are moving in the direction of the surface we are standing on
+        // This is to make going up or down slopes more natural & decide if we can go up the slope
         moveDir.Normalize();
         moveDir = Vector3.ProjectOnPlane(moveDir, GetSurfaceNormal());
 
         // Calculate gradual force depending on current speed
         // Dot multiplier is temporary, it tries to increase the speed when hard turning
-        float dotMultiplier = Mathf.Lerp(2, 1, dot);
+        float dotMultiplier = Mathf.Lerp(1, 1, dot);
         float gradualForce = Mathf.Lerp(moveForce * dotMultiplier, 0, dirVel / maxSpeed);
 
         // Apply force only if we are not at max speed
@@ -155,14 +160,56 @@ public class CharacterController : MonoBehaviour
         }
         else
         {
+            // Can be removed, but useful for determening if we apply too much force
             Debug.Log("over max speed: " + (dirVel - maxSpeed));
         }
 
-        // Remove
+        // Remove or make debug variables if we want to see them in the inspector
         debugMoveDir = moveDir;
         debugMoveInput = MoveVector();
         debugMoveInput = Quaternion.AngleAxis(cameraHolder.rotation.eulerAngles.y, Vector3.up) * debugMoveInput;
         debugMoveInput.Normalize();
+    }
+
+    // Small method to calculate counter movement direction
+    private Vector3 CalculateCounterMovement (Vector3 moveDir, Vector3 rbVel, float dot)
+    {
+        // Counter vel for better control only when moving forward to not confuse the counter movement
+        if (dot > 0.1f)
+        {
+            // By using the dot of right and rbVel we can determine if we are moving left or right
+            // Because by shifting it 90 degrees, we get left and right instead of forward and backward
+            right = Vector3.Cross(Vector3.up, moveDir);
+            right.Normalize();
+
+            if (Vector3.Dot(right, rbVel.normalized) > 0)
+            {
+                right *= -1;
+            }
+
+            // Mirroring the rbVel to get the exact opposite direction
+            // Then setting the movement direction to the reflected direction
+            // This will quickly alight the player with the wanted direction the larger the difference
+            // Between the rbVel and the wanted direction
+            moveDir = -Vector3.Reflect(rbVel.normalized, moveDir.normalized);
+
+            // To make the player align faster when the diffrerence is small
+            // We gradually shift angle of counterDir to faster align with input direction the
+            // Smaller the difference is the stronger the shift until the difference is acceptable
+            float counterDot = Vector3.Dot(moveDir.normalized, rbVel.normalized);
+            if (counterDot < 0.995f)
+            {
+                Vector3 gradualAngleShift = right * counterDot;
+                //Vector3 gradualAngleShift = right * Mathf.Lerp(0, 1, counterDot);
+                moveDir += gradualAngleShift;
+                
+            }
+
+            return moveDir;
+        }
+
+        // If not moving forward, return the original moveDir to avoid bugs
+        return moveDir;
     }
 
     // When not inputting any movement, and on the ground, apply a gradual force to stop the player
@@ -318,10 +365,5 @@ public class CharacterController : MonoBehaviour
 
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + debugMoveInput * 1.5f);
-
-        /*
-        Gizmos.color = Color.magenta;
-        Gizmos.DrawLine(transform.position, transform.position + counterMoveDir.normalized * 1.5f);
-        */
     }
 }

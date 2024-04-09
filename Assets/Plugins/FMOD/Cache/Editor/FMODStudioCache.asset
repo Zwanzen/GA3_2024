@@ -811,7 +811,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Props Interaction.bank
   Name: Props Interaction
   StudioPath: bank:/Props Interaction
-  lastModified: 638482169420120060
+  lastModified: 638482620935915551
   FileSizes:
   - Name: Desktop
     Value: 111808
@@ -1116,7 +1116,7 @@ MonoBehaviour:
   - {fileID: 4677152490814659433}
   StringsBanks:
   - {fileID: 4038073233029663505}
-  cacheTime: 638482169420120060
+  cacheTime: 638482620935915551
   cacheVersion: 131617
 --- !u!114 &475843691984646049
 MonoBehaviour:
@@ -1189,7 +1189,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank
   Name: Prop Ambience
   StudioPath: bank:/Prop Ambience
-  lastModified: 638482169419871418
+  lastModified: 638482620935895610
   FileSizes:
   - Name: Desktop
     Value: 1531616
@@ -1468,7 +1468,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638482169419345397
+  lastModified: 638481922462155908
   FileSizes:
   - Name: Desktop
     Value: 1882
@@ -1515,7 +1515,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638482169419335414
+  lastModified: 638481922462125059
   FileSizes:
   - Name: Desktop
     Value: 670

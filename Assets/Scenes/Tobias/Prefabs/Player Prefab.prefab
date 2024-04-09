@@ -1467,7 +1467,7 @@ MonoBehaviour:
   moveForce: 50
   maxSpeed: 4.5
   stopForce: 50
-  airMultiplier: 0.5
+  airMultiplier: 0.1
   rotationSpeed: 720
   jumpForce: 4.5
   jumpDelay: 0.1

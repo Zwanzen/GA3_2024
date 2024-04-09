@@ -134,6 +134,5 @@ public class FirstPersonOcclusion : MonoBehaviour
     private void SetParameter()
     {
         Audio.setParameterByName("Occlusion", lineCastHitCount / 11);
-        Debug.Log("Occlusion: " + lineCastHitCount / 11);
     }
 }
