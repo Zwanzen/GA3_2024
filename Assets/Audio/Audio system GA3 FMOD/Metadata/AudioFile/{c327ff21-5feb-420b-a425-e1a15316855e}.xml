@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{c327ff21-5feb-420b-a425-e1a15316855e}">
 		<property name="assetPath">
-			<value>FX/FX - Gas Vent (Loop) 2.wav</value>
+			<value>FX/Vents/FX - Gas Vent (Loop) 2.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{496ca6c0-dd89-4b28-9395-8ac846ddbe42}">
 		<property name="assetPath">
-			<value>FX/FX - Hum (Loop) 3.wav</value>
+			<value>FX/Humming/FX - Hum (Loop) 3.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

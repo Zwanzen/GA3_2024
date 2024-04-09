@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{da71c7ba-6c05-4f40-8437-7fad8cc34a0f}">
 		<property name="assetPath">
-			<value>FX/FX - Distant Blasts.wav</value>
+			<value>FX/Explosions &amp; Impacts/FX - Distant Blasts.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

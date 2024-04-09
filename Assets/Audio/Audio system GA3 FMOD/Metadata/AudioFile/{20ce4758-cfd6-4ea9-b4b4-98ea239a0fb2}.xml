@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{20ce4758-cfd6-4ea9-b4b4-98ea239a0fb2}">
 		<property name="assetPath">
-			<value>FX/FX - Machine Noise (Loop).wav</value>
+			<value>FX/Machines/FX - Machine Noise (Loop).wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

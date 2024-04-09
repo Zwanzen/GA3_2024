@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{5b9bf631-9454-4b85-82ee-79869ee231b4}">
 		<property name="assetPath">
-			<value>FX/FX - Digital Button 2.wav</value>
+			<value>FX/Buttons/FX - Digital Button 2.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

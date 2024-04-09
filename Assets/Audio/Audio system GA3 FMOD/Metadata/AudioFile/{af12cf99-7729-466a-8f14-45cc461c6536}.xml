@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{af12cf99-7729-466a-8f14-45cc461c6536}">
 		<property name="assetPath">
-			<value>FX/FX - Machine Wiring Up.wav</value>
+			<value>FX/Machines/FX - Machine Wiring Up.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>96</value>

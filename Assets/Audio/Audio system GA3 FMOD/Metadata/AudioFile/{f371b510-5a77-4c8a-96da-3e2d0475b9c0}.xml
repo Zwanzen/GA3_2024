@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{f371b510-5a77-4c8a-96da-3e2d0475b9c0}">
 		<property name="assetPath">
-			<value>FX/FX - Gas Vent (Loop) 1.wav</value>
+			<value>FX/Vents/FX - Gas Vent (Loop) 1.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

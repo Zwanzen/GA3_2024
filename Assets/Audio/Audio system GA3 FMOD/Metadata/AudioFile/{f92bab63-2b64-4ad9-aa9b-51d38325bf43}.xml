@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{f92bab63-2b64-4ad9-aa9b-51d38325bf43}">
 		<property name="assetPath">
-			<value>FX/FX - Electric Hum.wav</value>
+			<value>FX/Humming/FX - Electric Hum.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

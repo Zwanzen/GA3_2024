@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{c65980ab-b938-4feb-aef2-d90d49b72e70}">
 		<property name="assetPath">
-			<value>FX/FX - Noise (Loop).wav</value>
+			<value>FX/Vents/FX - Noise (Loop).wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

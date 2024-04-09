@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{1e451892-3285-4e1a-ae56-46f5664c3bd3}">
 		<property name="assetPath">
-			<value>FX/FX - Machine Discord.wav</value>
+			<value>FX/Machines/FX - Machine Discord.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

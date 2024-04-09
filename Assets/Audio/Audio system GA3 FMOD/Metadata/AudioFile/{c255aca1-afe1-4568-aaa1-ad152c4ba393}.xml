@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{c255aca1-afe1-4568-aaa1-ad152c4ba393}">
 		<property name="assetPath">
-			<value>FX/FX - Machine Manufacturing (Loop).wav</value>
+			<value>FX/Machines/FX - Machine Manufacturing (Loop).wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

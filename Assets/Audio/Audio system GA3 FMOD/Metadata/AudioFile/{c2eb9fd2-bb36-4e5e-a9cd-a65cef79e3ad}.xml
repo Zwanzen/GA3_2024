@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{c2eb9fd2-bb36-4e5e-a9cd-a65cef79e3ad}">
 		<property name="assetPath">
-			<value>FX/FX - Impact 2.ogg</value>
+			<value>FX/Explosions &amp; Impacts/FX - Impact 2.ogg</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

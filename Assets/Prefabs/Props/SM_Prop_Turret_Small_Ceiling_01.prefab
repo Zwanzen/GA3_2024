@@ -307,7 +307,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4491033501517649710}
-  - component: {fileID: 2612366168152549190}
+  - component: {fileID: 2674777410564891941}
   m_Layer: 3
   m_Name: Audio
   m_TagString: Untagged
@@ -330,7 +330,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4656818137409928}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2612366168152549190
+--- !u!114 &2674777410564891941
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -339,25 +339,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 842985183608643726}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 210e04439cc818c4ab1051ef6d2c7468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
+  SelectAudio:
     Guid:
       Data1: 182410831
       Data2: 1289422395
       Data3: 1867798944
       Data4: 593811747
     Path: event:/Props Looping/FX - Turret
-  Event: 
-  PlayEvent: 1
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  SoundOcclusionWidening: 1
+  PlayerOcclusionWidening: 1
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
