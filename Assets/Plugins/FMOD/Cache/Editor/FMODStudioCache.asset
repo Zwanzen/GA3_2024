@@ -67,33 +67,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6358
---- !u!114 &-8329508907073728385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Hallways
-  m_EditorClassIdentifier: 
-  Path: event:/Hallways
-  Guid:
-    Data1: -466339289
-    Data2: 1109803643
-    Data3: 1983764894
-    Data4: -1106819373
-  Banks:
-  - {fileID: -3154856355711480994}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5675
 --- !u!114 &-8147985588696739636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,7 +172,7 @@ MonoBehaviour:
   Parameters:
   - {fileID: 6012255170663062802}
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10
   Length: 10041
 --- !u!114 &-7555475267200934695
 MonoBehaviour:
@@ -225,6 +198,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-7547766842849909677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Music - Control & Engine Rooms
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Music - Control & Engine Rooms
+  Guid:
+    Data1: -151963095
+    Data2: 1173428299
+    Data3: -924706904
+    Data4: -1164171013
+  Banks:
+  - {fileID: -1983535384101858900}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 36571
 --- !u!114 &-7460432099976129529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,10 +248,62 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
+  Parameters:
+  - {fileID: -7341396403810462102}
+  MinDistance: 1
+  MaxDistance: 8
+  Length: 39191
+--- !u!114 &-7386510255732464432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Music - Hallways
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Music - Hallways
+  Guid:
+    Data1: 702502549
+    Data2: 1123693063
+    Data3: 615245750
+    Data4: -615448100
+  Banks:
+  - {fileID: -1983535384101858900}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 39191
+  Length: 82001
+--- !u!114 &-7341396403810462102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FX - Medical Tube (Unused) 2/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3871982834
+    data2: 2785124848
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-7261297685694872440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,6 +331,61 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8940
+--- !u!114 &-6789343505743518355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/General Ambience/Ambience - Machine Room
+  m_EditorClassIdentifier: 
+  Path: event:/General Ambience/Ambience - Machine Room
+  Guid:
+    Data1: -1764768616
+    Data2: 1087744734
+    Data3: 842575754
+    Data4: -794616435
+  Banks:
+  - {fileID: -3154856355711480994}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10007
+--- !u!114 &-6644514324374715052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Interaction/FX - Machine Computing
+  m_EditorClassIdentifier: 
+  Path: event:/Props Interaction/FX - Machine Computing
+  Guid:
+    Data1: -363851131
+    Data2: 1284676985
+    Data3: 492873908
+    Data4: -1970729135
+  Banks:
+  - {fileID: -2203919514268191177}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 4406565105453603174}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6844
 --- !u!114 &-6400643112036240276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -490,7 +597,7 @@ MonoBehaviour:
   Parameters:
   - {fileID: 5635808166050676829}
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10
   Length: 5020
 --- !u!114 &-4981268672490872217
 MonoBehaviour:
@@ -685,10 +792,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/General Ambience.bank
   Name: General Ambience
   StudioPath: bank:/General Ambience
-  lastModified: 638483052092213598
+  lastModified: 638483549418235676
   FileSizes:
   - Name: Desktop
-    Value: 218464
+    Value: 1549920
   Exists: 1
 --- !u!114 &-3078194232689877648
 MonoBehaviour:
@@ -741,10 +848,38 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
+  Parameters:
+  - {fileID: -1965714806499775606}
+  MinDistance: 1
+  MaxDistance: 10
+  Length: 39191
+--- !u!114 &-2660899257330515050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/General Ambience/Hallways
+  m_EditorClassIdentifier: 
+  Path: event:/General Ambience/Hallways
+  Guid:
+    Data1: -466339289
+    Data2: 1109803643
+    Data3: 1983764894
+    Data4: -1106819373
+  Banks:
+  - {fileID: -3154856355711480994}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 39191
+  Length: 5675
 --- !u!114 &-2203919514268191177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -760,7 +895,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Props Interaction.bank
   Name: Props Interaction
   StudioPath: bank:/Props Interaction
-  lastModified: 638483049740176453
+  lastModified: 638483549418741201
   FileSizes:
   - Name: Desktop
     Value: 111808
@@ -908,6 +1043,50 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/FX - Door Sliding Down/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3871982834
+    data2: 2785124848
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-1983535384101858900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638483549419151019
+  FileSizes:
+  - Name: Desktop
+    Value: 6181760
+  Exists: 1
+--- !u!114 &-1965714806499775606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FX - Medical Tube (In Use)/Occlusion
   m_EditorClassIdentifier: 
   Name: Occlusion
   StudioPath: 
@@ -1071,6 +1250,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-924933251699478400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/General Ambience/Ambience - Sounds
+  m_EditorClassIdentifier: 
+  Path: event:/General Ambience/Ambience - Sounds
+  Guid:
+    Data1: 192819963
+    Data2: 1287268117
+    Data3: -1553754489
+    Data4: 1351682303
+  Banks:
+  - {fileID: -3154856355711480994}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 70843
 --- !u!114 &-888084885912303689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1140,12 +1346,11 @@ MonoBehaviour:
   - {fileID: 1035693365860309677}
   - {fileID: -2203919514268191177}
   - {fileID: -3154856355711480994}
+  - {fileID: -1983535384101858900}
   EditorEvents:
   - {fileID: -3829678978775068134}
-  - {fileID: 3941639828232522562}
   - {fileID: -6007721163422832705}
   - {fileID: -4163284187221975639}
-  - {fileID: -8329508907073728385}
   - {fileID: -7460432099976129529}
   - {fileID: -5366557311743043833}
   - {fileID: 3348506016378508154}
@@ -1164,12 +1369,22 @@ MonoBehaviour:
   - {fileID: 7564904783920039389}
   - {fileID: -3078194232689877648}
   - {fileID: 6485215827140894721}
+  - {fileID: -2660899257330515050}
+  - {fileID: -7547766842849909677}
+  - {fileID: 2064221735539098931}
+  - {fileID: -7386510255732464432}
+  - {fileID: 4333845490033308509}
+  - {fileID: 8026915874292793383}
+  - {fileID: -6789343505743518355}
+  - {fileID: 3676457872801423454}
+  - {fileID: -924933251699478400}
+  - {fileID: -6644514324374715052}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4677152490814659433}
   StringsBanks:
   - {fileID: 4038073233029663505}
-  cacheTime: 638483059833263281
+  cacheTime: 638483549419151019
   cacheVersion: 131617
 --- !u!114 &152564166377372431
 MonoBehaviour:
@@ -1214,10 +1429,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank
   Name: Prop Ambience
   StudioPath: bank:/Prop Ambience
-  lastModified: 638483059833263281
+  lastModified: 638483532402392874
   FileSizes:
   - Name: Desktop
-    Value: 2115136
+    Value: 2103168
   Exists: 1
 --- !u!114 &1065810116750121637
 MonoBehaviour:
@@ -1270,6 +1485,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &2064221735539098931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Music - Bridge
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Music - Bridge
+  Guid:
+    Data1: -1091887754
+    Data2: 1086145270
+    Data3: 1085501072
+    Data4: 1457913065
+  Banks:
+  - {fileID: -1983535384101858900}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 215536
 --- !u!114 &2221350478494026718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1350,30 +1592,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &2943210615556352487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/FX - Machine Computing/Occlusion
-  m_EditorClassIdentifier: 
-  Name: Occlusion
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3871982834
-    data2: 2785124848
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &3237278646735954968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1426,6 +1644,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2631
+--- !u!114 &3676457872801423454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/General Ambience/Ambience - Ominous
+  m_EditorClassIdentifier: 
+  Path: event:/General Ambience/Ambience - Ominous
+  Guid:
+    Data1: 93902823
+    Data2: 1243684317
+    Data3: -1342607965
+    Data4: -96554244
+  Banks:
+  - {fileID: -3154856355711480994}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 63497
 --- !u!114 &3726146973503775133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1454,34 +1699,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 12409
---- !u!114 &3941639828232522562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX - Machine Computing
-  m_EditorClassIdentifier: 
-  Path: event:/FX - Machine Computing
-  Guid:
-    Data1: -363851131
-    Data2: 1284676985
-    Data3: 492873908
-    Data4: -1970729135
-  Banks:
-  - {fileID: -2203919514268191177}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 2943210615556352487}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 6844
 --- !u!114 &4038073233029663505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1497,10 +1714,61 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638483052054745912
+  lastModified: 638483549418292107
   FileSizes:
   - Name: Desktop
-    Value: 2084
+    Value: 2536
+  Exists: 1
+--- !u!114 &4333845490033308509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Music - Introduction
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Music - Introduction
+  Guid:
+    Data1: 338046390
+    Data2: 1164105395
+    Data3: 554531488
+    Data4: -1109592377
+  Banks:
+  - {fileID: -1983535384101858900}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 62931
+--- !u!114 &4406565105453603174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FX - Machine Computing/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3871982834
+    data2: 2785124848
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &4419139349261637467
 MonoBehaviour:
@@ -1544,7 +1812,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638483052054699878
+  lastModified: 638483549418281819
   FileSizes:
   - Name: Desktop
     Value: 670
@@ -1576,7 +1844,7 @@ MonoBehaviour:
   - {fileID: -587783710439788809}
   MinDistance: 1
   MaxDistance: 20
-  Length: 6358
+  Length: 7067
 --- !u!114 &4832132329273557613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1807,6 +2075,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8186
+--- !u!114 &8026915874292793383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Music - Science Lab
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Music - Science Lab
+  Guid:
+    Data1: 1270471114
+    Data2: 1274010962
+    Data3: 1053423008
+    Data4: 2101684484
+  Banks:
+  - {fileID: -1983535384101858900}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 74482
 --- !u!114 &8111448070985113584
 MonoBehaviour:
   m_ObjectHideFlags: 0
