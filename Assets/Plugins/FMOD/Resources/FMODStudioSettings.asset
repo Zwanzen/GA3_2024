@@ -416,6 +416,7 @@ MonoBehaviour:
   - Master
   Banks:
   - General Ambience
+  - Music
   - Prop Ambience
   - Props Interaction
   BanksToLoad: []
