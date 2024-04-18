@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33488681922130362}
   - component: {fileID: 23706478586578056}
   - component: {fileID: 4093276447027474491}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_CenterTube_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 4489227423954426}
   - component: {fileID: 33057091636254816}
   - component: {fileID: 23815701232414108}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_CenterTube_Glass_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}

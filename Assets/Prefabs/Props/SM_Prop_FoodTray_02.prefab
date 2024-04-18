@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33596832362528460}
   - component: {fileID: 23776949526292360}
   - component: {fileID: -6384178045428403710}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_FoodTray_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}

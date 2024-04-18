@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4677106847913516}
   - component: {fileID: 33646609748306704}
   - component: {fileID: 23654688063564732}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Crew_Shower_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 33103162675564780}
   - component: {fileID: 23903049715671506}
   - component: {fileID: 7938400364135016832}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Crew_Shower_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

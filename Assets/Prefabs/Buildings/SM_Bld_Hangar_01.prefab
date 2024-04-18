@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33908270742296504}
   - component: {fileID: 23335156034062736}
   - component: {fileID: 2406957738340835671}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bld_HangerFloor_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 33616845610830410}
   - component: {fileID: 23630978183079382}
   - component: {fileID: 1387805755311190600}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_HangerCeiling_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 33861149366530922}
   - component: {fileID: 23616503677960302}
   - component: {fileID: 5584102338019427380}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Door_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 33262907943537990}
   - component: {fileID: 23433324013993782}
   - component: {fileID: 9110043966599100773}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_HangerDoor_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -435,7 +435,7 @@ GameObject:
   - component: {fileID: 33724135162129938}
   - component: {fileID: 23788090224274980}
   - component: {fileID: 6402324742209586683}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -540,7 +540,7 @@ GameObject:
   - component: {fileID: 33766748263354108}
   - component: {fileID: 23238926346363378}
   - component: {fileID: 5229833468489462103}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_HangerGlass_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -646,7 +646,7 @@ GameObject:
   - component: {fileID: 33352201819960788}
   - component: {fileID: 23219469563942486}
   - component: {fileID: 8491919270913697236}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_HangerDoor_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -752,7 +752,7 @@ GameObject:
   - component: {fileID: 33311616166706756}
   - component: {fileID: 23447255250221828}
   - component: {fileID: 2937897370860496597}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Door_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -857,7 +857,7 @@ GameObject:
   - component: {fileID: 33744490607234066}
   - component: {fileID: 23488901207551784}
   - component: {fileID: 974798225027059183}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Hangar_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

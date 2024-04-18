@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33239774732671808}
   - component: {fileID: 23056523079190998}
   - component: {fileID: 4544482803242936403}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Corridor_Double_Arch_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}

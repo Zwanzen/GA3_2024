@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33480080355823194}
   - component: {fileID: 23232398280843638}
   - component: {fileID: 6620944782880555431}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Bridge_Walls_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 4182201377707774}
   - component: {fileID: 33986826636179420}
   - component: {fileID: 23978185976270046}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Bridge_Walls_Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

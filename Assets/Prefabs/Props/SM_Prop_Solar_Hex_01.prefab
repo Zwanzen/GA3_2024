@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4395319355963836}
   - component: {fileID: 33969790012635774}
   - component: {fileID: 23724106673478156}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Solar_Hex_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

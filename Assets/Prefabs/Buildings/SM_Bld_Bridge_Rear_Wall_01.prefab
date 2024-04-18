@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33821239890311004}
   - component: {fileID: 23128053750206412}
   - component: {fileID: 3519565181909379394}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Bridge_Rear_Wall_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

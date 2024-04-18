@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33487863383939082}
   - component: {fileID: 23231049613742490}
   - component: {fileID: 1199189596205780221}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Wall_Pods_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 33519561918779348}
   - component: {fileID: 23168288878634106}
   - component: {fileID: 4146821662439831550}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Wall_Pods_Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

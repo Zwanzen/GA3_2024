@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33759270952893754}
   - component: {fileID: 23516518585772082}
   - component: {fileID: -4382124882679380874}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_MapTable_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7390832002023108723}
   - component: {fileID: 3930126480732756173}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}

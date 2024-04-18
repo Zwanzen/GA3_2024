@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4120350692488268}
   - component: {fileID: 33196398453457432}
   - component: {fileID: 23872134096206334}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Joystick_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

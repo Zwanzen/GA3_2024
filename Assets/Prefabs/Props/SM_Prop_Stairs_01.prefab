@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33963694441596372}
   - component: {fileID: 23941627669671584}
   - component: {fileID: 1276972691686879707}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Stairs_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5318542804716298827}
   - component: {fileID: 7257281971592282206}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: StairsCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

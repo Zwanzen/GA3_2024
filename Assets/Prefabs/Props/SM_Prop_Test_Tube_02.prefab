@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4478666654007568}
   - component: {fileID: 33362279334591138}
   - component: {fileID: 23405807961920382}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Test_Tube_Glass_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 33540475266736290}
   - component: {fileID: 23887808011666622}
   - component: {fileID: 8741415608089435472}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Test_Tube_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}

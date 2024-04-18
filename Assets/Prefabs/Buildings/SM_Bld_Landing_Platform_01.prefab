@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33672551916304234}
   - component: {fileID: 23359458781153612}
   - component: {fileID: 78600358794525412}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bld_Landing_Platform_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

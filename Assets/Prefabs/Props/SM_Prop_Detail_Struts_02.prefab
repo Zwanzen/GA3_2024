@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33108579808344388}
   - component: {fileID: 23116253412643080}
   - component: {fileID: -8470991580783226787}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Detail_Struts_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}

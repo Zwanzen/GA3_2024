@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4330992474915434}
   - component: {fileID: 33510762363167634}
   - component: {fileID: 23391854816094192}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Detail_Wire_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}

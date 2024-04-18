@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33812261094059576}
   - component: {fileID: 23321618233827218}
   - component: {fileID: -3425636543036127026}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Wall_Mechanical_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8482694281551346120}
   - component: {fileID: 6006946652990672486}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}

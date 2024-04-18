@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33165209623364504}
   - component: {fileID: 23456493983021982}
   - component: {fileID: 1664644384655544627}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Crew_Toilet_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 4342103198877938}
   - component: {fileID: 33314792400159358}
   - component: {fileID: 23874717148397298}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Crew_Toilet_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

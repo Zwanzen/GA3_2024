@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 23212260322488272}
   - component: {fileID: 95741231362544368}
   - component: {fileID: 5689474011454655138}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bld_Lift_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 33787413768867048}
   - component: {fileID: 23238656916124346}
   - component: {fileID: 5645153341372696895}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Lift_Door_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 33972679071397174}
   - component: {fileID: 23582401892419468}
   - component: {fileID: 976201034325503149}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Lift_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

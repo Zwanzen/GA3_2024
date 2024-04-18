@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4082225186556528}
   - component: {fileID: 33938816349637482}
   - component: {fileID: 23521254646617552}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Buttons_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}

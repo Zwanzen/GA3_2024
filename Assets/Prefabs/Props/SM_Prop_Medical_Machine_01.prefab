@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33123126566083572}
   - component: {fileID: 23923796713430262}
   - component: {fileID: 2210590434093174503}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Medical_Machine_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33166603938469478}
   - component: {fileID: 23182890679614710}
   - component: {fileID: 4872510441554235187}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_CryoBed_Lid_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 33406709773732902}
   - component: {fileID: 23552661165548832}
   - component: {fileID: 6474036785465627892}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_CryoBed_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 33024449946140274}
   - component: {fileID: 23051797163878468}
   - component: {fileID: 5461584787392271828}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_CryoBed_Lid_Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4226665273351826898}
   - component: {fileID: 7760991303478246355}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}

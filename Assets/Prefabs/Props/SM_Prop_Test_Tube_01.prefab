@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33522117443032886}
   - component: {fileID: 23941005293392380}
   - component: {fileID: -600883086103689497}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Test_Tube_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 4986693305123756}
   - component: {fileID: 33542641514173146}
   - component: {fileID: 23443549801999854}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Test_Tube_Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2396907697244173891}
   - component: {fileID: 7851316882921493107}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}

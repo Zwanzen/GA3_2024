@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33887418643553592}
   - component: {fileID: 23589253899640070}
   - component: {fileID: -7637857062447815278}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Crew_Desk_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

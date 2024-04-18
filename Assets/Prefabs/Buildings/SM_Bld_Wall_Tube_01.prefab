@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33603653894178192}
   - component: {fileID: 23545199439876476}
   - component: {fileID: 8732120253233737330}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Wall_Tube_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

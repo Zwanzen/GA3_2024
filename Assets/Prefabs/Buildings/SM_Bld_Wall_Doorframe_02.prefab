@@ -13,9 +13,7 @@ GameObject:
   - component: {fileID: 23755734973451154}
   - component: {fileID: 38878408691393560}
   - component: {fileID: 1567459930561638292}
-  - component: {fileID: 6403407391755934556}
-  - component: {fileID: 4795373246496998384}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Wall_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,41 +127,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.6098664, y: 3.058591, z: 0.18863678}
   m_Center: {x: 0, y: 1.4423761, z: -0.00000071525574}
---- !u!65 &6403407391755934556
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1182285933139604}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 5, y: 8, z: 3}
-  m_Center: {x: 0, y: 1.5, z: 0}
---- !u!114 &4795373246496998384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1182285933139604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 836e9338584f482439b87a3030b555f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doorOpenSoundEvent: event:/Props Interaction/FX - Door Sliding Up
-  doorCloseSoundEvent: event:/Props Interaction/FX - Door Sliding Down
 --- !u!1 &1543695114780030
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,7 +139,7 @@ GameObject:
   - component: {fileID: 33357041334664418}
   - component: {fileID: 23240524022881482}
   - component: {fileID: 8105734068294054148}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Wall_Doorframe_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,6 +160,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4871574090082970}
+  - {fileID: 7258147095256051092}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &33357041334664418
@@ -271,3 +235,74 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d15e6ce658984be4dba714b6201bc4d3, type: 3}
+--- !u!1 &8306333768121379799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7258147095256051092}
+  - component: {fileID: 3419407493671649429}
+  - component: {fileID: 2226848679448014038}
+  m_Layer: 0
+  m_Name: DoorTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7258147095256051092
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8306333768121379799}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.4999924, y: -0.0045592305, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4950033287718502}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3419407493671649429
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8306333768121379799}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5, y: 8, z: 3}
+  m_Center: {x: 0, y: 1.5, z: 0}
+--- !u!114 &2226848679448014038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8306333768121379799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836e9338584f482439b87a3030b555f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorObject: {fileID: 1182285933139604}
+  isOpen: 0
+  isPlayerInRange: 0
+  doorOpenSoundEvent: event:/Props Interaction/FX - Door Sliding Up
+  doorCloseSoundEvent: event:/Props Interaction/FX - Door Sliding Down

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4990803419325372}
   - component: {fileID: 33920640853903450}
   - component: {fileID: 23714810700866000}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Detail_Lights_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}

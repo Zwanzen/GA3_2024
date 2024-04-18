@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 23076145599266472}
   - component: {fileID: 95435024080827778}
   - component: {fileID: -3452303520768527517}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Oxygen_Tank_Large
   m_TagString: Untagged
   m_Icon: {fileID: 0}

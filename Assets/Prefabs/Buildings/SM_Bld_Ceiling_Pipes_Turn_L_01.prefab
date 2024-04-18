@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4565021973327482}
   - component: {fileID: 33518674278507852}
   - component: {fileID: 23094673423404934}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Ceiling_Pipes_Turn_L_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8342308180480501173}
   - component: {fileID: 3472961871146532964}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}

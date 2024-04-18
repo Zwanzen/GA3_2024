@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 4462375482329052}
   - component: {fileID: 33694749248845058}
   - component: {fileID: 23292859524412888}
-  m_Layer: 3
+  - component: {fileID: 7859303495860186182}
+  m_Layer: 0
   m_Name: SM_Prop_Turret_Small_Pivot_Ceiling_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,6 +85,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &7859303495860186182
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035179349942366}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 196238e2d88fe7c48969c08b6203f325, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1758184269991666
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,7 +118,8 @@ GameObject:
   - component: {fileID: 33082088501762194}
   - component: {fileID: 23963605313659268}
   - component: {fileID: 7255933311969128790}
-  m_Layer: 3
+  - component: {fileID: 271617030455460344}
+  m_Layer: 0
   m_Name: SM_Prop_Turret_Small_Gun_Ceiling_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,6 +214,27 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300004, guid: 907d70ed8f0fe5742ab7df700400b8f8, type: 3}
+--- !u!95 &271617030455460344
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758184269991666}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 196238e2d88fe7c48969c08b6203f325, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1890719031488806
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,7 +247,7 @@ GameObject:
   - component: {fileID: 33638529347561694}
   - component: {fileID: 23050072320692804}
   - component: {fileID: 925559231574442584}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Turret_Small_Ceiling_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,7 +352,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4491033501517649710}
   - component: {fileID: 2674777410564891941}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -353,4 +397,4 @@ MonoBehaviour:
   PlayerOcclusionWidening: 1
   OcclusionLayer:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 136

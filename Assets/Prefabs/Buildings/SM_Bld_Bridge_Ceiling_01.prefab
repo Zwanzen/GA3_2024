@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4752208296073064}
   - component: {fileID: 33508976396102552}
   - component: {fileID: 23759864561837346}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Bridge_Ceiling_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

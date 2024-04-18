@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 23554745839666270}
   - component: {fileID: 95691075693530336}
   - component: {fileID: 3531644230938737836}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Wall_Corner_Pillar_Wide_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

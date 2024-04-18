@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33394889827564216}
   - component: {fileID: 23532896299138782}
   - component: {fileID: 4538908989160711831}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Bed_Medical_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 33907251464167996}
   - component: {fileID: 23019026930577786}
   - component: {fileID: 3526671051847347423}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Bed_Medical_Slide_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

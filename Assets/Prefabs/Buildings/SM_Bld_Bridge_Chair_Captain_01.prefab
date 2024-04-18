@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33789573288091786}
   - component: {fileID: 23987171954927072}
   - component: {fileID: -6342906293900284873}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Bridge_Chair_Captain_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33844693992977058}
   - component: {fileID: 23243834550246312}
   - component: {fileID: 8843462105285638002}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Corridor_Single_Arch_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}

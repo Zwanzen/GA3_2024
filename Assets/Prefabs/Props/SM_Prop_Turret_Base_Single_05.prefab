@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4084450482427484}
   - component: {fileID: 33567266958477062}
   - component: {fileID: 23862776525309168}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Turret_Laser_Barrel_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4834836030662622}
   - component: {fileID: 33226127025285966}
   - component: {fileID: 23975963533853010}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Turret_Base_Single_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 4167889990349076}
   - component: {fileID: 33700327437190642}
   - component: {fileID: 23842446081399708}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Turret_Laser_Base_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}

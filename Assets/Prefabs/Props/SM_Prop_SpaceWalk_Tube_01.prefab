@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33439559953178350}
   - component: {fileID: 23005310840786118}
   - component: {fileID: 6952724338852163867}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_SpaceWalk_Tube_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33302601289805078}
   - component: {fileID: 23935945473657840}
   - component: {fileID: -8669333284108640548}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Bridge_Console_Corner_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7979430758025744338}
   - component: {fileID: 2294357419961751370}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}

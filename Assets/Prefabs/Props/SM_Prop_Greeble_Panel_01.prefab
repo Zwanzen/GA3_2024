@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33961247288572376}
   - component: {fileID: 23075533755797114}
   - component: {fileID: -981622831274502504}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Greeble_Panel_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33239049711233036}
   - component: {fileID: 23450184663386258}
   - component: {fileID: 5741769944290801256}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Hydroponics_Roof_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 4737550971135580}
   - component: {fileID: 33065329972742766}
   - component: {fileID: 23865225653032008}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Hydroponics_Roof_RingLights_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

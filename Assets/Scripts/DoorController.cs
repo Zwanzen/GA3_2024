@@ -6,6 +6,9 @@ public class DoorController : MonoBehaviour
 {
     private Animator doorAnimator;
     private Light doorLight;
+
+    [Header("Door Settings")]
+    public GameObject doorObject; // Reference to the door GameObject
     [SerializeField] private bool isOpen = false;
     [SerializeField] private bool isPlayerInRange = false;
 
@@ -16,10 +19,17 @@ public class DoorController : MonoBehaviour
     void Start()
     {
         // Get the Animator component attached to the door
-        doorAnimator = GetComponent<Animator>();
+        doorAnimator = doorObject.GetComponent<Animator>();
+
+        // Check if the Animator component is attached to the door
+        if (doorAnimator == null)
+        {
+            Debug.LogError("Animator component not found on the door GameObject.");
+            return;
+        }
 
         // Check if the door has a light component
-        doorLight = GetComponentInChildren<Light>();
+        doorLight = doorObject.GetComponentInChildren<Light>();
     }
 
     void Update()

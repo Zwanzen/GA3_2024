@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33576610512627120}
   - component: {fileID: 23365009222246092}
   - component: {fileID: -799431279331278544}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Detail_SynCola_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}

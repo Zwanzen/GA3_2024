@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4527327023219914}
   - component: {fileID: 33681333391877142}
   - component: {fileID: 23986573423430274}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Ceiling_Pipes_Straight_Broken_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9041605420164692517}
   - component: {fileID: 5980630371734912510}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}

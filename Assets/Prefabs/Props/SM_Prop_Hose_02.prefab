@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4537946315880024}
   - component: {fileID: 33953565460264792}
   - component: {fileID: 23117461051686144}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Hose_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}

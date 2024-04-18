@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4010939104472766}
   - component: {fileID: 33187578041018222}
   - component: {fileID: 23178284632581840}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Missile_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}

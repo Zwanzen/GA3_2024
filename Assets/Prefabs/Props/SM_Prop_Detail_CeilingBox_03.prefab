@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33074195957308862}
   - component: {fileID: 23624136349944750}
   - component: {fileID: 2314388123042134685}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Detail_CeilingBox_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}

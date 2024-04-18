@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33877777704642580}
   - component: {fileID: 23745176885623898}
   - component: {fileID: 1051874914001224280}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Wall_Esc_Hatch_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 33879173562500414}
   - component: {fileID: 23510801045148106}
   - component: {fileID: 8529231188963370786}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Wall_Escpod_Hatch_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

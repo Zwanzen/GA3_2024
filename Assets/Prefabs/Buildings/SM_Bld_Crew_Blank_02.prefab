@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33146571967407726}
   - component: {fileID: 23423789664796216}
   - component: {fileID: -1440796709496502494}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Crew_Blank_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}

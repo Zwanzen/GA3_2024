@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4731653346815800}
   - component: {fileID: 33157100046692426}
   - component: {fileID: 23902895257325492}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Turret_Base_Double_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 4764635919626452}
   - component: {fileID: 33461059998917592}
   - component: {fileID: 23947694940147712}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Turret_Gattling_Barrel_03_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 4727078963365362}
   - component: {fileID: 33900430606974148}
   - component: {fileID: 23451631535441234}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Turret_Gattling_Barrel_03_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 4854560194722580}
   - component: {fileID: 33028070117752730}
   - component: {fileID: 23834363037892806}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Turret_Gattling_Base_Double_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4193788555034502}
   - component: {fileID: 33037242443231792}
   - component: {fileID: 23160172425908798}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Turret_Small_Pivot_Floor_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 33082876304452740}
   - component: {fileID: 23205334108557550}
   - component: {fileID: 2763040336400674893}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Turret_Small_Gun_Floor_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 33480027960919256}
   - component: {fileID: 23551956721184422}
   - component: {fileID: 2821588200898968437}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_Turret_Small_Floor_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

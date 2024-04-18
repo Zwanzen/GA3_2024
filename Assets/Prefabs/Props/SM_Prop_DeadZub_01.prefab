@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4095700507211904}
   - component: {fileID: 33428426435915156}
   - component: {fileID: 23796524014283540}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Prop_DeadZub_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
