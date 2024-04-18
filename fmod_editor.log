@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002EF35E0AD08 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001D4458700E8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -16,15 +16,1504 @@
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D37893B1F8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Electric Hum (Loop) 1', format=5, channels=2, frequency=48000, lengthbytes=45152, lengthpcm=305212, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.950836.
+[WRN] AsyncCommandBuffer::growBuffer           : Growing command buffer to 65536 bytes. Initial command buffer size can be tuned to avoid dynamic growth using Studio::System::setAdvancedSettings()
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D378939D58
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Hum (Loop) 1', format=5, channels=2, frequency=48000, lengthbytes=80576, lengthpcm=339246, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.219238.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D378938EE8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Hum (Loop) 2', format=5, channels=2, frequency=48000, lengthbytes=82560, lengthpcm=319730, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.209351.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D37893B1F8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Hum (Loop) 3', format=5, channels=2, frequency=48000, lengthbytes=75168, lengthpcm=392968, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.215271.
+[LOG] SoundI::release                          :  (000001D47CC794E8)
+[LOG] SoundI::release                          :     FX - Electric Hum (Loop) 1 (000001D423968F58)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D37893CCC8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Machine Looping Frequency', format=5, channels=2, frequency=48000, lengthbytes=40544, lengthpcm=456921, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.728629.
+[LOG] SoundI::release                          :  (000001D47CC79AA8)
+[LOG] SoundI::release                          :     FX - Hum (Loop) 1 (000001D423969918)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 114688, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D4559C6298, queue head = 000001D45E564378, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D4559C6298
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D36EA39640
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='FX - Machine Manufacturing (Loop)', format=5, channels=2, frequency=48000, lengthbytes=141152, lengthpcm=595663, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.181030.
+[LOG] Thread::initThread                       :     Init FMOD file thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D4559C6298
+[LOG] SoundI::release                          : FX - Machine Manufacturing (Loop) (000001D4559C6298)
+[LOG] SoundI::release                          :     FX - Machine Manufacturing (Loop) (000001D447FB5BD8)
+[LOG] SoundI::release                          :     FX - Machine Manufacturing (Loop) (000001D4420C76F8)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D4559C3508, queue head = 000001D45E564378, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D4559C3508
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D36EA39640
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='FX - Machine Noise (Loop)', format=5, channels=2, frequency=48000, lengthbytes=297376, lengthpcm=1210366, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.888214.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D4559C3508
+[LOG] SoundI::release                          : FX - Machine Noise (Loop) (000001D4559C3508)
+[LOG] SoundI::release                          :     FX - Machine Noise (Loop) (000001D447FB5D78)
+[LOG] SoundI::release                          :     FX - Machine Noise (Loop) (000001D4420C56E8)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D454BC1D68
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Electric Hum (Loop) 3', format=5, channels=2, frequency=48000, lengthbytes=92576, lengthpcm=374400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.234314.
+[LOG] SoundI::release                          :  (000001D47CC79C18)
+[LOG] SoundI::release                          :     FX - Hum (Loop) 2 (000001D42396AAF8)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D454BC1318
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Electric Hum (Loop) 2', format=5, channels=2, frequency=48000, lengthbytes=41696, lengthpcm=166136, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.230530.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D454BC0AD8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Electric Hum (Loop) 1', format=5, channels=2, frequency=48000, lengthbytes=45152, lengthpcm=305212, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.950836.
+[LOG] SoundI::release                          :  (000001D47CC79D88)
+[LOG] SoundI::release                          :     FX - Hum (Loop) 3 (000001D4239680B8)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D4559C6298, queue head = 000001D45E564378, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D4559C6298
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D36EA39640
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='FX - Machine Noise (Loop)', format=5, channels=2, frequency=48000, lengthbytes=297376, lengthpcm=1210366, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.888214.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D4559C6298
+[LOG] SoundI::release                          : FX - Machine Noise (Loop) (000001D4559C6298)
+[LOG] SoundI::release                          :     FX - Machine Noise (Loop) (000001D447FB5D78)
+[LOG] SoundI::release                          :     FX - Machine Noise (Loop) (000001D4420C5388)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D454BC1B58
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Noise (Loop)', format=5, channels=2, frequency=48000, lengthbytes=29984, lengthpcm=126320, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.270538.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D454BC04A8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Bluezone_BC0303_futuristic_user_interface_high_tech_beep_038', format=5, channels=2, frequency=48000, lengthbytes=1120, lengthpcm=3867, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.972747.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D454BC04A8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Bluezone_BC0298_designed_water_underwater_005', format=5, channels=2, frequency=48000, lengthbytes=47680, lengthpcm=220820, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.972747.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D454BC04A8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Bluezone_BC0298_designed_water_texture_014', format=5, channels=2, frequency=48000, lengthbytes=33408, lengthpcm=94528, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.972747.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D454BC04A8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Underwater 2', format=5, channels=1, frequency=48000, lengthbytes=41024, lengthpcm=252382, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.890839.
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D4559C6B08, queue head = 000001D45E564378, queue count = 0
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D4559C0E38, queue head = 000001D45E564378, queue count = 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D4559C6B08
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D36EA39640
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='DSGNDron_Geofon17_InMotionAudio_GEODRONE', format=5, channels=2, frequency=48000, lengthbytes=129888, lengthpcm=1881188, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968200.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D4559C6B08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D4559C0E38
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D4C85F0B20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='DSGNDron_Geofon24_InMotionAudio_GEODRONE', format=5, channels=2, frequency=48000, lengthbytes=135296, lengthpcm=654441, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968200.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D4559C0E38
+[LOG] SoundI::release                          :  (000001D47CC794E8)
+[LOG] SoundI::release                          :     FX - Machine Looping Frequency (000001D42396B318)
+[LOG] SoundI::release                          :  (000001D37A41BAC8)
+[LOG] SoundI::release                          :     FX - Electric Hum (Loop) 3 (000001D441F5DFA8)
+[LOG] SoundI::release                          : DSGNDron_Geofon24_InMotionAudio_GEODRONE (000001D4559C0E38)
+[LOG] SoundI::release                          :     DSGNDron_Geofon24_InMotionAudio_GEODRONE (000001D447FB60B8)
+[LOG] SoundI::release                          :     DSGNDron_Geofon24_InMotionAudio_GEODRONE (000001D4420C6618)
+[LOG] SoundI::release                          : DSGNDron_Geofon17_InMotionAudio_GEODRONE (000001D4559C6B08)
+[LOG] SoundI::release                          :     DSGNDron_Geofon17_InMotionAudio_GEODRONE (000001D447FB5D78)
+[LOG] SoundI::release                          :     DSGNDron_Geofon17_InMotionAudio_GEODRONE (000001D4420C6E88)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D4559C4CA8, queue head = 000001D45E564378, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D4559C4CA8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D4C85F0B20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='FX - Machine Noise (Loop)', format=5, channels=2, frequency=48000, lengthbytes=297376, lengthpcm=1210366, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.888214.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D4559C4CA8
+[LOG] SoundI::release                          : FX - Machine Noise (Loop) (000001D4559C4CA8)
+[LOG] SoundI::release                          :     FX - Machine Noise (Loop) (000001D447FB5D78)
+[LOG] SoundI::release                          :     FX - Machine Noise (Loop) (000001D4420C6468)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D454BC7828
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Machine Looping Frequency', format=5, channels=2, frequency=48000, lengthbytes=40544, lengthpcm=456921, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.728629.
+[LOG] SoundI::release                          :  (000001D37A41BF18)
+[LOG] SoundI::release                          :     FX - Electric Hum (Loop) 2 (000001D441F5ECA8)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D454BC1318
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Electric Hum (Loop) 3', format=5, channels=2, frequency=48000, lengthbytes=92576, lengthpcm=374400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.234314.
+[LOG] SoundI::release                          :  (000001D447D64388)
+[LOG] SoundI::release                          :     FX - Electric Hum (Loop) 1 (000001D441F5BA48)
+[LOG] SoundI::release                          :  (000001D42BE86098)
+[LOG] SoundI::release                          :     FX - Noise (Loop) (000001D441F5CDC8)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D454BC3628
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Electric Hum (Loop) 2', format=5, channels=2, frequency=48000, lengthbytes=41696, lengthpcm=166136, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.230530.
+[LOG] SoundI::release                          :  (000001D42BE86378)
+[LOG] SoundI::release                          :     Bluezone_BC0298_designed_water_underwater_005 (000001D441F5D108)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D454BC08C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Electric Hum (Loop) 1', format=5, channels=2, frequency=48000, lengthbytes=45152, lengthpcm=305212, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.950836.
+[LOG] SoundI::release                          :  (000001D42BE86208)
+[LOG] SoundI::release                          :     Bluezone_BC0298_designed_water_texture_014 (000001D441F5C8E8)
+[LOG] SoundI::release                          :  (000001D42BE86D88)
+[LOG] SoundI::release                          :     Bluezone_BC0303_futuristic_user_interface_high_tech_beep_038 (000001D441F5C748)
+[LOG] SoundI::release                          :  (000001D42BE864E8)
+[LOG] SoundI::release                          :     Underwater 2 (000001D441F5CF68)
+[LOG] SoundI::release                          :  (000001D42BE86658)
+[LOG] SoundI::release                          :     FX - Machine Looping Frequency (000001D441F5E488)
+[LOG] SoundI::release                          :  (000001D42BE867C8)
+[LOG] SoundI::release                          :     FX - Electric Hum (Loop) 3 (000001D441F5C5A8)
+[LOG] SoundI::release                          :  (000001D42BE86C18)
+[LOG] SoundI::release                          :     FX - Electric Hum (Loop) 2 (000001D441F5DE08)
+[LOG] SoundI::release                          :  (000001D42BE86378)
+[LOG] SoundI::release                          :     FX - Electric Hum (Loop) 1 (000001D441F5D928)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] SystemI::close                           : Closed.
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D45EAE3B08
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Air Vent Fan (Loop) 1', format=5, channels=2, frequency=48000, lengthbytes=107520, lengthpcm=429140, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.187805.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D45EAE4768
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Air Vent Fan (Loop) 2', format=5, channels=2, frequency=48000, lengthbytes=83392, lengthpcm=332183, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.244415.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D45EAE6028
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Hum (Loop) 1', format=5, channels=2, frequency=48000, lengthbytes=80576, lengthpcm=339246, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.219238.
+[LOG] SoundI::release                          :  (000001D4CE07B1D8)
+[LOG] SoundI::release                          :     FX - Air Vent Fan (Loop) 1 (000001D4595C5528)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D45EAE3F28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Hum (Loop) 2', format=5, channels=2, frequency=48000, lengthbytes=82560, lengthpcm=319730, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.209351.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D45EAE3B08
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Gas Vent (Loop) 1', format=5, channels=2, frequency=48000, lengthbytes=63392, lengthpcm=240991, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.126068.
+[LOG] SoundI::release                          :  (000001D4CE07BD58)
+[LOG] SoundI::release                          :     FX - Air Vent Fan (Loop) 2 (000001D4595CB508)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D4559B3638, queue head = 000001D45E564378, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D4559B3638
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D4C85F0B20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='FX - Gas Vent (Loop) 2', format=5, channels=2, frequency=48000, lengthbytes=120832, lengthpcm=481981, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.141724.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D4559B3638
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D4559B5138, queue head = 000001D45E564378, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D4559B5138
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D36EA39640
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='FX - Gas Vent (Loop) 2', format=5, channels=2, frequency=48000, lengthbytes=120832, lengthpcm=481981, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.141724.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D4559B5138
+[LOG] SoundI::release                          : FX - Gas Vent (Loop) 2 (000001D4559B3638)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 2 (000001D4EC4A0468)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 2 (000001D4C875F148)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D4559B7148, queue head = 000001D45E564378, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D4559B7148
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D4EC2AD800
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='FX - Gas Vent (Loop) 2', format=5, channels=2, frequency=48000, lengthbytes=120832, lengthpcm=481981, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.141724.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D4559B7148
+[LOG] SoundI::release                          : FX - Gas Vent (Loop) 2 (000001D4559B5138)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 2 (000001D4595CAE88)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 2 (000001D4420AC1E8)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D4551C9FB8, queue head = 000001D45E564378, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D4551C9FB8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D44222B370
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='FX - Gas Vent (Loop) 2', format=5, channels=2, frequency=48000, lengthbytes=120832, lengthpcm=481981, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.141724.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D4551C9FB8
+[LOG] SoundI::release                          : FX - Gas Vent (Loop) 2 (000001D4559B7148)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 2 (000001D4EC4A02C8)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 2 (000001D4C875EC38)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D4559B8078, queue head = 000001D45E564378, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D4559B8078
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D4EC2AD800
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='FX - Gas Vent (Loop) 2', format=5, channels=2, frequency=48000, lengthbytes=120832, lengthpcm=481981, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.141724.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D4559B8078
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[LOG] SoundI::release                          : FX - Gas Vent (Loop) 2 (000001D4551C9FB8)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 2 (000001D4EC4A2008)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 2 (000001D4C875F2F8)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D4420C9558, queue head = 000001D45E564378, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D4420C9558
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D3C09023D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='FX - Gas Vent (Loop) 2', format=5, channels=2, frequency=48000, lengthbytes=120832, lengthpcm=481981, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.141724.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D4420C9558
+[LOG] SoundI::release                          : FX - Gas Vent (Loop) 2 (000001D4559B8078)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 2 (000001D4595C9488)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 2 (000001D4420C78A8)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D4420C4B18, queue head = 000001D45E564378, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D4420C4B18
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D3C0902790
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='FX - Gas Vent (Loop) 2', format=5, channels=2, frequency=48000, lengthbytes=120832, lengthpcm=481981, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.141724.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D4420C4B18
+[LOG] SoundI::release                          : FX - Gas Vent (Loop) 2 (000001D4420C9558)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 2 (000001D4595C7408)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 2 (000001D4420C5DA8)
+[LOG] SoundI::release                          : FX - Gas Vent (Loop) 2 (000001D4420C4B18)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 2 (000001D4EC49F288)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 2 (000001D4C875E068)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D4420C42A8, queue head = 000001D45E564378, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D4420C42A8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D3C09023D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='FX - Gas Vent (Loop) 2', format=5, channels=2, frequency=48000, lengthbytes=120832, lengthpcm=481981, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.141724.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D4420C42A8
+[LOG] SoundI::release                          : FX - Gas Vent (Loop) 2 (000001D4420C42A8)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 2 (000001D4EC49F288)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 2 (000001D4C875EC38)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D4420AE3A8, queue head = 000001D45E564378, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D4420AE3A8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D3C0902790
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='FX - Gas Vent (Loop) 2', format=5, channels=2, frequency=48000, lengthbytes=120832, lengthpcm=481981, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.141724.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D4420AE3A8
+[LOG] SoundI::release                          : FX - Gas Vent (Loop) 2 (000001D4420AE3A8)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 2 (000001D4595C9E48)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 2 (000001D4420AC6F8)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B874F8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Noise (Loop)', format=5, channels=2, frequency=48000, lengthbytes=29984, lengthpcm=126320, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.270538.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B88368
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Hum (Loop) 3', format=5, channels=2, frequency=48000, lengthbytes=75168, lengthpcm=392968, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.215271.
+[LOG] SoundI::release                          :  (000001D4CE07BBE8)
+[LOG] SoundI::release                          :     FX - Hum (Loop) 1 (000001D4595C8C68)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B895F8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Hum (Loop) 1', format=5, channels=2, frequency=48000, lengthbytes=80576, lengthpcm=339246, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.219238.
+[LOG] SoundI::release                          :  (000001D4CE07BEC8)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 1 (000001D4595C9FE8)
+[LOG] SoundI::release                          :  (000001D36E830B78)
+[LOG] SoundI::release                          :     FX - Noise (Loop) (000001D4EC49F288)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B8D7F8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Air Vent Fan (Loop) 3', format=5, channels=2, frequency=48000, lengthbytes=113824, lengthpcm=458050, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.231842.
+[LOG] SoundI::release                          :  (000001D4CE07BA78)
+[LOG] SoundI::release                          :     FX - Hum (Loop) 2 (000001D4595C6088)
+[LOG] SoundI::release                          :  (000001D4781D1C18)
+[LOG] SoundI::release                          :     FX - Hum (Loop) 1 (000001D4EC4A0FC8)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B8EA88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Air Vent Fan (Loop) 2', format=5, channels=2, frequency=48000, lengthbytes=83392, lengthpcm=332183, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.244415.
+[LOG] SoundI::release                          :  (000001D36E830728)
+[LOG] SoundI::release                          :     FX - Hum (Loop) 3 (000001D4EC4A0468)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B87918
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Air Vent Fan (Loop) 1', format=5, channels=2, frequency=48000, lengthbytes=107520, lengthpcm=429140, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.187805.
+[LOG] SoundI::release                          :  (000001D4781D2068)
+[LOG] SoundI::release                          :     FX - Air Vent Fan (Loop) 3 (000001D4EC49F288)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D45EAE11C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Noise (Loop)', format=5, channels=2, frequency=48000, lengthbytes=29984, lengthpcm=126320, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.270538.
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D455A772D8, queue head = 000001D45E564378, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D455A772D8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D4EC2AD080
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='DSGNDron_Geofon17_InMotionAudio_GEODRONE', format=5, channels=2, frequency=48000, lengthbytes=129888, lengthpcm=1881188, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968200.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D455A772D8
+[LOG] SoundI::release                          : DSGNDron_Geofon17_InMotionAudio_GEODRONE (000001D455A772D8)
+[LOG] SoundI::release                          :     DSGNDron_Geofon17_InMotionAudio_GEODRONE (000001D447FB5F18)
+[LOG] SoundI::release                          :     DSGNDron_Geofon17_InMotionAudio_GEODRONE (000001D4420AD478)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D455A76708, queue head = 000001D45E564378, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D455A76708
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D4EC2AC680
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='FX - Gas Vent (Loop) 2', format=5, channels=2, frequency=48000, lengthbytes=120832, lengthpcm=481981, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.141724.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D455A76708
+[LOG] SoundI::release                          : FX - Gas Vent (Loop) 2 (000001D455A76708)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 2 (000001D447FB5F18)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 2 (000001D4420AB468)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B8C568
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Machine Computing', format=5, channels=1, frequency=48000, lengthbytes=69952, lengthpcm=328550, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.217041.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B8C568
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Hum (Loop) 1', format=5, channels=2, frequency=48000, lengthbytes=80576, lengthpcm=339246, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.219238.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B8C568
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Electric Hum (Loop) 1', format=5, channels=2, frequency=48000, lengthbytes=45152, lengthpcm=305212, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.950836.
+[LOG] SoundI::release                          :  (000001D4781D1D88)
+[LOG] SoundI::release                          :     FX - Air Vent Fan (Loop) 2 (000001D4EC49E728)
+[LOG] SoundI::release                          :  (000001D4781D1C18)
+[LOG] SoundI::release                          :     FX - Air Vent Fan (Loop) 1 (000001D4EC49F428)
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[LOG] SoundI::release                          :  (000001D4781D2068)
+[LOG] SoundI::release                          :     FX - Machine Computing (000001D4EC4A02C8)
+[LOG] SoundI::release                          :  (000001D36E830B78)
+[LOG] SoundI::release                          :     FX - Hum (Loop) 1 (000001D4EC4A0FC8)
+[LOG] SoundI::release                          :  (000001D36E830728)
+[LOG] SoundI::release                          :     FX - Electric Hum (Loop) 1 (000001D4EC4A1168)
+[LOG] SoundI::release                          :  (000001D4CE07BBE8)
+[LOG] SoundI::release                          :     FX - Noise (Loop) (000001D447FB5BD8)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D4559C80F8, queue head = 000001D45E564378, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D4559C80F8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D4EC2AC2C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='FX - Machine Noise (Loop)', format=5, channels=2, frequency=48000, lengthbytes=297376, lengthpcm=1210366, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.888214.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D4559C80F8
+[LOG] SoundI::release                          : FX - Machine Noise (Loop) (000001D4559C80F8)
+[LOG] SoundI::release                          :     FX - Machine Noise (Loop) (000001D4EC4A02C8)
+[LOG] SoundI::release                          :     FX - Machine Noise (Loop) (000001D4C875FD18)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B89E38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Hum (Loop) 3', format=5, channels=2, frequency=48000, lengthbytes=75168, lengthpcm=392968, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.215271.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B8C988
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Hum (Loop) 2', format=5, channels=2, frequency=48000, lengthbytes=82560, lengthpcm=319730, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.209351.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B87708
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Hum (Loop) 1', format=5, channels=2, frequency=48000, lengthbytes=80576, lengthpcm=339246, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.219238.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B89E38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Electric Hum (Loop) 1', format=5, channels=2, frequency=48000, lengthbytes=45152, lengthpcm=305212, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.950836.
+[LOG] SoundI::release                          :  (000001D36E830B78)
+[LOG] SoundI::release                          :     FX - Hum (Loop) 3 (000001D4EC4A0948)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B87918
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Air Vent Fan (Loop) 3', format=5, channels=2, frequency=48000, lengthbytes=113824, lengthpcm=458050, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.231842.
+[LOG] SoundI::release                          :  (000001D36E830728)
+[LOG] SoundI::release                          :     FX - Hum (Loop) 2 (000001D4EC49F428)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D4559C7888, queue head = 000001D45E564378, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D4559C7888
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D4EC2AC040
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='FX - Machine Noise (Loop)', format=5, channels=2, frequency=48000, lengthbytes=297376, lengthpcm=1210366, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.888214.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D4559C7888
+[LOG] SoundI::release                          : FX - Machine Noise (Loop) (000001D4559C7888)
+[LOG] SoundI::release                          :     FX - Machine Noise (Loop) (000001D4EC4A1988)
+[LOG] SoundI::release                          :     FX - Machine Noise (Loop) (000001D4C875EF98)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B89E38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Bluezone_BC0303_futuristic_user_interface_high_tech_beep_038', format=5, channels=2, frequency=48000, lengthbytes=1120, lengthpcm=3867, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.972747.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B89E38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Bluezone_BC0298_designed_water_underwater_005', format=5, channels=2, frequency=48000, lengthbytes=47680, lengthpcm=220820, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.972747.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B89E38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Bluezone_BC0298_designed_water_texture_014', format=5, channels=2, frequency=48000, lengthbytes=33408, lengthpcm=94528, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.972747.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B89E38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Underwater 2', format=5, channels=1, frequency=48000, lengthbytes=41024, lengthpcm=252382, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.890839.
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D4559C9538, queue head = 000001D45E564378, queue count = 0
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D4559CAB28, queue head = 000001D45E564378, queue count = 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D4559C9538
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D4EC2AD580
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='DSGNDron_Geofon17_InMotionAudio_GEODRONE', format=5, channels=2, frequency=48000, lengthbytes=129888, lengthpcm=1881188, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968200.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D4559C9538
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D4559CAB28
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D4EC2AD300
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='DSGNDron_Geofon24_InMotionAudio_GEODRONE', format=5, channels=2, frequency=48000, lengthbytes=135296, lengthpcm=654441, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968200.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D4559CAB28
+[LOG] SoundI::release                          :  (000001D4781D1C18)
+[LOG] SoundI::release                          :     FX - Hum (Loop) 1 (000001D4EC4A0FC8)
+[LOG] SoundI::release                          :  (000001D4781D1D88)
+[LOG] SoundI::release                          :     FX - Electric Hum (Loop) 1 (000001D4EC4A1168)
+[LOG] SoundI::release                          : DSGNDron_Geofon24_InMotionAudio_GEODRONE (000001D4559CAB28)
+[LOG] SoundI::release                          :     DSGNDron_Geofon24_InMotionAudio_GEODRONE (000001D447FB5D78)
+[LOG] SoundI::release                          :     DSGNDron_Geofon24_InMotionAudio_GEODRONE (000001D4420B3B68)
+[LOG] SoundI::release                          : DSGNDron_Geofon17_InMotionAudio_GEODRONE (000001D4559C9538)
+[LOG] SoundI::release                          :     DSGNDron_Geofon17_InMotionAudio_GEODRONE (000001D447FB53B8)
+[LOG] SoundI::release                          :     DSGNDron_Geofon17_InMotionAudio_GEODRONE (000001D4420B2578)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B89E38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Noise (Loop)', format=5, channels=2, frequency=48000, lengthbytes=29984, lengthpcm=126320, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.270538.
+[LOG] SoundI::release                          :  (000001D4781D2068)
+[LOG] SoundI::release                          :     FX - Air Vent Fan (Loop) 3 (000001D4EC4A0948)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B8C988
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Machine Computing', format=5, channels=1, frequency=48000, lengthbytes=69952, lengthpcm=328550, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.217041.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B8C988
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Hum (Loop) 1', format=5, channels=2, frequency=48000, lengthbytes=80576, lengthpcm=339246, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.219238.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B8C988
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Electric Hum (Loop) 1', format=5, channels=2, frequency=48000, lengthbytes=45152, lengthpcm=305212, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.950836.
+[LOG] SoundI::release                          :  (000001D36E830B78)
+[LOG] SoundI::release                          :     Bluezone_BC0298_designed_water_underwater_005 (000001D4EC49F428)
+[LOG] SoundI::release                          :  (000001D5544183B8)
+[LOG] SoundI::release                          :     Bluezone_BC0298_designed_water_texture_014 (000001D4EC4A1648)
+[LOG] SoundI::release                          :  (000001D36E830728)
+[LOG] SoundI::release                          :     Bluezone_BC0303_futuristic_user_interface_high_tech_beep_038 (000001D4EC49E728)
+[LOG] SoundI::release                          :  (000001D554417F68)
+[LOG] SoundI::release                          :     Underwater 2 (000001D4EC4A1B28)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B8C568
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Gas Vent (Loop) 1', format=5, channels=2, frequency=48000, lengthbytes=63392, lengthpcm=240991, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.126068.
+[LOG] SoundI::release                          :  (000001D554418528)
+[LOG] SoundI::release                          :     FX - Noise (Loop) (000001D4EC4A0468)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 43552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D4D9B8EA88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Noise (Loop)', format=5, channels=2, frequency=48000, lengthbytes=29984, lengthpcm=126320, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.270538.
+[LOG] SoundI::release                          :  (000001D554417DF8)
+[LOG] SoundI::release                          :     FX - Machine Computing (000001D4EC49F288)
+[LOG] SoundI::release                          :  (000001D554418248)
+[LOG] SoundI::release                          :     FX - Hum (Loop) 1 (000001D4EC4A24E8)
+[LOG] SoundI::release                          :  (000001D5544180D8)
+[LOG] SoundI::release                          :     FX - Electric Hum (Loop) 1 (000001D4EC4A2EA8)
+[LOG] SoundI::release                          :  (000001D5544183B8)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 1 (000001D4EC49F428)
+[LOG] SoundI::release                          :  (000001D554418528)
+[LOG] SoundI::release                          :     FX - Noise (Loop) (000001D4EC4A0FC8)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 47648
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D45EADFD28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Noise (Loop)', format=5, channels=2, frequency=48000, lengthbytes=29984, lengthpcm=126320, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.270538.
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D4559CCAE8, queue head = 000001D45E564378, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D4559CCAE8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 47648
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D4EC2ACA40
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='FX - Machine Manufacturing (Loop)', format=5, channels=2, frequency=48000, lengthbytes=141152, lengthpcm=595663, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.181030.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D4559CCAE8
+[LOG] SoundI::release                          : FX - Machine Manufacturing (Loop) (000001D4559CCAE8)
+[LOG] SoundI::release                          :     FX - Machine Manufacturing (Loop) (000001D4590279E8)
+[LOG] SoundI::release                          :     FX - Machine Manufacturing (Loop) (000001D45AD164A8)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 47648
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D45EADFD28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Machine Looping Frequency', format=5, channels=2, frequency=48000, lengthbytes=40544, lengthpcm=456921, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.728629.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 47648
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D420E67A68
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Hum (Loop) 3', format=5, channels=2, frequency=48000, lengthbytes=75168, lengthpcm=392968, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.215271.
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D45A656258, queue head = 000001D45E564378, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D45A656258
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 47648
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D45904B440
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='FX - Gas Vent (Loop) 2', format=5, channels=2, frequency=48000, lengthbytes=120832, lengthpcm=481981, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.141724.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D45A656258
+[LOG] SoundI::release                          : FX - Gas Vent (Loop) 2 (000001D45A656258)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 2 (000001D4CDD479F8)
+[LOG] SoundI::release                          :     FX - Gas Vent (Loop) 2 (000001D45A653678)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 47648
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D420E69538
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Electric Hum (Loop) 3', format=5, channels=2, frequency=48000, lengthbytes=92576, lengthpcm=374400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.234314.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 47648
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D420E68CF8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Electric Hum (Loop) 1', format=5, channels=2, frequency=48000, lengthbytes=45152, lengthpcm=305212, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.950836.
+[LOG] SoundI::release                          :  (000001D4CE07B1D8)
+[LOG] SoundI::release                          :     FX - Noise (Loop) (000001D459024E08)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D4559D1888, queue head = 000001D45E564378, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D4559D1888
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2059616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 47648
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D4EC2ACF40
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='DSGNDron_Geofon17_InMotionAudio_GEODRONE', format=5, channels=2, frequency=48000, lengthbytes=129888, lengthpcm=1881188, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968200.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D4559D1888
+[LOG] SoundI::release                          : DSGNDron_Geofon17_InMotionAudio_GEODRONE (000001D4559D1888)
+[LOG] SoundI::release                          :     DSGNDron_Geofon17_InMotionAudio_GEODRONE (000001D4CDD49598)
+[LOG] SoundI::release                          :     DSGNDron_Geofon17_InMotionAudio_GEODRONE (000001D45A654098)
+[LOG] SoundI::release                          :  (000001D4CE07B4B8)
+[LOG] SoundI::release                          :     FX - Machine Looping Frequency (000001D4590279E8)
+[LOG] SoundI::release                          :  (000001D45DFEC498)
+[LOG] SoundI::release                          :     FX - Hum (Loop) 3 (000001D45A263078)
+[LOG] SoundI::release                          :  (000001D45DFEBED8)
+[LOG] SoundI::release                          :     FX - Electric Hum (Loop) 3 (000001D45A264738)
+[LOG] SoundI::release                          :  (000001D45DFEC1B8)
+[LOG] SoundI::release                          :     FX - Electric Hum (Loop) 1 (000001D45A264C18)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2064672
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 54368
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D45EACD428
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Bluezone_BC0298_designed_water_underwater_005', format=5, channels=2, frequency=48000, lengthbytes=47680, lengthpcm=220820, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.972747.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2064672
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 54368
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D45EACD428
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Bluezone_BC0298_designed_water_texture_014', format=5, channels=2, frequency=48000, lengthbytes=33408, lengthpcm=94528, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.972747.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2064672
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 54368
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000550B0F138
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBEDB03F60
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBEDB03F20
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBEDB04040
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBEDB04100
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D45EACD428
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FX - Button Bubblepop', format=5, channels=2, frequency=48000, lengthbytes=4992, lengthpcm=23776, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.386728.
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001D4559D07A8, queue head = 000001D45E564378, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D4559D07A8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2064672
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 54368
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D4EC2ABDC0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bluezone_BC0292_alien_tripod_texture_organic_liquid_005', format=5, channels=2, frequency=48000, lengthbytes=182368, lengthpcm=672000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.972747.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D4559D07A8
+[LOG] SoundI::release                          : Bluezone_BC0292_alien_tripod_texture_organic_liquid_005 (000001D4559D07A8)
+[LOG] SoundI::release                          :     Bluezone_BC0292_alien_tripod_texture_organic_liquid_005 (000001D459026668)
+[LOG] SoundI::release                          :     Bluezone_BC0292_alien_tripod_texture_organic_liquid_005 (000001D45ACF06D8)
+[LOG] SoundI::release                          :  (000001D4CE07BD58)
+[LOG] SoundI::release                          :     Bluezone_BC0298_designed_water_underwater_005 (000001D459027508)
+[LOG] SoundI::release                          :  (000001D4CE07B4B8)
+[LOG] SoundI::release                          :     Bluezone_BC0298_designed_water_texture_014 (000001D459023748)
+[LOG] SoundI::release                          :  (000001D4CE07B1D8)
+[LOG] SoundI::release                          :     FX - Button Bubblepop (000001D459028888)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
