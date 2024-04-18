@@ -433,6 +433,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 12409
+--- !u!114 &-6222728356362357246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Interaction/FX - Large Door Sliding Up
+  m_EditorClassIdentifier: 
+  Path: event:/Props Interaction/FX - Large Door Sliding Up
+  Guid:
+    Data1: 1499435518
+    Data2: 1233499685
+    Data3: 828616096
+    Data4: -1538904607
+  Banks:
+  - {fileID: 1035693365860309677}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5074
 --- !u!114 &-6007721163422832705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -457,7 +484,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 3237278646735954968}
+  - {fileID: -869173998438443781}
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
@@ -943,10 +970,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Props Interaction.bank
   Name: Props Interaction
   StudioPath: bank:/Props Interaction
-  lastModified: 638483549418741201
+  lastModified: 638490807355545178
   FileSizes:
   - Name: Desktop
-    Value: 111808
+    Value: 111712
   Exists: 1
 --- !u!114 &-2181386607191122262
 MonoBehaviour:
@@ -1352,6 +1379,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 9519
+--- !u!114 &-869173998438443781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FX - Door Sliding Up/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3871982834
+    data2: 2785124848
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-587783710439788809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1430,12 +1481,16 @@ MonoBehaviour:
   - {fileID: -5636617293883843115}
   - {fileID: 6522857970529014368}
   - {fileID: -2841316978271649754}
+  - {fileID: 3693648260611598353}
+  - {fileID: 7241532075766406932}
+  - {fileID: 6774911225886701167}
+  - {fileID: -6222728356362357246}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4677152490814659433}
   StringsBanks:
   - {fileID: 4038073233029663505}
-  cacheTime: 638490604945428014
+  cacheTime: 638490810443020273
   cacheVersion: 131617
 --- !u!114 &152564166377372431
 MonoBehaviour:
@@ -1465,6 +1520,54 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3461
+--- !u!114 &489506430882091199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FX - Control Panel/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3871982834
+    data2: 2785124848
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &864904902641796500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FX - Battery Machine/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3871982834
+    data2: 2785124848
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &1035693365860309677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1480,10 +1583,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank
   Name: Prop Ambience
   StudioPath: bank:/Prop Ambience
-  lastModified: 638490604945428014
+  lastModified: 638490810443020273
   FileSizes:
   - Name: Desktop
-    Value: 2119040
+    Value: 2359936
   Exists: 1
 --- !u!114 &1065810116750121637
 MonoBehaviour:
@@ -1667,30 +1770,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &3237278646735954968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/FX - Door Sliding Up/doorActivate
-  m_EditorClassIdentifier: 
-  Name: doorActivate
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2193837411
-    data2: 2232946539
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &3348506016378508154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1746,6 +1825,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 63497
+--- !u!114 &3693648260611598353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Looping/FX - Pipe Pillar
+  m_EditorClassIdentifier: 
+  Path: event:/Props Looping/FX - Pipe Pillar
+  Guid:
+    Data1: 2146008842
+    Data2: 1229640351
+    Data3: 310935453
+    Data4: -647769068
+  Banks:
+  - {fileID: 1035693365860309677}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 3842363940023437964}
+  MinDistance: 1
+  MaxDistance: 15
+  Length: 10041
 --- !u!114 &3726146973503775133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1774,6 +1881,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 12409
+--- !u!114 &3842363940023437964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FX - Pipe Pillar/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3871982834
+    data2: 2785124848
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &4038073233029663505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1789,10 +1920,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638490604943583046
+  lastModified: 638490807350570342
   FileSizes:
   - Name: Desktop
-    Value: 2658
+    Value: 2796
   Exists: 1
 --- !u!114 &4333845490033308509
 MonoBehaviour:
@@ -1887,7 +2018,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638490604943542274
+  lastModified: 638490807350550395
   FileSizes:
   - Name: Desktop
     Value: 670
@@ -2075,6 +2206,62 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &6774911225886701167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Looping/FX - Control Panel
+  m_EditorClassIdentifier: 
+  Path: event:/Props Looping/FX - Control Panel
+  Guid:
+    Data1: -1264530765
+    Data2: 1089176038
+    Data3: 1250301356
+    Data4: -1257133059
+  Banks:
+  - {fileID: 1035693365860309677}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 489506430882091199}
+  MinDistance: 1
+  MaxDistance: 8
+  Length: 0
+--- !u!114 &7241532075766406932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Looping/FX - Battery Machine
+  m_EditorClassIdentifier: 
+  Path: event:/Props Looping/FX - Battery Machine
+  Guid:
+    Data1: -1614300871
+    Data2: 1190264418
+    Data3: -814371699
+    Data4: -1204151451
+  Banks:
+  - {fileID: 1035693365860309677}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 864904902641796500}
+  MinDistance: 1
+  MaxDistance: 8
+  Length: 0
 --- !u!114 &7452445576320695263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2261,7 +2448,7 @@ MonoBehaviour:
   Parameters:
   - {fileID: 7847881701775080558}
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 8
   Length: 10041
 --- !u!114 &8910730370944048304
 MonoBehaviour:

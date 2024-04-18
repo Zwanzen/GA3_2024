@@ -132,7 +132,7 @@
 			<value>1</value>
 		</property>
 		<relationship name="parameter">
-			<destination>{c249c1f4-4b21-4a53-a8ca-24d73b0e399b}</destination>
+			<destination>{f682362b-0793-4ae3-8135-a1bf18ff854e}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{51b9517d-56a4-406f-8cf3-621c739803bf}">

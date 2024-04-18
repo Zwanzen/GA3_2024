@@ -36,7 +36,7 @@ AnimatorController:
   m_Name: DoorSlidingLargeAnimator
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: DoorActivate
+  - m_Name: doorActivate
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -89,7 +89,7 @@ AnimatorStateTransition:
   m_Name: Close
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: DoorActivate
+    m_ConditionEvent: doorActivate
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -7657631651260675232}
@@ -141,7 +141,7 @@ AnimatorStateTransition:
   m_Name: Open
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: DoorActivate
+    m_ConditionEvent: doorActivate
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8162617664495573493}
