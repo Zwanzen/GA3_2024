@@ -1,6 +1,7 @@
 using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
+using System.Reflection.Emit;
 
 public class FirstPersonOcclusion : MonoBehaviour
 {
@@ -131,8 +132,27 @@ public class FirstPersonOcclusion : MonoBehaviour
             Debug.DrawLine(Start, End, colour);
     }
 
+    private float Occlusion = 0f;
+    private float LastOcclusion = 0f;
+    private float LastHitCount = 0;
+    private float timer = 1f;
+
     private void SetParameter()
     {
-        Audio.setParameterByName("Occlusion", lineCastHitCount / 11);
+        if (LastHitCount != lineCastHitCount && timer > 1f)
+        {
+            timer = 0f;
+        }
+        timer += Time.deltaTime;
+
+        Occlusion = Mathf.Lerp(LastHitCount / 11, lineCastHitCount / 11, timer);
+        Audio.setParameterByName("Occlusion", Occlusion);
+
+
+        if (timer >= 1f)
+        {
+            LastHitCount = lineCastHitCount;
+        }
+
     }
 }

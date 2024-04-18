@@ -6,10 +6,10 @@ public class CharacterController : MonoBehaviour
 {
     [Space(20)]
     [Header("Character Size Variables")]
-    [SerializeField, Range(0,2)]
+    [SerializeField, Range(0.0f, 2.0f)]
     private float characterHeight = 1.8f;
-    [SerializeField, Range(0,2)]
-    private float characterWidth = 1f;
+    [SerializeField, Range(0.0f, 2.0f)]
+    private float characterWidth = 1.0f;
     [SerializeField, Range(0.1f,0.8f)]
     private float stepHeight = 0.5f;
     [SerializeField]
@@ -18,37 +18,39 @@ public class CharacterController : MonoBehaviour
     [Space(20)]
     [Header("Movement Variables")]
     [SerializeField]
-    private float moveForce = 5f;
+    private float moveForce = 5.0f;
     [SerializeField]
-    private float maxSpeed = 10f;
+    private float maxSpeed = 10.0f;
     [SerializeField]
-    private float stopForce = 5f;
-    [SerializeField, Range(0,1)]
+    private float stopForce = 5.0f;
+    [SerializeField, Range(0.0f, 1.0f)]
     private float airMultiplier = 0.5f;
     [SerializeField]
-    private float rotationSpeed = 720;
+    private float rotationSpeed = 720.0f;
     [SerializeField]
-    private float springStrenght = 50f;
+    private float springStrenght = 50.0f;
     [SerializeField]
-    private float springDampener = 10f;
+    private float springDampener = 10.0f;
 
     [Space(20)]
     [Header("Counter Movement")]
     [SerializeField]
-    private float rightShiftMultiplier = 10f;
+    private float rightShiftMultiplier = 10.0f;
     [SerializeField, Range(0.9000f,0.9999f)]
     private float counterDotThreshold = 0.995f;
     [SerializeField, Range(0.1f, 1.0f)]
-    private float counterMovementDirVelMultiplier = 1f;
+    private float counterMovementDirVelMultiplier = 1.0f;
+
+    private Vector3 right;
 
     [Space(20)]
     [Header("Jump Variables")]
     [SerializeField]
-    private float jumpForce = 10f;
+    private float jumpForce = 10.0f;
     [SerializeField]
     float jumpDelay = 0.2f;
     [SerializeField]
-    float jumpLeway = 1f;
+    float jumpLeway = 1.0f;
 
     public bool jumping;
     public bool canJump;
@@ -62,29 +64,34 @@ public class CharacterController : MonoBehaviour
     [SerializeField]
     private LayerMask groundLayer;
     [SerializeField]
-    private float checkerRadius = 1f;
+    private float checkerRadius = 1.0f;
 
     [Space(20)]
     [Header("Camera Variables")]
     [SerializeField]
-    private Transform targetTransform;
+    private Transform cameraTransform;
     [SerializeField]
     private Transform cameraPivotTransform;
     [SerializeField]
-    private float followSpeed = 1.0f;
+    private float pivotSpeed = 1.0f;
     [SerializeField]
-    private float pivotSpeed = 1f;
+    private float lookSpeed = 1.0f;
     [SerializeField]
-    private float lookSpeed = 1f;
+    private bool enableHeadBobbing = true;
+    [SerializeField, Range(0,0.1f)]
+    private float HbAmplitude = 0.1f;
+    [SerializeField, Range(0,30f)]
+    private float HbFrequency = 0.1f;
 
-    public float lookAngle;
+    private float HbToggleSpeed = 3.0f;
+    private Vector3 HbStartPos;
+
+    private float lookAngle;
     private float pivotAngle;
 
     [HideInInspector]
     public Rigidbody rb;
     public Transform cameraHolder;
-
-    private Vector3 right;
 
     [Space(20)]
     [Header("Debugging")]
@@ -104,6 +111,7 @@ public class CharacterController : MonoBehaviour
     private void Awake()
     {
         InstantiateCharacterSize();
+        HbStartPos = cameraTransform.localPosition;
     }
 
     // Start is called before the first frame update
@@ -117,8 +125,12 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        FollowPlayer();
         HandleRotation();
+        ResetHeadPosition();
+        if (MoveVector() != Vector3.zero && IsGrounded() && enableHeadBobbing)
+        {
+            HandleHeadBobbing(FootStepMotion());
+        }
     }
 
     public void LateUpdate()
@@ -346,18 +358,6 @@ public class CharacterController : MonoBehaviour
         {
             return false;
         }
-
-
-/*        Collider[] colliders = Physics.OverlapSphere(checkerPosition + transform.position, checkerRadius, groundLayer);
-
-        if (colliders.Length > 0)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }*/
     }
 
     //Find Better Name
@@ -371,13 +371,6 @@ public class CharacterController : MonoBehaviour
         {
             return multiplier;
         }
-    }
-
-    //WTF is this?
-    private void FollowPlayer()
-    {
-        Vector3 targetPosition = Vector3.Lerp(transform.position, targetTransform.position, Time.deltaTime / followSpeed);
-        transform.position = targetPosition;
     }
 
     private Vector3 MouseInputVector()
@@ -406,6 +399,27 @@ public class CharacterController : MonoBehaviour
         cameraPivotTransform.localRotation = targetRotation;
     }
 
+    private void HandleHeadBobbing(Vector3 motion)
+    {
+        cameraTransform.localPosition += motion;
+    }
+
+    private Vector3 FootStepMotion()
+    {
+        Vector3 pos = Vector3.zero;
+        pos.y += Mathf.Sin(Time.time * HbFrequency) * HbAmplitude;
+        pos.x += Mathf.Cos(Time.time * HbFrequency / 2.0f) * HbAmplitude * 2.0f;
+        return pos;
+    }
+
+    private void ResetHeadPosition()
+    {
+        if(cameraTransform.localPosition != HbStartPos)
+        {
+            cameraTransform.localPosition = Vector3.Lerp(cameraTransform.localPosition, HbStartPos, Time.deltaTime * 1f);
+        }
+    }
+        
     private void InstantiateCharacterSize()
     {
         RaycastHit hit;
