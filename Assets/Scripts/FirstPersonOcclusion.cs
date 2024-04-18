@@ -155,11 +155,4 @@ public class FirstPersonOcclusion : MonoBehaviour
         }
 
     }
-
-    private void OnGUI()
-    {
-        GUI.Label(new Rect(10, 10, 200, 20), "Occlusion: " + Occlusion);
-        GUI.Label(new Rect(10, 30, 200, 20), "Last Occlusion: " + LastOcclusion);
-
-    }
 }
