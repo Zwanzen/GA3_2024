@@ -179,7 +179,7 @@ MonoBehaviour:
       Data3: -1626340479
       Data4: 250414098
     Path: event:/Props Looping/FX - Electric Hum (Loop) 3
-  SoundOcclusionWidening: 1
+  SoundOcclusionWidening: 0.4
   PlayerOcclusionWidening: 1
   OcclusionLayer:
     serializedVersion: 2

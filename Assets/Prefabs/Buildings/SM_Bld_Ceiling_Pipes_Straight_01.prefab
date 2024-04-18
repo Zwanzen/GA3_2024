@@ -130,11 +130,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectAudio:
     Guid:
-      Data1: 1477538965
-      Data2: 1315900281
-      Data3: -687549529
-      Data4: 1831088279
-    Path: event:/Props Looping/Gas Vent (Loop) 1
+      Data1: 1849719624
+      Data2: 1322777814
+      Data3: 1725681543
+      Data4: -788907687
+    Path: event:/Props Looping/FX - Pipes
   SoundOcclusionWidening: 1
   PlayerOcclusionWidening: 1
   OcclusionLayer:

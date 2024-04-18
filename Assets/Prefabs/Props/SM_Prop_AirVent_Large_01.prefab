@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5708924523156090389}
-  - component: {fileID: 8060359741017490559}
+  - component: {fileID: 5719219612429354697}
   m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
@@ -139,7 +139,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4778811995332320}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8060359741017490559
+--- !u!114 &5719219612429354697
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,25 +148,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 3986409330662780098}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 210e04439cc818c4ab1051ef6d2c7468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
+  SelectAudio:
     Guid:
-      Data1: -1561866104
-      Data2: 1203966150
-      Data3: 521272765
-      Data4: 238226705
-    Path: event:/Props Looping/FX - Air Vent Fan (Loop) 1
-  Event: 
-  PlayEvent: 1
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+      Data1: 1422651468
+      Data2: 1321398717
+      Data3: 313296555
+      Data4: -1295978550
+    Path: event:/Props Looping/FX - Air Vent Large
+  SoundOcclusionWidening: 1
+  PlayerOcclusionWidening: 1
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 136

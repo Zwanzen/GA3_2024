@@ -118,7 +118,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6025195552950687947}
-  - component: {fileID: 2683193614426294312}
+  - component: {fileID: 7261189362889033595}
   m_Layer: 0
   m_Name: Audio (2)
   m_TagString: Untagged
@@ -141,7 +141,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4848315047316750}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2683193614426294312
+--- !u!114 &7261189362889033595
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,28 +150,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 3820574789272586646}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 210e04439cc818c4ab1051ef6d2c7468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
+  SelectAudio:
     Guid:
       Data1: -324632017
       Data2: 1254065144
       Data3: -1452079716
       Data4: 1159719407
     Path: event:/Props Looping/FX - Noise (Loop)
-  Event: 
-  PlayEvent: 1
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 4
+  SoundOcclusionWidening: 1
+  PlayerOcclusionWidening: 1
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 136
 --- !u!1 &4291321114600521087
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,7 +174,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1130493949828610177}
-  - component: {fileID: 3005406755055867785}
+  - component: {fileID: 7313684521751512074}
   m_Layer: 0
   m_Name: Audio (1)
   m_TagString: Untagged
@@ -204,7 +197,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4848315047316750}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3005406755055867785
+--- !u!114 &7313684521751512074
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -213,28 +206,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 4291321114600521087}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 210e04439cc818c4ab1051ef6d2c7468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
+  SelectAudio:
     Guid:
       Data1: -324632017
       Data2: 1254065144
       Data3: -1452079716
       Data4: 1159719407
     Path: event:/Props Looping/FX - Noise (Loop)
-  Event: 
-  PlayEvent: 1
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 4
+  SoundOcclusionWidening: 1
+  PlayerOcclusionWidening: 1
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 136
 --- !u!1 &4863812301151667460
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,7 +230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4289105946390942252}
-  - component: {fileID: 7960459349421881603}
+  - component: {fileID: 6517297125241162529}
   m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
@@ -267,7 +253,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4848315047316750}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7960459349421881603
+--- !u!114 &6517297125241162529
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -276,25 +262,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 4863812301151667460}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 210e04439cc818c4ab1051ef6d2c7468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
+  SelectAudio:
     Guid:
       Data1: 830336184
       Data2: 1276968949
       Data3: 2126642594
       Data4: -1326344297
     Path: event:/Props Looping/FX - Machine Manufacturing (Loop)
-  Event: 
-  PlayEvent: 1
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 8
+  SoundOcclusionWidening: 1
+  PlayerOcclusionWidening: 1
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 136

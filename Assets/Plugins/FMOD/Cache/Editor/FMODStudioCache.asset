@@ -146,34 +146,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8186
---- !u!114 &-7571178086265108717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Props Looping/Gas Vent (Loop) 2
-  m_EditorClassIdentifier: 
-  Path: event:/Props Looping/Gas Vent (Loop) 2
-  Guid:
-    Data1: 1810295422
-    Data2: 1188914578
-    Data3: 585606329
-    Data4: -260493079
-  Banks:
-  - {fileID: 1035693365860309677}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 6012255170663062802}
-  MinDistance: 1
-  MaxDistance: 10
-  Length: 10041
 --- !u!114 &-7555475267200934695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,6 +358,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6844
+--- !u!114 &-6593149527827945773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FX - Gas Vent (Loop) 1/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3871982834
+    data2: 2785124848
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-6400643112036240276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -516,6 +512,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2631
+--- !u!114 &-5636617293883843115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Looping/FX - Gas Vent (Loop) 2
+  m_EditorClassIdentifier: 
+  Path: event:/Props Looping/FX - Gas Vent (Loop) 2
+  Guid:
+    Data1: 1810295422
+    Data2: 1188914578
+    Data3: 585606329
+    Data4: -260493079
+  Banks:
+  - {fileID: 1035693365860309677}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2531570706642599954}
+  MinDistance: 1
+  MaxDistance: 10
+  Length: 10041
 --- !u!114 &-5413907511381824662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -571,34 +595,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 9519
---- !u!114 &-5349476040415902251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Props Looping/Gas Vent (Loop) 1
-  m_EditorClassIdentifier: 
-  Path: event:/Props Looping/Gas Vent (Loop) 1
-  Guid:
-    Data1: 1477538965
-    Data2: 1315900281
-    Data3: -687549529
-    Data4: 1831088279
-  Banks:
-  - {fileID: 1035693365860309677}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 5635808166050676829}
-  MinDistance: 1
-  MaxDistance: 10
-  Length: 5020
 --- !u!114 &-4981268672490872217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -792,7 +788,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/General Ambience.bank
   Name: General Ambience
   StudioPath: bank:/General Ambience
-  lastModified: 638483563037778317
+  lastModified: 638483549418235676
   FileSizes:
   - Name: Desktop
     Value: 1549920
@@ -853,6 +849,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 10
   Length: 39191
+--- !u!114 &-2841316978271649754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Looping/FX - Test Tube
+  m_EditorClassIdentifier: 
+  Path: event:/Props Looping/FX - Test Tube
+  Guid:
+    Data1: -2140243523
+    Data2: 1250021473
+    Data3: 417244306
+    Data4: 518748706
+  Banks:
+  - {fileID: 1035693365860309677}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -2387996864763186310}
+  MinDistance: 1
+  MaxDistance: 6
+  Length: 6358
 --- !u!114 &-2660899257330515050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -880,6 +904,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5675
+--- !u!114 &-2387996864763186310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FX - Test Tube/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3871982834
+    data2: 2785124848
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-2203919514268191177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -895,7 +943,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Props Interaction.bank
   Name: Props Interaction
   StudioPath: bank:/Props Interaction
-  lastModified: 638483563038479908
+  lastModified: 638483549418741201
   FileSizes:
   - Name: Desktop
     Value: 111808
@@ -1071,7 +1119,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638483563038274147
+  lastModified: 638483549419151019
   FileSizes:
   - Name: Desktop
     Value: 6181760
@@ -1359,10 +1407,8 @@ MonoBehaviour:
   - {fileID: -2180110670663442124}
   - {fileID: -2070796820847334808}
   - {fileID: 2221350478494026718}
-  - {fileID: -7571178086265108717}
   - {fileID: -3035792132298158828}
   - {fileID: 2491010655477698542}
-  - {fileID: -5349476040415902251}
   - {fileID: 152564166377372431}
   - {fileID: 3726146973503775133}
   - {fileID: -8147985588696739636}
@@ -1379,12 +1425,17 @@ MonoBehaviour:
   - {fileID: 3676457872801423454}
   - {fileID: -924933251699478400}
   - {fileID: -6644514324374715052}
+  - {fileID: 8755853455624703028}
+  - {fileID: 8910730370944048304}
+  - {fileID: -5636617293883843115}
+  - {fileID: 6522857970529014368}
+  - {fileID: -2841316978271649754}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4677152490814659433}
   StringsBanks:
   - {fileID: 4038073233029663505}
-  cacheTime: 638483563038479908
+  cacheTime: 638490604945428014
   cacheVersion: 131617
 --- !u!114 &152564166377372431
 MonoBehaviour:
@@ -1429,10 +1480,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank
   Name: Prop Ambience
   StudioPath: bank:/Prop Ambience
-  lastModified: 638483563038469934
+  lastModified: 638490604945428014
   FileSizes:
   - Name: Desktop
-    Value: 2103168
+    Value: 2119040
   Exists: 1
 --- !u!114 &1065810116750121637
 MonoBehaviour:
@@ -1592,6 +1643,30 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &2531570706642599954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FX - Gas Vent (Loop) 2/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3871982834
+    data2: 2785124848
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &3237278646735954968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1714,10 +1789,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638483563037788275
+  lastModified: 638490604943583046
   FileSizes:
   - Name: Desktop
-    Value: 2536
+    Value: 2658
   Exists: 1
 --- !u!114 &4333845490033308509
 MonoBehaviour:
@@ -1812,7 +1887,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638481922462125059
+  lastModified: 638490604943542274
   FileSizes:
   - Name: Desktop
     Value: 670
@@ -1872,30 +1947,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7800
---- !u!114 &5635808166050676829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Gas Vent (Loop) 1/Occlusion
-  m_EditorClassIdentifier: 
-  Name: Occlusion
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3871982834
-    data2: 2785124848
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &5709561869058277264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1907,30 +1958,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/FX - Electric Hum/Occlusion
-  m_EditorClassIdentifier: 
-  Name: Occlusion
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3871982834
-    data2: 2785124848
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &6012255170663062802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Gas Vent (Loop) 2/Occlusion
   m_EditorClassIdentifier: 
   Name: Occlusion
   StudioPath: 
@@ -1996,6 +2023,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 9542
+--- !u!114 &6522857970529014368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Looping/FX - Gas Vent (Loop) 1
+  m_EditorClassIdentifier: 
+  Path: event:/Props Looping/FX - Gas Vent (Loop) 1
+  Guid:
+    Data1: 1477538965
+    Data2: 1315900281
+    Data3: -687549529
+    Data4: 1831088279
+  Banks:
+  - {fileID: 1035693365860309677}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6593149527827945773}
+  MinDistance: 1
+  MaxDistance: 10
+  Length: 5020
 --- !u!114 &6747820975276866780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2075,6 +2130,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8186
+--- !u!114 &7847881701775080558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FX - Pipes/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3871982834
+    data2: 2785124848
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &8026915874292793383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2156,3 +2235,83 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 25215
+--- !u!114 &8755853455624703028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Looping/FX - Pipes
+  m_EditorClassIdentifier: 
+  Path: event:/Props Looping/FX - Pipes
+  Guid:
+    Data1: 1849719624
+    Data2: 1322777814
+    Data3: 1725681543
+    Data4: -788907687
+  Banks:
+  - {fileID: 1035693365860309677}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 7847881701775080558}
+  MinDistance: 1
+  MaxDistance: 10
+  Length: 10041
+--- !u!114 &8910730370944048304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Looping/FX - Air Vent Large
+  m_EditorClassIdentifier: 
+  Path: event:/Props Looping/FX - Air Vent Large
+  Guid:
+    Data1: 1422651468
+    Data2: 1321398717
+    Data3: 313296555
+    Data4: -1295978550
+  Banks:
+  - {fileID: 1035693365860309677}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8929597748205772130}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8940
+--- !u!114 &8929597748205772130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FX - Air Vent Large/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3871982834
+    data2: 2785124848
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1

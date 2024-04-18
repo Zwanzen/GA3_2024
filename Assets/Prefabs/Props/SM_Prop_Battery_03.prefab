@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8588721926356961238}
-  - component: {fileID: 2392140025567489825}
+  - component: {fileID: 7036926323703284065}
   m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
@@ -139,7 +139,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4431002318680872}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2392140025567489825
+--- !u!114 &7036926323703284065
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,25 +148,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1031144983401462005}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 210e04439cc818c4ab1051ef6d2c7468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
+  SelectAudio:
     Guid:
       Data1: 1727281271
       Data2: 1334258999
       Data3: -1626340479
       Data4: 250414098
     Path: event:/Props Looping/FX - Electric Hum (Loop) 3
-  Event: 
-  PlayEvent: 1
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  SoundOcclusionWidening: 1
+  PlayerOcclusionWidening: 1
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 136

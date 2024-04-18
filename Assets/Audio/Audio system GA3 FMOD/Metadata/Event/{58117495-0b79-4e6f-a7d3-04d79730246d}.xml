@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{58117495-0b79-4e6f-a7d3-04d79730246d}">
 		<property name="name">
-			<value>Gas Vent (Loop) 1</value>
+			<value>FX - Gas Vent (Loop) 1</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>

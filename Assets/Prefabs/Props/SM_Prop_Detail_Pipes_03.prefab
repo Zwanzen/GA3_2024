@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3073721832993427173}
-  - component: {fileID: 6297699012085078988}
+  - component: {fileID: 411764672294060040}
   m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
@@ -139,7 +139,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4726450285780632}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6297699012085078988
+--- !u!114 &411764672294060040
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,25 +148,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 7899995070705413865}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 210e04439cc818c4ab1051ef6d2c7468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
+  SelectAudio:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  Event: 
-  PlayEvent: 1
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: -1
-  OverrideMaxDistance: -1
+      Data1: 1849719624
+      Data2: 1322777814
+      Data3: 1725681543
+      Data4: -788907687
+    Path: event:/Props Looping/FX - Pipes
+  SoundOcclusionWidening: 1
+  PlayerOcclusionWidening: 1
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 136
