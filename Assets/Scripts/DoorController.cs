@@ -6,8 +6,8 @@ public class DoorController : MonoBehaviour
 {
     private Animator doorAnimator;
     private Light doorLight;
-    private bool isOpen = false;
-    private bool isPlayerInRange = false;
+    [SerializeField] private bool isOpen = false;
+    [SerializeField] private bool isPlayerInRange = false;
 
     [Header("FMOD Sound Events")]
     public string doorOpenSoundEvent;
@@ -61,7 +61,7 @@ public class DoorController : MonoBehaviour
     {
         if (openState)
         {
-            // Wait for 0.2 seconds before deactivating the light
+            // Wait for 0.2 seconds before deactivating the light (to hinder light through the wall)
             yield return new WaitForSeconds(0.2f);
 
             // Deactivate the light when the door opens if there is a light component
