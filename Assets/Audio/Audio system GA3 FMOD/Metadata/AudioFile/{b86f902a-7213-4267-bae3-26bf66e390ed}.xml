@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{b86f902a-7213-4267-bae3-26bf66e390ed}">
+		<property name="assetPath">
+			<value>FX/Bolt - ARP 2600- Droids, Blips, Drones &amp; more/MECHMisc_TRS Cable Plug In Solid Metal Thump_BOLT_ARP2600.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>192</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.5799947916666666</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d43037b8-6550-4082-ad65-b5b16eaec78b}</destination>
+		</relationship>
+	</object>
+</objects>

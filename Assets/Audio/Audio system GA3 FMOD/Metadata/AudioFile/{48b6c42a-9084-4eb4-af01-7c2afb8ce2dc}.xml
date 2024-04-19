@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{48b6c42a-9084-4eb4-af01-7c2afb8ce2dc}">
 		<property name="assetPath">
-			<value>FX/BluezoneCorp - Designed Water/Bluezone_BC0298_designed_water_texture_014.wav</value>
+			<value>FX/BluezoneCorp - Designed Water/Water Submerge.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>96</value>

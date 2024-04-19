@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{a809a31f-37e0-4ece-a619-b740cf473a73}">
 		<property name="assetPath">
-			<value>FX/BluezoneCorp - Futuristic User Interface/Bluezone_BC0303_futuristic_user_interface_high_tech_beep_038.wav</value>
+			<value>FX/BluezoneCorp - Futuristic User Interface/Beep.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>96</value>

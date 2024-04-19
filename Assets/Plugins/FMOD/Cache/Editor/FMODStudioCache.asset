@@ -461,6 +461,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5074
+--- !u!114 &-6065210139507204321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Interaction/FX - Vault Door Opening
+  m_EditorClassIdentifier: 
+  Path: event:/Props Interaction/FX - Vault Door Opening
+  Guid:
+    Data1: -2130574312
+    Data2: 1267634055
+    Data3: 158456967
+    Data4: -1772998832
+  Banks:
+  - {fileID: -2203919514268191177}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -2175573972344682071}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5642
 --- !u!114 &-6007721163422832705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -825,6 +853,34 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-3259345837920603618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Interaction/FX - Vault Door Closing
+  m_EditorClassIdentifier: 
+  Path: event:/Props Interaction/FX - Vault Door Closing
+  Guid:
+    Data1: -1316734753
+    Data2: 1224634664
+    Data3: 237574817
+    Data4: 2009466766
+  Banks:
+  - {fileID: -2203919514268191177}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 7482901054137685150}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5397
 --- !u!114 &-3154856355711480994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -995,10 +1051,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Props Interaction.bank
   Name: Props Interaction
   StudioPath: bank:/Props Interaction
-  lastModified: 638491368094458470
+  lastModified: 638491592578399136
   FileSizes:
   - Name: Desktop
-    Value: 408000
+    Value: 466240
   Exists: 1
 --- !u!114 &-2181386607191122262
 MonoBehaviour:
@@ -1067,6 +1123,30 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/FX - Hum (Loop) 2/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3871982834
+    data2: 2785124848
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-2175573972344682071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FX - Vault Door Opening/Occlusion
   m_EditorClassIdentifier: 
   Name: Occlusion
   StudioPath: 
@@ -1511,12 +1591,14 @@ MonoBehaviour:
   - {fileID: 6774911225886701167}
   - {fileID: -6222728356362357246}
   - {fileID: 3819622761439993061}
+  - {fileID: -6065210139507204321}
+  - {fileID: -3259345837920603618}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4677152490814659433}
   StringsBanks:
   - {fileID: 4038073233029663505}
-  cacheTime: 638491368094458470
+  cacheTime: 638491592578399136
   cacheVersion: 131617
 --- !u!114 &152564166377372431
 MonoBehaviour:
@@ -1609,10 +1691,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank
   Name: Prop Ambience
   StudioPath: bank:/Prop Ambience
-  lastModified: 638491366150469326
+  lastModified: 638491582552970549
   FileSizes:
   - Name: Desktop
-    Value: 2360352
+    Value: 2360192
   Exists: 1
 --- !u!114 &1065810116750121637
 MonoBehaviour:
@@ -1998,10 +2080,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638491366148991813
+  lastModified: 638491582548746360
   FileSizes:
   - Name: Desktop
-    Value: 2842
+    Value: 2942
   Exists: 1
 --- !u!114 &4333845490033308509
 MonoBehaviour:
@@ -2096,7 +2178,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638491366148981745
+  lastModified: 638491582548726181
   FileSizes:
   - Name: Desktop
     Value: 670
@@ -2367,6 +2449,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 9542
+--- !u!114 &7482901054137685150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FX - Vault Door Closing/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3871982834
+    data2: 2785124848
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &7564904783920039389
 MonoBehaviour:
   m_ObjectHideFlags: 0

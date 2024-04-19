@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{a62b6ec6-7e6c-4616-8172-298e7df451ae}">
+		<property name="assetPath">
+			<value>FX/BluezoneCorp - Alien Interface/Bluezone_BC0300_alien_interface_sci_fi_transition_008.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.0804895833333332</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d43037b8-6550-4082-ad65-b5b16eaec78b}</destination>
+		</relationship>
+	</object>
+</objects>

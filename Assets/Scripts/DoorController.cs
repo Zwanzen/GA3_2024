@@ -7,6 +7,7 @@ public class DoorController : MonoBehaviour
     private Animator doorAnimator;
     private Light doorLight;
     private bool isPlayerInRange = false;
+    private Transform doorTransform; // Reference to the door's transform
 
     [Header("Door Settings")]
     public GameObject doorObject; // Reference to the door GameObject
@@ -33,6 +34,9 @@ public class DoorController : MonoBehaviour
             Debug.LogError("Animator component not found on the door GameObject.");
             return;
         }
+
+        // Get the door's transform
+        doorTransform = doorObject.transform;
 
         // Check if the door has a light component
         doorLight = doorObject.GetComponentInChildren<Light>();
@@ -94,8 +98,8 @@ public class DoorController : MonoBehaviour
         // Start the coroutine to handle light deactivation
         StartCoroutine(ToggleLightCoroutine(true));
 
-        // Play the door open sound
-        FMODUnity.RuntimeManager.PlayOneShot(doorOpenSoundEvent, GetComponent<Transform>().position);
+        // Play the door open sound from the door's position
+        FMODUnity.RuntimeManager.PlayOneShot(doorOpenSoundEvent, doorTransform.position);
     }
 
     void CloseDoor()
@@ -107,8 +111,8 @@ public class DoorController : MonoBehaviour
         // Start the coroutine to handle light reactivation
         StartCoroutine(ToggleLightCoroutine(false));
 
-        // Play the door close sound
-        FMODUnity.RuntimeManager.PlayOneShot(doorCloseSoundEvent, GetComponent<Transform>().position);
+        // Play the door close sound from the door's position
+        FMODUnity.RuntimeManager.PlayOneShot(doorCloseSoundEvent, doorTransform.position);
     }
 
     void BroadcastLockedMessage()

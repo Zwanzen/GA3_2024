@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{210a9813-d902-40e1-aed5-6d1485367ce5}">
 		<property name="assetPath">
-			<value>FX/BluezoneCorp - Alien Tripod/Bluezone_BC0292_alien_tripod_texture_organic_liquid_005.wav</value>
+			<value>FX/BluezoneCorp - Alien Tripod/Organic Liquid.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

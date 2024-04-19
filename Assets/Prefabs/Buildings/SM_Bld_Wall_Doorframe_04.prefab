@@ -284,7 +284,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -304,9 +304,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorObject: {fileID: 1932278615020720}
   isOpen: 0
-  isPlayerInRange: 0
   automaticDoor: 0
-  requiresKey: 1
+  isLocked: 0
   keyToOpen: 101
-  doorOpenSoundEvent: event:/Props Interaction/FX - Door Sliding Up
-  doorCloseSoundEvent: event:/Props Interaction/FX - Door Sliding Down
+  doorOpenSoundEvent: event:/Props Interaction/FX - Vault Door Opening
+  doorCloseSoundEvent: event:/Props Interaction/FX - Vault Door Closing
+  lockedMessage: The door is locked.

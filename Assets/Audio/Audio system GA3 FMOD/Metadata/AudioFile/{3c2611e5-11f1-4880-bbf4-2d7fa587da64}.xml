@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{3c2611e5-11f1-4880-bbf4-2d7fa587da64}">
 		<property name="assetPath">
-			<value>FX/BluezoneCorp - Alien Tripod/Bluezone_BC0292_alien_tripod_pneumatic_chemical_weapon_black_smoke_001.wav</value>
+			<value>FX/BluezoneCorp - Alien Tripod/Steam Vent.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>96</value>
