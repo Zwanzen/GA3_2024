@@ -6,19 +6,25 @@ public class DoorController : MonoBehaviour
 {
     private Animator doorAnimator;
     private Light doorLight;
+    private bool isPlayerInRange = false;
 
     [Header("Door Settings")]
     public GameObject doorObject; // Reference to the door GameObject
     [SerializeField] private bool isOpen = false;
-    [SerializeField] private bool isPlayerInRange = false;
+    [SerializeField] private bool automaticDoor = false; // Boolean for whether the door automatically opens or closes
+    [SerializeField] private bool isLocked = false; // Boolean for whether the door is locked
+    public KeyCode keyToOpen = KeyCode.E; // Key required to open the door, default is 'E'
 
     [Header("FMOD Sound Events")]
     public string doorOpenSoundEvent;
     public string doorCloseSoundEvent;
 
+    [Header("Messages")]
+    public string lockedMessage = "The door is locked.";
+
     void Start()
     {
-        // Get the Animator component attached to the door
+        // Get the Animator component attached to the door if it exists
         doorAnimator = doorObject.GetComponent<Animator>();
 
         // Check if the Animator component is attached to the door
@@ -30,41 +36,84 @@ public class DoorController : MonoBehaviour
 
         // Check if the door has a light component
         doorLight = doorObject.GetComponentInChildren<Light>();
+
+        // Close the door at the start
+        doorAnimator.SetBool("doorActivate", false);
+        isOpen = false;
     }
 
     void Update()
     {
-        // Check if the door should open or close based on the player's proximity
-        if (isPlayerInRange)
+        if (automaticDoor)
         {
-            if (!isOpen)
-            {
-                // Update the Animator parameter to trigger the door animation
-                doorAnimator.SetBool("doorActivate", true);
-                isOpen = true;
-
-                // Start the coroutine to handle light deactivation
-                StartCoroutine(ToggleLightCoroutine(true));
-
-                // Play the door open sound
-                FMODUnity.RuntimeManager.PlayOneShot(doorOpenSoundEvent, GetComponent<Transform>().position);
-            }
+            HandleAutomaticDoor();
         }
         else
         {
-            if (isOpen)
+            HandleManualDoor();
+        }
+    }
+
+    void HandleAutomaticDoor()
+    {
+        if (isPlayerInRange && !isOpen && !isLocked)
+        {
+            OpenDoor();
+        }
+        else if (!isPlayerInRange && isOpen)
+        {
+            CloseDoor();
+        }
+    }
+
+    void HandleManualDoor()
+    {
+        if (isPlayerInRange && Input.GetKeyDown(keyToOpen))
+        {
+            if (isLocked)
             {
-                // Update the Animator parameter to trigger the door animation
-                doorAnimator.SetBool("doorActivate", false);
-                isOpen = false;
-
-                // Start the coroutine to handle light reactivation
-                StartCoroutine(ToggleLightCoroutine(false));
-
-                // Play the door close sound
-                FMODUnity.RuntimeManager.PlayOneShot(doorCloseSoundEvent, GetComponent<Transform>().position);
+                BroadcastLockedMessage();
+            }
+            else if (!isOpen)
+            {
+                OpenDoor();
+            }
+            else
+            {
+                CloseDoor();
             }
         }
+    }
+
+    void OpenDoor()
+    {
+        // Update the Animator parameter to trigger the door animation
+        doorAnimator.SetBool("doorActivate", true);
+        isOpen = true;
+
+        // Start the coroutine to handle light deactivation
+        StartCoroutine(ToggleLightCoroutine(true));
+
+        // Play the door open sound
+        FMODUnity.RuntimeManager.PlayOneShot(doorOpenSoundEvent, GetComponent<Transform>().position);
+    }
+
+    void CloseDoor()
+    {
+        // Update the Animator parameter to trigger the door animation
+        doorAnimator.SetBool("doorActivate", false);
+        isOpen = false;
+
+        // Start the coroutine to handle light reactivation
+        StartCoroutine(ToggleLightCoroutine(false));
+
+        // Play the door close sound
+        FMODUnity.RuntimeManager.PlayOneShot(doorCloseSoundEvent, GetComponent<Transform>().position);
+    }
+
+    void BroadcastLockedMessage()
+    {
+        Debug.Log(lockedMessage); // You can replace this with whatever method you use to display messages to the player
     }
 
     IEnumerator ToggleLightCoroutine(bool openState)
@@ -110,6 +159,11 @@ public class DoorController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = false;
+
+            if (automaticDoor && isOpen)
+            {
+                CloseDoor();
+            }
         }
     }
 }

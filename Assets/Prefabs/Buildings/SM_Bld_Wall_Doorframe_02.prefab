@@ -304,5 +304,8 @@ MonoBehaviour:
   doorObject: {fileID: 1182285933139604}
   isOpen: 0
   isPlayerInRange: 0
+  automaticDoor: 1
+  requiresKey: 0
+  keyToOpen: 101
   doorOpenSoundEvent: event:/Props Interaction/FX - Door Sliding Up
   doorCloseSoundEvent: event:/Props Interaction/FX - Door Sliding Down

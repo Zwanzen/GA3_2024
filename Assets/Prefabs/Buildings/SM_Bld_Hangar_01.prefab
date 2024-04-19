@@ -1127,6 +1127,9 @@ MonoBehaviour:
   doorObject: {fileID: 1372252293594134}
   isOpen: 0
   isPlayerInRange: 0
+  automaticDoor: 1
+  requiresKey: 0
+  keyToOpen: 101
   doorOpenSoundEvent: event:/Props Interaction/FX - Door Sliding Up
   doorCloseSoundEvent: event:/Props Interaction/FX - Door Sliding Down
 --- !u!1 &6513623213501630176
@@ -1198,6 +1201,9 @@ MonoBehaviour:
   doorObject: {fileID: 1609895197071774}
   isOpen: 0
   isPlayerInRange: 0
+  automaticDoor: 0
+  requiresKey: 0
+  keyToOpen: 101
   doorOpenSoundEvent: event:/Props Interaction/FX - Door Sliding Up
   doorCloseSoundEvent: event:/Props Interaction/FX - Door Sliding Down
 --- !u!1 &8428935693374905700
@@ -1302,6 +1308,9 @@ MonoBehaviour:
   doorObject: {fileID: 1293291423513358}
   isOpen: 0
   isPlayerInRange: 0
+  automaticDoor: 0
+  requiresKey: 0
+  keyToOpen: 101
   doorOpenSoundEvent: event:/Props Interaction/FX - Door Sliding Up
   doorCloseSoundEvent: event:/Props Interaction/FX - Door Sliding Down
 --- !u!1 &8948375693096368273

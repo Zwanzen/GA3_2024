@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7389816641200717122}
-  - component: {fileID: 3177550678058103757}
+  - component: {fileID: 4340943280714697660}
   m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
@@ -133,13 +133,13 @@ Transform:
   m_GameObject: {fileID: 8088570014337596890}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0.25}
+  m_LocalPosition: {x: -0.0000007599592, y: 0.5, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4461912938598962}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3177550678058103757
+--- !u!114 &4340943280714697660
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,25 +148,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 8088570014337596890}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 210e04439cc818c4ab1051ef6d2c7468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
+  SelectAudio:
     Guid:
-      Data1: -140939803
-      Data2: 1209853887
-      Data3: 1030559422
-      Data4: 211752540
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
     Path: event:/Air Vent 3 Looping
-  Event: 
-  PlayEvent: 1
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 10
+  SoundOcclusionWidening: 0.5
+  PlayerOcclusionWidening: 1
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 0

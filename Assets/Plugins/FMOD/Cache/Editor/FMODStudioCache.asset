@@ -456,7 +456,8 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: 3253143317827555472}
   MinDistance: 1
   MaxDistance: 20
   Length: 5074
@@ -776,6 +777,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6661
+--- !u!114 &-3479505935572616646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FX - Large Door Sliding Down/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3871982834
+    data2: 2785124848
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-3278515684653840021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -970,10 +995,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Props Interaction.bank
   Name: Props Interaction
   StudioPath: bank:/Props Interaction
-  lastModified: 638490807355545178
+  lastModified: 638491368094458470
   FileSizes:
   - Name: Desktop
-    Value: 111712
+    Value: 408000
   Exists: 1
 --- !u!114 &-2181386607191122262
 MonoBehaviour:
@@ -1485,12 +1510,13 @@ MonoBehaviour:
   - {fileID: 7241532075766406932}
   - {fileID: 6774911225886701167}
   - {fileID: -6222728356362357246}
+  - {fileID: 3819622761439993061}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4677152490814659433}
   StringsBanks:
   - {fileID: 4038073233029663505}
-  cacheTime: 638490810443020273
+  cacheTime: 638491368094458470
   cacheVersion: 131617
 --- !u!114 &152564166377372431
 MonoBehaviour:
@@ -1583,10 +1609,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank
   Name: Prop Ambience
   StudioPath: bank:/Prop Ambience
-  lastModified: 638490810443020273
+  lastModified: 638491366150469326
   FileSizes:
   - Name: Desktop
-    Value: 2359936
+    Value: 2360352
   Exists: 1
 --- !u!114 &1065810116750121637
 MonoBehaviour:
@@ -1770,6 +1796,30 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &3253143317827555472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FX - Large Door Sliding Up/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3871982834
+    data2: 2785124848
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &3348506016378508154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1881,6 +1931,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 12409
+--- !u!114 &3819622761439993061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Interaction/FX - Large Door Sliding Down
+  m_EditorClassIdentifier: 
+  Path: event:/Props Interaction/FX - Large Door Sliding Down
+  Guid:
+    Data1: 1610498765
+    Data2: 1222738215
+    Data3: 1079334529
+    Data4: 1292510977
+  Banks:
+  - {fileID: -2203919514268191177}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -3479505935572616646}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7712
 --- !u!114 &3842363940023437964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1920,10 +1998,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638490807350570342
+  lastModified: 638491366148991813
   FileSizes:
   - Name: Desktop
-    Value: 2796
+    Value: 2842
   Exists: 1
 --- !u!114 &4333845490033308509
 MonoBehaviour:
@@ -2018,7 +2096,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638490807350550395
+  lastModified: 638491366148981745
   FileSizes:
   - Name: Desktop
     Value: 670
