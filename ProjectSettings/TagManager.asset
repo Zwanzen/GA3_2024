@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ignore
+  - UpperFloorTrigger
+  - LowerFloorTrigger
+  - ElevatorTrigger
   layers:
   - Default
   - TransparentFX

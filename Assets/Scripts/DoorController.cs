@@ -89,7 +89,7 @@ public class DoorController : MonoBehaviour
         }
     }
 
-    void OpenDoor()
+    public void OpenDoor()
     {
         // Update the Animator parameter to trigger the door animation
         doorAnimator.SetBool("doorActivate", true);
@@ -102,7 +102,7 @@ public class DoorController : MonoBehaviour
         FMODUnity.RuntimeManager.PlayOneShot(doorOpenSoundEvent, doorTransform.position);
     }
 
-    void CloseDoor()
+    public void CloseDoor()
     {
         // Update the Animator parameter to trigger the door animation
         doorAnimator.SetBool("doorActivate", false);
