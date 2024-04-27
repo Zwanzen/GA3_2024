@@ -1079,10 +1079,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Props Interaction.bank
   Name: Props Interaction
   StudioPath: bank:/Props Interaction
-  lastModified: 638498357583953116
+  lastModified: 638498611211545770
   FileSizes:
   - Name: Desktop
-    Value: 748960
+    Value: 777792
   Exists: 1
 --- !u!114 &-2181386607191122262
 MonoBehaviour:
@@ -1622,12 +1622,14 @@ MonoBehaviour:
   - {fileID: -6065210139507204321}
   - {fileID: -3259345837920603618}
   - {fileID: -2774838947033018602}
+  - {fileID: 5063809657522417592}
+  - {fileID: 8987534389315063945}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4677152490814659433}
   StringsBanks:
   - {fileID: 4038073233029663505}
-  cacheTime: 638498357583953116
+  cacheTime: 638498611211545770
   cacheVersion: 131617
 --- !u!114 &152564166377372431
 MonoBehaviour:
@@ -2133,10 +2135,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638498338742115329
+  lastModified: 638498602539480677
   FileSizes:
   - Name: Desktop
-    Value: 3000
+    Value: 3106
   Exists: 1
 --- !u!114 &4333845490033308509
 MonoBehaviour:
@@ -2231,7 +2233,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638498338742095080
+  lastModified: 638498602539465615
   FileSizes:
   - Name: Desktop
     Value: 670
@@ -2291,6 +2293,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7800
+--- !u!114 &5063809657522417592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Interaction/FX - Door Hinged Opening
+  m_EditorClassIdentifier: 
+  Path: event:/Props Interaction/FX - Door Hinged Opening
+  Guid:
+    Data1: -1943901630
+    Data2: 1131617790
+    Data3: 2138872477
+    Data4: 1840494080
+  Banks:
+  - {fileID: -2203919514268191177}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 8
+  Length: 1000
 --- !u!114 &5709561869058277264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2739,3 +2768,30 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &8987534389315063945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Interaction/FX - Door Hinged Closing
+  m_EditorClassIdentifier: 
+  Path: event:/Props Interaction/FX - Door Hinged Closing
+  Guid:
+    Data1: -960055687
+    Data2: 1078630929
+    Data3: -839823176
+    Data4: 1236546963
+  Banks:
+  - {fileID: -2203919514268191177}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 8
+  Length: 1730
