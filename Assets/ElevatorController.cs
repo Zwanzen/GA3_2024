@@ -1,10 +1,15 @@
 using UnityEngine;
+using FMODUnity;
 
 public class ElevatorController : MonoBehaviour
 {
+    [Header("FMOD Sound Events")]
+    public string elevatorActivationEvent;
+
     public UpperFloorTrigger upperFloorTriggerScript;
     public LowerFloorTrigger lowerFloorTriggerScript;
 
+    public GameObject elevatorSoundSource; // Reference to the sound source GameObject
     public Animator animator;
     public bool isPlayerInside;
 
@@ -46,12 +51,14 @@ public class ElevatorController : MonoBehaviour
                 {
                     Debug.Log("Lift is going up.");
                     animator.SetTrigger("Ascend");
+                    PlayElevatorActivationSound();
                 }
                 // Check if the elevator is in LiftUpperFloor state
                 else if (currentState.IsName("LiftUpperFloor"))
                 {
                     Debug.Log("Lift is going down.");
                     animator.SetTrigger("Descend");
+                    PlayElevatorActivationSound();
                 }
             }
         }
@@ -67,6 +74,7 @@ public class ElevatorController : MonoBehaviour
                 {
                     Debug.Log("Lift is coming up.");
                     animator.SetTrigger("Ascend");
+                    PlayElevatorActivationSound();
                 }
                 else
                 {
@@ -86,6 +94,7 @@ public class ElevatorController : MonoBehaviour
                 {
                     Debug.Log("Lift is coming down.");
                     animator.SetTrigger("Descend");
+                    PlayElevatorActivationSound();
                 }
                 else
                 {
@@ -93,6 +102,14 @@ public class ElevatorController : MonoBehaviour
                     return;
                 }
             }
+        }
+
+        void PlayElevatorActivationSound()
+        {
+            // Update the position of the sound source to match the elevator's position
+            elevatorSoundSource.transform.position = transform.position;
+            // Play elevator activation sound event
+            FMODUnity.RuntimeManager.PlayOneShot(elevatorActivationEvent, elevatorSoundSource.transform.position);
         }
     }
 }

@@ -985,6 +985,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 6
   Length: 6358
+--- !u!114 &-2774838947033018602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Interaction/FX - ElevatorActivation
+  m_EditorClassIdentifier: 
+  Path: event:/Props Interaction/FX - ElevatorActivation
+  Guid:
+    Data1: 1875875715
+    Data2: 1197166801
+    Data3: -1733329498
+    Data4: -1721551441
+  Banks:
+  - {fileID: -2203919514268191177}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 1117390252749052861}
+  MinDistance: 1
+  MaxDistance: 10
+  Length: 8343
 --- !u!114 &-2660899257330515050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1051,10 +1079,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Props Interaction.bank
   Name: Props Interaction
   StudioPath: bank:/Props Interaction
-  lastModified: 638491592578399136
+  lastModified: 638498357583953116
   FileSizes:
   - Name: Desktop
-    Value: 466240
+    Value: 748960
   Exists: 1
 --- !u!114 &-2181386607191122262
 MonoBehaviour:
@@ -1593,12 +1621,13 @@ MonoBehaviour:
   - {fileID: 3819622761439993061}
   - {fileID: -6065210139507204321}
   - {fileID: -3259345837920603618}
+  - {fileID: -2774838947033018602}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4677152490814659433}
   StringsBanks:
   - {fileID: 4038073233029663505}
-  cacheTime: 638491592578399136
+  cacheTime: 638498357583953116
   cacheVersion: 131617
 --- !u!114 &152564166377372431
 MonoBehaviour:
@@ -1723,6 +1752,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 10041
+--- !u!114 &1117390252749052861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FX - ElevatorActivation/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3871982834
+    data2: 2785124848
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &1144689714531579144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2080,10 +2133,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638491582548746360
+  lastModified: 638498338742115329
   FileSizes:
   - Name: Desktop
-    Value: 2942
+    Value: 3000
   Exists: 1
 --- !u!114 &4333845490033308509
 MonoBehaviour:
@@ -2178,7 +2231,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638491582548726181
+  lastModified: 638498338742095080
   FileSizes:
   - Name: Desktop
     Value: 670
