@@ -33,6 +33,11 @@ public class DefaultNPCInteraction : MonoBehaviour
         SetTag();
     }
 
-
+    // The UI button has to ref this and send int depending on what choice button it is.
+    public void SelectedChoice(int choice)
+    {
+        dialogue = dialogue.choices[choice];
+        // StartDialogue(); when selecting a choice, it should loop again with the new dialogue
+    }
 
 }
