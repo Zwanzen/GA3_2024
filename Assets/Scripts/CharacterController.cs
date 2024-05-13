@@ -437,7 +437,7 @@ public class CharacterController : MonoBehaviour
 
     private void OnValidate()
     {
-        InstantiateCharacterSize();
+        //InstantiateCharacterSize();
 
     }
 

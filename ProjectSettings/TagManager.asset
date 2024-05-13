@@ -8,6 +8,7 @@ TagManager:
   - UpperFloorTrigger
   - LowerFloorTrigger
   - ElevatorTrigger
+  - NPC
   layers:
   - Default
   - TransparentFX
