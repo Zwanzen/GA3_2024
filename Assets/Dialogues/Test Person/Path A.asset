@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f96de2a467794424c9da080f8fe7fd1d, type: 3}
-  m_Name: Test
+  m_Name: Path A
   m_EditorClassIdentifier: 
-  NPCname: 
-  dialogueLines: []
+  NPCname: Angry Test NPC
+  dialogueLines:
+  - You will pay for this
   choices: []
   choiceText1: 
   choiceText2: 
