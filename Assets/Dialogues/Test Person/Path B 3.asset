@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f96de2a467794424c9da080f8fe7fd1d, type: 3}
-  m_Name: Path B
+  m_Name: Path B 3
   m_EditorClassIdentifier: 
   _name: Test Person
   dialogueLines:
   - I'm very happy
   choices:
-  - {fileID: 11400000, guid: 4b5f7c77cde13cb479847e82d300c0b7, type: 2}
+  - {fileID: 0}
   choiceText:
-  - Okay?
+  - Ugh
