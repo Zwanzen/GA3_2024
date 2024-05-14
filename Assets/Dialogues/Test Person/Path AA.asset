@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f96de2a467794424c9da080f8fe7fd1d, type: 3}
-  m_Name: Path A
+  m_Name: Path AA
   m_EditorClassIdentifier: 
   _name: Test Person
   dialogueLines:
-  - You will pay for this
-  choices:
-  - {fileID: 11400000, guid: f9374ee27bccce84188fa52cc5fdf2bf, type: 2}
-  choiceText:
-  - Why?
+  - Ok :)
+  - I no shoot
+  choices: []
+  choiceText: []

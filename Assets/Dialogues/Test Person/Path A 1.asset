@@ -10,28 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f96de2a467794424c9da080f8fe7fd1d, type: 3}
-  m_Name: Introduction
+  m_Name: Path A 1
   m_EditorClassIdentifier: 
   _name: Test Person
   dialogueLines:
-  - 'Test 1 '
-  - 'Test 2
-
-'
-  - 'Test 3
-
-'
-  - 'Test 4
-
-
-'
+  - Because i said so
+  - '[POINTS GUN]'
   choices:
-  - {fileID: 11400000, guid: 8aaf0b652357a9c42b023d47d413c8b1, type: 2}
-  - {fileID: 11400000, guid: bc2ddd27257b50641a5ba6a15ce8a21e, type: 2}
-  - {fileID: 11400000, guid: bc2ddd27257b50641a5ba6a15ce8a21e, type: 2}
-  - {fileID: 11400000, guid: 8aaf0b652357a9c42b023d47d413c8b1, type: 2}
+  - {fileID: 11400000, guid: c5a8da310e14c8343a206b756c11fa10, type: 2}
+  - {fileID: 11400000, guid: 7ee8c910c976d3a4089f914a4fb95f2b, type: 2}
   choiceText:
-  - U're Dumb
-  - Be happy
-  - Smile
-  - What are u?
+  - IM SORRY
+  - LOOSER
