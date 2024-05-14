@@ -84,18 +84,31 @@ public class PlayerController : MonoBehaviour
     private float cameraShakeAmplitudeMax = 2f;
     [SerializeField]
     private float cameraShakeFrequencyMax = 2f;
+    public Transform cameraHolder;
+
 
     private float lookAngle;
     private float pivotAngle;
 
     [Space(20)]
     [Header("Interactions")]
-    [SerializeField]
+    [SerializeField] private GameObject dialogueUI;
+    [SerializeField] private GameObject dialogueChoicesUI;
+    [SerializeField] private GameObject[] choiceButtons;
+    [SerializeField] private TextMeshProUGUI nameText;
+    [SerializeField] private TextMeshProUGUI dialogueText;
+    [SerializeField] private TextMeshProUGUI continueText;
+    [SerializeField] private TextMeshProUGUI interactText;
+
+    public void InitializeNPC(NPCInteraction npc)
+    {
+        npc.Initialize(dialogueUI, dialogueChoicesUI, choiceButtons, nameText, dialogueText, continueText, interactText);
+    }
+
     bool interacting;
 
     [HideInInspector]
     public Rigidbody rb;
-    public Transform cameraHolder;
 
     [Space(20)]
     [Header("Debugging")]

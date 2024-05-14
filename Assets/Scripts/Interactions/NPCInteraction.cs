@@ -10,26 +10,32 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Rigidbody))]
 public class NPCInteraction : MonoBehaviour
 {
-    [Header("Player")]
+    [Header("NPC & Ref")]
     [SerializeField] private PlayerController player;
-
-    [Space(10)]
-    [Header("Dialogue UI")]
-    [SerializeField] private GameObject dialogueUI;
-    [SerializeField] private GameObject dialogueChoicesUI;
-    [SerializeField] private GameObject[] choiceButtons;
-    [SerializeField] private TextMeshProUGUI nameText;
-    [SerializeField] private TextMeshProUGUI dialogueText;
-    [SerializeField] private TextMeshProUGUI continueText;
-    [SerializeField] private TextMeshProUGUI interactText;
-
-
-    [Space(10)]
-    [Header("Dialogue")]
     [SerializeField] public Dialogue dialogue;
+    [SerializeField] private Transform lookAtPosition;
 
-    [Space(10)]
-    public bool canClick = false;
+    private GameObject dialogueUI;
+     private GameObject dialogueChoicesUI;
+     private GameObject[] choiceButtons;
+     private TextMeshProUGUI nameText;
+     private TextMeshProUGUI dialogueText;
+     private TextMeshProUGUI continueText;
+     private TextMeshProUGUI interactText;
+
+    public void Initialize(GameObject _dialogueUI, GameObject _dialogueChoicesUI, GameObject[] _choiceButtons,
+        TextMeshProUGUI _nameText, TextMeshProUGUI _dialogueText, TextMeshProUGUI _continueText, TextMeshProUGUI _interactText)
+    {
+        dialogueUI = _dialogueUI;
+        dialogueChoicesUI = _dialogueChoicesUI;
+        choiceButtons = _choiceButtons;
+        nameText = _nameText;
+        dialogueText = _dialogueText;
+        continueText = _continueText;
+        interactText = _interactText;
+    }
+
+    private bool canClick = false;
 
     //Private variables
     private const string interactTag = "NPC";
@@ -53,6 +59,7 @@ public class NPCInteraction : MonoBehaviour
     private void Awake()
     {
         SetTag();
+        player.InitializeNPC(this);
     }
 
     private void Start()
@@ -79,12 +86,13 @@ public class NPCInteraction : MonoBehaviour
 
     public void StartDialogue()
     {
-        player.ToggleInteraction(true, transform);
+        player.ToggleInteraction(true, lookAtPosition);
         canClick = true;
         dialogueLines.Clear();
         dialogueUI.SetActive(true);
         dialogueChoicesUI.SetActive(false);
         continueText.text = "Click to continue...";
+        nameText.text = dialogue._name;
 
 
         foreach (string line in dialogue.dialogueLines)

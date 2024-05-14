@@ -632,9 +632,19 @@ MonoBehaviour:
   lookSpeed: 3
   cameraShakeAmplitudeMax: 1.2
   cameraShakeFrequencyMax: 1.2
-  interacting: 0
-  rb: {fileID: 1832552650018738455}
   cameraHolder: {fileID: 1011793306237034860}
+  dialogueUI: {fileID: 4550875705522789396}
+  dialogueChoicesUI: {fileID: 3639589219947155328}
+  choiceButtons:
+  - {fileID: 1094597094229967050}
+  - {fileID: 308998185000232870}
+  - {fileID: 367338857207689783}
+  - {fileID: 2694669912675417720}
+  nameText: {fileID: 4849032927679851691}
+  dialogueText: {fileID: 9170305150444481733}
+  continueText: {fileID: 4298444089561784585}
+  interactText: {fileID: 2699430059230567561}
+  rb: {fileID: 1832552650018738455}
   moveForceText: {fileID: 0}
   stopForceText: {fileID: 0}
   magText: {fileID: 0}
