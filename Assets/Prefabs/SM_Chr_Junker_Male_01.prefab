@@ -2485,19 +2485,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  dialogueUI: {fileID: 0}
-  dialogueChoicesUI: {fileID: 0}
-  choiceButtons:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  nameText: {fileID: 0}
-  dialogueText: {fileID: 0}
-  continueText: {fileID: 0}
-  interactText: {fileID: 0}
   dialogue: {fileID: 11400000, guid: 074d590c66a983045bb9265697722951, type: 2}
-  canClick: 0
+  lookAtPosition: {fileID: 0}
 --- !u!1 &4804897234824585174
 GameObject:
   m_ObjectHideFlags: 0

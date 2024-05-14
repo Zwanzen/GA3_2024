@@ -175,8 +175,8 @@ public class PlayerController : MonoBehaviour
     private void HandleCameraShake()
     {
         // Get values for shake amplitude and frequency based on current speed
-        float shakeAmplitude = Mathf.Lerp(1, cameraShakeAmplitudeMax * 2, rb.velocity.magnitude / (maxSpeed * 2));
-        float shakeFrequency = Mathf.Lerp(1, cameraShakeFrequencyMax * 2, rb.velocity.magnitude / (maxSpeed * 2));
+        float shakeAmplitude = Mathf.Lerp(1, cameraShakeAmplitudeMax, rb.velocity.magnitude / (maxSpeed * 2));
+        float shakeFrequency = Mathf.Lerp(1, cameraShakeFrequencyMax, rb.velocity.magnitude / (maxSpeed * 2));
 
         // Set the shake values to the camera
         cinCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = shakeAmplitude;
