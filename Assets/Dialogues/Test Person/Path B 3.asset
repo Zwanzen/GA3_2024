@@ -15,7 +15,5 @@ MonoBehaviour:
   _name: Test Person
   dialogueLines:
   - I'm very happy
-  choices:
-  - {fileID: 0}
-  choiceText:
-  - Ugh
+  choices: []
+  choiceText: []

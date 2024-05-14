@@ -1,8 +1,9 @@
+using Cinemachine;
 using System.Collections;
 using TMPro;
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     [Space(20)]
     [Header("Character Size Variables")]
@@ -69,25 +70,28 @@ public class CharacterController : MonoBehaviour
     [Space(20)]
     [Header("Camera Variables")]
     [SerializeField]
-    private Transform cameraTransform;
+    private Transform aimPoint;
+    [SerializeField]
+    private CinemachineVirtualCamera cinCamera;
     [SerializeField]
     private Transform cameraPivotTransform;
     [SerializeField]
     private float pivotSpeed = 1.0f;
     [SerializeField]
     private float lookSpeed = 1.0f;
+    [Space(5)]
     [SerializeField]
-    private bool enableHeadBobbing = true;
-    [SerializeField, Range(0,0.1f)]
-    private float HbAmplitude = 0.1f;
-    [SerializeField, Range(0,30f)]
-    private float HbFrequency = 0.1f;
-
-    private float HbToggleSpeed = 3.0f;
-    private Vector3 HbStartPos;
+    private float cameraShakeAmplitudeMax = 2f;
+    [SerializeField]
+    private float cameraShakeFrequencyMax = 2f;
 
     private float lookAngle;
     private float pivotAngle;
+
+    [Space(20)]
+    [Header("Interactions")]
+    [SerializeField]
+    bool interacting;
 
     [HideInInspector]
     public Rigidbody rb;
@@ -102,45 +106,68 @@ public class CharacterController : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI magText;
     
-    private Vector3 debugMoveDir;
-    private Vector3 debugMoveInput;
-    private Vector3 storedRBVel;
-    private Vector3 counterMoveDir;
-    private float debugDirVel;
+
 
     private void Awake()
     {
         InstantiateCharacterSize();
-        HbStartPos = cameraTransform.localPosition;
     }
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-
         Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
     void Update()
     {
-        HandleRotation();
-        ResetHeadPosition();
-        if (MoveVector() != Vector3.zero && IsGrounded() && enableHeadBobbing)
+        if (!interacting)
         {
-            HandleHeadBobbing(FootStepMotion());
-        }
+            HandleRotation();
+        }   
+        HandleCameraShake();
     }
 
     public void LateUpdate()
     {
-        Jump();
+        if(!interacting)
+        {
+            Jump();
+        }
     }
 
     public void FixedUpdate()
     {
         HandleMovement();
+    }
+
+    public void ToggleInteraction(bool _int, Transform lookAt)
+    {
+        if(_int)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            interacting = true;
+            cinCamera.LookAt = lookAt;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            cinCamera.LookAt = aimPoint;
+            interacting = false;
+        }
+    }
+
+    private void HandleCameraShake()
+    {
+        // Get values for shake amplitude and frequency based on current speed
+        float shakeAmplitude = Mathf.Lerp(1, cameraShakeAmplitudeMax * 2, rb.velocity.magnitude / (maxSpeed * 2));
+        float shakeFrequency = Mathf.Lerp(1, cameraShakeFrequencyMax * 2, rb.velocity.magnitude / (maxSpeed * 2));
+
+        // Set the shake values to the camera
+        cinCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = shakeAmplitude;
+        cinCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = shakeFrequency;
     }
 
     private Vector3 MoveVector()
@@ -153,7 +180,7 @@ public class CharacterController : MonoBehaviour
 
     private void HandleMovement()
     {
-        if(MoveVector() != Vector3.zero)
+        if(MoveVector() != Vector3.zero && !interacting)
         {
             Moving();
         }
@@ -218,20 +245,12 @@ public class CharacterController : MonoBehaviour
         {
             moveDir = moveDir * gradualForce * AirMultiplier(airMultiplier);
             rb.AddForce(moveDir);
-            debugMoveDir = moveDir;
-            debugDirVel = dirVel;
         }
         else
         {
             // Can be removed, but useful for determening if we apply too much force
-            Debug.Log("over max speed: " + (dirVel - maxSpeed));
+            //Debug.Log("over max speed: " + (dirVel - maxSpeed));
         }
-
-        // Remove or make debug variables if we want to see them in the inspector
-        
-        debugMoveInput = MoveVector();
-        debugMoveInput = Quaternion.AngleAxis(cameraHolder.rotation.eulerAngles.y, Vector3.up) * debugMoveInput;
-        debugMoveInput.Normalize();
     }
 
     // Small method to calculate counter movement direction
@@ -399,26 +418,8 @@ public class CharacterController : MonoBehaviour
         cameraPivotTransform.localRotation = targetRotation;
     }
 
-    private void HandleHeadBobbing(Vector3 motion)
-    {
-        cameraTransform.localPosition += motion;
-    }
+    
 
-    private Vector3 FootStepMotion()
-    {
-        Vector3 pos = Vector3.zero;
-        pos.y += Mathf.Sin(Time.time * HbFrequency) * HbAmplitude;
-        pos.x += Mathf.Cos(Time.time * HbFrequency / 2.0f) * HbAmplitude * 2.0f;
-        return pos;
-    }
-
-    private void ResetHeadPosition()
-    {
-        if(cameraTransform.localPosition != HbStartPos)
-        {
-            cameraTransform.localPosition = Vector3.Lerp(cameraTransform.localPosition, HbStartPos, Time.deltaTime * 1f);
-        }
-    }
         
     private void InstantiateCharacterSize()
     {
@@ -439,25 +440,5 @@ public class CharacterController : MonoBehaviour
     {
         //InstantiateCharacterSize();
 
-    }
-
-    private void OnDrawGizmos()
-    {
-        
-        /*
-        Gizmos.DrawSphere(transform.position + checkerPosition, checkerRadius);
-        */
-        if (rb.velocity.magnitude > 0.1f)
-        {
-            storedRBVel = rb.velocity;
-        }
-        Gizmos.color = Color.Lerp(Color.yellow, Color.red, debugDirVel / maxSpeed);
-        Gizmos.DrawLine(transform.position, transform.position + storedRBVel);
-
-        Gizmos.color = Color.green;
-        Gizmos.DrawLine(transform.position, transform.position + debugMoveDir);
-
-        Gizmos.color = Color.red;
-        Gizmos.DrawLine(transform.position, transform.position + debugMoveInput * 1.5f);
     }
 }

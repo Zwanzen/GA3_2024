@@ -10,18 +10,23 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Rigidbody))]
 public class NPCInteraction : MonoBehaviour
 {
+    [Header("Player")]
+    [SerializeField] private PlayerController player;
+
+    [Space(10)]
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialogueUI;
     [SerializeField] private GameObject dialogueChoicesUI;
     [SerializeField] private GameObject[] choiceButtons;
-    [Space(5)]
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private TextMeshProUGUI continueText;
+    [SerializeField] private TextMeshProUGUI interactText;
+
 
     [Space(10)]
     [Header("Dialogue")]
-    [SerializeField] private Dialogue dialogue;
+    [SerializeField] public Dialogue dialogue;
 
     [Space(10)]
     public bool canClick = false;
@@ -29,6 +34,8 @@ public class NPCInteraction : MonoBehaviour
     //Private variables
     private const string interactTag = "NPC";
     private Queue<string> dialogueLines;
+    private bool canInteract = false;
+
 
     // Function that makes sure the object has the correct tag.
     private void SetTag()
@@ -51,11 +58,18 @@ public class NPCInteraction : MonoBehaviour
     private void Start()
     {
         dialogueLines = new Queue<string>();
-        StartDialogue(dialogue);
+        interactText.text = "Press E to interact with " + dialogue._name;
     }
 
     private void Update()
     {
+        if (canInteract && Input.GetKeyDown(KeyCode.E))
+        {
+            StartDialogue();
+            canInteract = false;
+            interactText.gameObject.SetActive(false);
+        }
+
         if (Input.GetMouseButtonDown(0) && canClick)
         {
             DisplayNextLine();
@@ -63,8 +77,9 @@ public class NPCInteraction : MonoBehaviour
     }
 
 
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue()
     {
+        player.ToggleInteraction(true, transform);
         canClick = true;
         dialogueLines.Clear();
         dialogueUI.SetActive(true);
@@ -112,6 +127,7 @@ public class NPCInteraction : MonoBehaviour
     {
         dialogueUI.SetActive(false);
         dialogueChoicesUI.SetActive(false);
+        player.ToggleInteraction(false, transform);
     }
 
     private void StartChoices()
@@ -147,6 +163,26 @@ public class NPCInteraction : MonoBehaviour
     public void SelectedChoice(int choice)
     {
         dialogue = dialogue.choices[choice];
-        StartDialogue(dialogue); 
+        StartDialogue(); 
+    }
+
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            interactText.gameObject.SetActive(true);
+            canInteract = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            interactText.gameObject.SetActive(false);
+            canInteract = false;
+        }
     }
 }
