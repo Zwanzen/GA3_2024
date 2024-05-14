@@ -404,7 +404,7 @@ public class PlayerController : MonoBehaviour
     {
         lookAngle += (MouseInputVector().x * lookSpeed);
         pivotAngle -= (MouseInputVector().y * pivotSpeed);
-        pivotAngle = Mathf.Clamp(pivotAngle, -90, 90);
+        pivotAngle = Mathf.Clamp(pivotAngle, -85, 85);
 
         Vector3 rotation = Vector3.zero;
         rotation.y = lookAngle;
