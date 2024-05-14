@@ -630,8 +630,8 @@ MonoBehaviour:
   cameraPivotTransform: {fileID: 1011793306237034860}
   pivotSpeed: 3
   lookSpeed: 3
-  cameraShakeAmplitudeMax: 2
-  cameraShakeFrequencyMax: 2
+  cameraShakeAmplitudeMax: 3
+  cameraShakeFrequencyMax: 3
   cameraHolder: {fileID: 1011793306237034860}
   dialogueUI: {fileID: 4550875705522789396}
   dialogueChoicesUI: {fileID: 3639589219947155328}
