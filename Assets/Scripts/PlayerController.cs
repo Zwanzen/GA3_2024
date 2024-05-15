@@ -215,12 +215,29 @@ public class PlayerController : MonoBehaviour
         if (Physics.Raycast(transform.position, Vector3.down, out hit, characterHeight + stepHeight, groundLayer))
         {
             Vector3 vel = rb.velocity;
-            float relVel = Vector3.Dot(Vector3.down, vel);
+
+            Vector3 otherVel = Vector3.zero;
+            Rigidbody hitBody = hit.rigidbody;
+            if(hitBody != null)
+            {
+                otherVel = hitBody.velocity;
+            }
+
+            float relDirVel = Vector3.Dot(Vector3.down, vel);
+            float otherDirVel = Vector3.Dot(Vector3.down, otherVel);
+
+            float relVel = relDirVel - otherDirVel;
 
             float x = hit.distance - characterHeight;
 
             float springForce = (x * springStrenght) - (relVel * springDampener);
             rb.AddForce(Vector3.down * springForce);
+
+            // Add force to the hit rigidbody
+            if (hitBody != null)
+            {
+                hitBody.AddForceAtPosition(Vector3.up * springForce, hit.point);
+            }
         }
     }
 

@@ -53,13 +53,6 @@ public class NPCInteraction : MonoBehaviour
         transform.tag = interactTag;
     }
 
-    // Function that sets the tag in editor mode.
-    // This is enough, but still have it in awake as well
-    private void OnValidate()
-    {
-        SetTag();
-    }
-
     private void Awake()
     {
         SetTag();
