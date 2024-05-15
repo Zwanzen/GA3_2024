@@ -7,7 +7,6 @@ public class ExplosionScript : MonoBehaviour
 {
     [SerializeField]
     private float explosionForce = 10f;
-    private SphereCollider collider;
 
     private void Update()
     {

@@ -1808,7 +1808,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!135 &1949521559
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1907,7 +1907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 417603c59a1aa7846a6eb109568bcf63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionForce: 250
+  explosionForce: 400
 --- !u!1001 &3865744241959516387
 PrefabInstance:
   m_ObjectHideFlags: 0
