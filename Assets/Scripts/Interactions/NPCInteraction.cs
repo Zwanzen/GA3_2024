@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-[RequireComponent(typeof(Collider))]
+[RequireComponent(typeof(SphereCollider))]
 [RequireComponent(typeof(Rigidbody))]
 public class NPCInteraction : MonoBehaviour
 {
@@ -41,6 +41,8 @@ public class NPCInteraction : MonoBehaviour
     private const string interactTag = "NPC";
     private Queue<string> dialogueLines;
     private bool canInteract = false;
+    private float triggerDistance = 2f;
+
 
 
     // Function that makes sure the object has the correct tag.
@@ -66,6 +68,7 @@ public class NPCInteraction : MonoBehaviour
     {
         dialogueLines = new Queue<string>();
         interactText.text = "Press E to interact with " + dialogue._name;
+        triggerDistance = GetComponent<SphereCollider>().radius;
     }
 
     private void Update()
@@ -123,11 +126,23 @@ public class NPCInteraction : MonoBehaviour
         }
 
         string line = dialogueLines.Dequeue();
-        dialogueText.text = line;
+        StopAllCoroutines();
+        StartCoroutine(TypeLine(line));
 
-        if(dialogueLines.Count == 0 && dialogue.choices.Length == 0)
+        if (dialogueLines.Count == 0 && dialogue.choices.Length == 0)
         {
             continueText.text = "End Conversation";
+        }
+    }
+
+    IEnumerator TypeLine(string line)
+    {
+        dialogueText.text = "";
+        foreach (char letter in line.ToCharArray())
+        {
+            dialogueText.text += letter;
+            // Make this a variable with a range probably
+            yield return new WaitForSeconds(0.025f);
         }
     }
 
@@ -136,6 +151,11 @@ public class NPCInteraction : MonoBehaviour
         dialogueUI.SetActive(false);
         dialogueChoicesUI.SetActive(false);
         player.ToggleInteraction(false, transform);
+        if(triggerDistance <= Vector3.Distance(player.transform.position, transform.position))
+        {
+            canInteract = true;
+            interactText.gameObject.SetActive(true);
+        }
     }
 
     private void StartChoices()

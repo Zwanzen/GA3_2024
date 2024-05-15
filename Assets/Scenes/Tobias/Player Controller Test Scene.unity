@@ -794,6 +794,11 @@ PrefabInstance:
       propertyPath: lookAtPosition
       value: 
       objectReference: {fileID: 843261445}
+    - target: {fileID: 2860385500016668888, guid: d6e3071e55435654c826fc167d43cdc0,
+        type: 3}
+      propertyPath: distanceToInteract
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4771824451011321781, guid: d6e3071e55435654c826fc167d43cdc0,
         type: 3}
       propertyPath: m_Name
@@ -1881,6 +1886,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 271235593288997931, guid: af34b6ac3637bb54994d5bf8c72a12c7,
+        type: 3}
+      propertyPath: cameraShakeAmplitudeMax
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 271235593288997931, guid: af34b6ac3637bb54994d5bf8c72a12c7,
+        type: 3}
+      propertyPath: cameraShakeFrequencyMax
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1574528202618130735, guid: af34b6ac3637bb54994d5bf8c72a12c7,
         type: 3}
       propertyPath: m_Name
