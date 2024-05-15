@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    #region References and Variables
     [Space(20)]
     [Header("Character Size Variables")]
     [SerializeField, Range(0.0f, 2.0f)]
@@ -119,9 +120,10 @@ public class PlayerController : MonoBehaviour
     private TextMeshProUGUI stopForceText;
     [SerializeField]
     private TextMeshProUGUI magText;
-    
 
+    #endregion
 
+    #region Runtime Functions
     private void Awake()
     {
         InstantiateCharacterSize();
@@ -156,41 +158,9 @@ public class PlayerController : MonoBehaviour
     {
         HandleMovement();
     }
+    #endregion
 
-    public void ToggleInteraction(bool _int, Transform lookAt)
-    {
-        if(_int)
-        {
-            Cursor.lockState = CursorLockMode.None;
-            interacting = true;
-            cinCamera.LookAt = lookAt;
-        }
-        else
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            cinCamera.LookAt = aimPoint;
-            interacting = false;
-        }
-    }
-
-    private void HandleCameraShake()
-    {
-        // Get values for shake amplitude and frequency based on current speed
-        float shakeAmplitude = Mathf.Lerp(1, cameraShakeAmplitudeMax, rb.velocity.magnitude / (maxSpeed * 2));
-        float shakeFrequency = Mathf.Lerp(1, cameraShakeFrequencyMax, rb.velocity.magnitude / (maxSpeed * 2));
-
-        // Set the shake values to the camera
-        cinCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = shakeAmplitude;
-        cinCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = shakeFrequency;
-    }
-
-    private Vector3 MoveVector()
-    {
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveZ = Input.GetAxisRaw("Vertical");
-
-        return new Vector3(moveX, 0, moveZ);
-    }
+    #region Movement and Rotation
 
     private void HandleMovement()
     {
@@ -387,50 +357,6 @@ public class PlayerController : MonoBehaviour
         canJump = false;
     }
 
-    private Vector3 GetSurfaceNormal()
-    {
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, characterHeight + (characterHeight * 0.1f), groundLayer))
-        {
-            return hit.normal;
-        }
-
-        return Vector3.up; // Default to returning upward direction if no surface is found
-    }
-
-    private bool IsGrounded()
-    {
-        if(Physics.Raycast(transform.position, Vector3.down, characterHeight + (characterHeight * 0.1f), groundLayer))
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
-
-    //Find Better Name
-    private float AirMultiplier(float multiplier)
-    {
-        if(IsGrounded())
-        {
-            return 1;
-        }
-        else
-        {
-            return multiplier;
-        }
-    }
-
-    private Vector3 MouseInputVector()
-    {
-        var mouseY = Input.GetAxis("Mouse Y");
-        var mouseX = Input.GetAxis("Mouse X");
-
-        return new Vector3(mouseX, mouseY, 0);
-    }
-
     private void HandleRotation()
     {
         lookAngle += (MouseInputVector().x * lookSpeed);
@@ -449,9 +375,97 @@ public class PlayerController : MonoBehaviour
         cameraPivotTransform.localRotation = targetRotation;
     }
 
-    
+    #endregion
 
-        
+    #region Variable Methods
+
+    private Vector3 MoveVector()
+    {
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveZ = Input.GetAxisRaw("Vertical");
+
+        return new Vector3(moveX, 0, moveZ);
+    }
+
+    private Vector3 GetSurfaceNormal()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, characterHeight + (characterHeight * 0.1f), groundLayer))
+        {
+            return hit.normal;
+        }
+
+        return Vector3.up; // Default to returning upward direction if no surface is found
+    }
+
+    private bool IsGrounded()
+    {
+        if (Physics.Raycast(transform.position, Vector3.down, characterHeight + (characterHeight * 0.1f), groundLayer))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    //Find Better Name
+    private float AirMultiplier(float multiplier)
+    {
+        if (IsGrounded())
+        {
+            return 1;
+        }
+        else
+        {
+            return multiplier;
+        }
+    }
+
+    private Vector3 MouseInputVector()
+    {
+        var mouseY = Input.GetAxis("Mouse Y");
+        var mouseX = Input.GetAxis("Mouse X");
+
+        return new Vector3(mouseX, mouseY, 0);
+    }
+
+    #endregion
+
+    #region Sound Systems
+
+
+    #endregion
+
+    #region Other Functions
+    public void ToggleInteraction(bool _int, Transform lookAt)
+    {
+        if (_int)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            interacting = true;
+            cinCamera.LookAt = lookAt;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            cinCamera.LookAt = aimPoint;
+            interacting = false;
+        }
+    }
+
+    private void HandleCameraShake()
+    {
+        // Get values for shake amplitude and frequency based on current speed
+        float shakeAmplitude = Mathf.Lerp(1, cameraShakeAmplitudeMax, rb.velocity.magnitude / (maxSpeed * 2));
+        float shakeFrequency = Mathf.Lerp(1, cameraShakeFrequencyMax, rb.velocity.magnitude / (maxSpeed * 2));
+
+        // Set the shake values to the camera
+        cinCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = shakeAmplitude;
+        cinCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = shakeFrequency;
+    }
+
     private void InstantiateCharacterSize()
     {
         RaycastHit hit;
@@ -467,9 +481,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    private void OnValidate()
-    {
-        //InstantiateCharacterSize();
+    #endregion
 
-    }
+
 }

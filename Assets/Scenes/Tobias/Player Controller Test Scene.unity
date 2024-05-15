@@ -409,7 +409,7 @@ GameObject:
   - component: {fileID: 264139253}
   - component: {fileID: 264139255}
   - component: {fileID: 264139256}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: NPC
   m_Icon: {fileID: 0}
@@ -475,8 +475,8 @@ Transform:
   m_GameObject: {fileID: 264139248}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.61, y: 1.21, z: 6.89}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.75, y: 1.21, z: 1.08}
+  m_LocalScale: {x: 2.2905, y: 0.28584415, z: 2.2905}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -529,27 +529,30 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!135 &264139256
-SphereCollider:
+--- !u!145 &264139256
+SpringJoint:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 264139248}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 2.38
-  m_Center: {x: 0, y: 0, z: 0}
+  m_ConnectedBody: {fileID: 0}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 3.6, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 2.3, z: 0}
+  serializedVersion: 2
+  m_Spring: 20
+  m_Damper: 5
+  m_MinDistance: 0
+  m_MaxDistance: 0
+  m_Tolerance: 0.025
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!114 &648914289 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 271235593288997931, guid: af34b6ac3637bb54994d5bf8c72a12c7,
