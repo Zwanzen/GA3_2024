@@ -99,10 +99,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private TextMeshProUGUI continueText;
     [SerializeField] private TextMeshProUGUI interactText;
+    [SerializeField] private Animator anim;
 
     public void InitializeNPC(NPCInteraction npc)
     {
-        npc.Initialize(dialogueUI, dialogueChoicesUI, choiceButtons, nameText, dialogueText, continueText, interactText);
+        npc.Initialize(dialogueUI, dialogueChoicesUI, choiceButtons, nameText, dialogueText, continueText, interactText, anim);
     }
 
     bool interacting;

@@ -24,7 +24,7 @@ public class NPCInteraction : MonoBehaviour
      private TextMeshProUGUI interactText;
 
     public void Initialize(GameObject _dialogueUI, GameObject _dialogueChoicesUI, GameObject[] _choiceButtons,
-        TextMeshProUGUI _nameText, TextMeshProUGUI _dialogueText, TextMeshProUGUI _continueText, TextMeshProUGUI _interactText)
+        TextMeshProUGUI _nameText, TextMeshProUGUI _dialogueText, TextMeshProUGUI _continueText, TextMeshProUGUI _interactText, Animator _anim)
     {
         dialogueUI = _dialogueUI;
         dialogueChoicesUI = _dialogueChoicesUI;
@@ -33,6 +33,7 @@ public class NPCInteraction : MonoBehaviour
         dialogueText = _dialogueText;
         continueText = _continueText;
         interactText = _interactText;
+        anim = _anim;
     }
 
     private bool canClick = false;
@@ -42,6 +43,7 @@ public class NPCInteraction : MonoBehaviour
     private Queue<string> dialogueLines;
     private bool canInteract = false;
     private float triggerDistance = 2f;
+    private Animator anim;
 
 
 
@@ -69,6 +71,7 @@ public class NPCInteraction : MonoBehaviour
         dialogueLines = new Queue<string>();
         interactText.text = "Press E to interact with " + dialogue._name;
         triggerDistance = GetComponent<SphereCollider>().radius;
+        anim.Play("Close", 0, 1f);
     }
 
     private void Update()
@@ -89,6 +92,7 @@ public class NPCInteraction : MonoBehaviour
 
     public void StartDialogue()
     {
+        anim.SetBool("Open", true);
         player.ToggleInteraction(true, lookAtPosition);
         canClick = true;
         dialogueLines.Clear();
@@ -151,7 +155,8 @@ public class NPCInteraction : MonoBehaviour
         dialogueUI.SetActive(false);
         dialogueChoicesUI.SetActive(false);
         player.ToggleInteraction(false, transform);
-        if(triggerDistance <= Vector3.Distance(player.transform.position, transform.position))
+        anim.SetBool("Open", false);
+        if (triggerDistance >= Vector3.Distance(player.transform.position, transform.position))
         {
             canInteract = true;
             interactText.gameObject.SetActive(true);
