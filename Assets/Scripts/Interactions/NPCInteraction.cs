@@ -85,10 +85,10 @@ public class NPCInteraction : MonoBehaviour
 
     public void StartDialogue()
     {
+        dialogueLines.Clear();
         anim.SetBool("Open", true);
         player.ToggleInteraction(true, lookAtPosition);
         canClick = true;
-        dialogueLines.Clear();
         dialogueUI.SetActive(true);
         dialogueChoicesUI.SetActive(false);
         continueText.text = "Click to continue...";
