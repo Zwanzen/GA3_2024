@@ -67,6 +67,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6358
+--- !u!114 &-8165663748966289430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Looping/FX - Energy Port
+  m_EditorClassIdentifier: 
+  Path: event:/Props Looping/FX - Energy Port
+  Guid:
+    Data1: -367977858
+    Data2: 1268336819
+    Data3: -1756016
+    Data4: 861209279
+  Banks:
+  - {fileID: 1035693365860309677}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -2710514217155292422}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6358
 --- !u!114 &-8147985588696739636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,6 +134,30 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/FX - Machine Manufacturing (Loop)/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3871982834
+    data2: 2785124848
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-7847094403204634858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FX - Map Table/Occlusion
   m_EditorClassIdentifier: 
   Name: Occlusion
   StudioPath: 
@@ -896,7 +948,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/General Ambience.bank
   Name: General Ambience
   StudioPath: bank:/General Ambience
-  lastModified: 638483563037778317
+  lastModified: 638483549418235676
   FileSizes:
   - Name: Desktop
     Value: 1549920
@@ -1013,6 +1065,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 10
   Length: 8343
+--- !u!114 &-2710514217155292422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FX - Energy Port/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3871982834
+    data2: 2785124848
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-2660899257330515050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1079,7 +1155,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Props Interaction.bank
   Name: Props Interaction
   StudioPath: bank:/Props Interaction
-  lastModified: 638510283211995117
+  lastModified: 638498611211545770
   FileSizes:
   - Name: Desktop
     Value: 777792
@@ -1279,7 +1355,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638483563038274147
+  lastModified: 638483549419151019
   FileSizes:
   - Name: Desktop
     Value: 6181760
@@ -1624,12 +1700,14 @@ MonoBehaviour:
   - {fileID: -2774838947033018602}
   - {fileID: 5063809657522417592}
   - {fileID: 8987534389315063945}
+  - {fileID: -8165663748966289430}
+  - {fileID: 2205169621531399682}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4677152490814659433}
   StringsBanks:
   - {fileID: 4038073233029663505}
-  cacheTime: 638510283211995117
+  cacheTime: 638516528911787104
   cacheVersion: 131617
 --- !u!114 &152564166377372431
 MonoBehaviour:
@@ -1722,10 +1800,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank
   Name: Prop Ambience
   StudioPath: bank:/Prop Ambience
-  lastModified: 638510283211965482
+  lastModified: 638516528911787104
   FileSizes:
   - Name: Desktop
-    Value: 2360192
+    Value: 2364544
   Exists: 1
 --- !u!114 &1065810116750121637
 MonoBehaviour:
@@ -1829,6 +1907,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 215536
+--- !u!114 &2205169621531399682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Looping/FX - Map Table
+  m_EditorClassIdentifier: 
+  Path: event:/Props Looping/FX - Map Table
+  Guid:
+    Data1: -864031263
+    Data2: 1161796710
+    Data3: -1045160807
+    Data4: -2047447649
+  Banks:
+  - {fileID: 1035693365860309677}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -7847094403204634858}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 39191
 --- !u!114 &2221350478494026718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2135,10 +2241,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638510283211865462
+  lastModified: 638516528911170123
   FileSizes:
   - Name: Desktop
-    Value: 3106
+    Value: 3210
   Exists: 1
 --- !u!114 &4333845490033308509
 MonoBehaviour:
@@ -2233,7 +2339,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638481922462125059
+  lastModified: 638516528911150173
   FileSizes:
   - Name: Desktop
     Value: 670
