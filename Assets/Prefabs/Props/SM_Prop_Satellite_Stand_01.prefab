@@ -581,11 +581,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectAudio:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1325142811
+      Data2: 1219267547
+      Data3: 241167796
+      Data4: -91010305
+    Path: event:/Props Looping/FX - Machine Looping Frequency
   SoundOcclusionWidening: 1
   PlayerOcclusionWidening: 1
   OcclusionLayer:

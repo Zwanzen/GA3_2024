@@ -154,11 +154,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectAudio:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -864031263
+      Data2: 1161796710
+      Data3: -1045160807
+      Data4: -2047447649
+    Path: event:/Props Looping/FX - Map Table
   SoundOcclusionWidening: 1
   PlayerOcclusionWidening: 1
   OcclusionLayer:

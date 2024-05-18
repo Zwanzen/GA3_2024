@@ -153,11 +153,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectAudio:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -367977858
+      Data2: 1268336819
+      Data3: -1756016
+      Data4: 861209279
+    Path: event:/Props Looping/FX - Energy Port
   SoundOcclusionWidening: 0.3
   PlayerOcclusionWidening: 1
   OcclusionLayer:
