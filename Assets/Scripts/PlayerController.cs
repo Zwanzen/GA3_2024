@@ -649,7 +649,6 @@ public class PlayerController : MonoBehaviour
             {
                 // Calculate the fall distance to determine falling sound intensity
                 float fallDistance = fallFromPosition.y - transform.position.y;
-                Debug.Log(fallDistance);
 
                 // Stops it from playing landing sound when crouching
                 if (fallDistance > 0.2f)
