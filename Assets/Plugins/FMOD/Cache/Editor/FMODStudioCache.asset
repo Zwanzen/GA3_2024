@@ -975,7 +975,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/General Ambience.bank
   Name: General Ambience
   StudioPath: bank:/General Ambience
-  lastModified: 638483549418235676
+  lastModified: 638483563037778317
   FileSizes:
   - Name: Desktop
     Value: 1549920
@@ -1182,7 +1182,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Props Interaction.bank
   Name: Props Interaction
   StudioPath: bank:/Props Interaction
-  lastModified: 638498611211545770
+  lastModified: 638510283211995117
   FileSizes:
   - Name: Desktop
     Value: 777792
@@ -1382,7 +1382,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638483549419151019
+  lastModified: 638483563038274147
   FileSizes:
   - Name: Desktop
     Value: 6181760
@@ -1790,7 +1790,7 @@ MonoBehaviour:
   - {fileID: 4677152490814659433}
   StringsBanks:
   - {fileID: 4038073233029663505}
-  cacheTime: 638517382529698134
+  cacheTime: 638517384891374948
   cacheVersion: 131617
 --- !u!114 &152564166377372431
 MonoBehaviour:
@@ -1883,7 +1883,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank
   Name: Prop Ambience
   StudioPath: bank:/Prop Ambience
-  lastModified: 638516528911787104
+  lastModified: 638516782559220047
   FileSizes:
   - Name: Desktop
     Value: 2364544
@@ -2137,7 +2137,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Footsteps.bank
   Name: Footsteps
   StudioPath: bank:/Footsteps
-  lastModified: 638517382529698134
+  lastModified: 638517384891374948
   FileSizes:
   - Name: Desktop
     Value: 82816
@@ -2371,7 +2371,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638517360448330392
+  lastModified: 638517366642316432
   FileSizes:
   - Name: Desktop
     Value: 3460
@@ -2469,7 +2469,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638517360448309792
+  lastModified: 638481922462125059
   FileSizes:
   - Name: Desktop
     Value: 670
