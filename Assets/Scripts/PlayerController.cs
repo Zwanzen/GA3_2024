@@ -1,8 +1,10 @@
 using Cinemachine;
+using Cinemachine.Utility;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -118,6 +120,18 @@ public class PlayerController : MonoBehaviour
     public Rigidbody rb;
 
     [Space(20)]
+    [Header("Sound")]
+    [SerializeField]
+    private FMODUnity.StudioEventEmitter footstepEmitter;
+    [SerializeField]
+    private FMODUnity.StudioEventEmitter landingEmitter;
+
+    private float footstepTimer;
+    private Vector3 lastPosition;
+    private Vector3 fallFromPosition;
+    private bool falling;
+
+    [Space(20)]
     [Header("Debugging")]
     [SerializeField]
     private TextMeshProUGUI moveForceText;
@@ -150,6 +164,9 @@ public class PlayerController : MonoBehaviour
             CheckForInteractable();
         }   
         HandleCameraShake();
+        HandleFootsteps();
+        HandleLandingSound();
+
     }
 
     public void LateUpdate()
@@ -450,6 +467,19 @@ public class PlayerController : MonoBehaviour
         return new Vector3(mouseX, mouseY, 0);
     }
 
+    // Could be implemented in many functions using raycasts
+    // Also modifiable
+    private RaycastHit RaycastGround()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, characterHeight + (characterHeight * 0.1f), groundLayer))
+        {
+            return hit;
+        }
+
+        return hit;
+    }
+
     #endregion
 
     #region Interactions
@@ -548,6 +578,62 @@ public class PlayerController : MonoBehaviour
 
     #region Sound Systems
 
+    private void HandleFootsteps()
+    {
+        if(IsGrounded() && MoveVector() != Vector3.zero)
+        {
+            // Place the footstep emitter at the position of our feet
+            // This would make more sense if i could fully develope the player controller
+            RaycastHit hit = RaycastGround();
+            if(hit.point != Vector3.zero)
+            {
+                footstepEmitter.transform.position = hit.point;
+            }
+
+            // Then decide if we can play the footstep sound
+            footstepTimer += Time.deltaTime;
+            if (footstepTimer >= 0.5f)
+            {
+                footstepEmitter.Play();
+                footstepTimer = 0;
+            }
+        }
+        else
+        {
+            //footstepTimer = 0;
+        }
+    }
+
+    private void HandleLandingSound()
+    {
+        // Check if we are moving negative in the y direction
+        if(rb.velocity.y < 0 && !IsGrounded())
+        {
+            // If we just started falling, save the position
+            if (!falling)
+            {
+                fallFromPosition = transform.position;
+            }
+            falling = true;
+        }
+        else
+        {
+            // If we were falling, play the landing sound
+            if (falling)
+            {
+                float fallDistance = fallFromPosition.y - transform.position.y;
+                Debug.Log(fallDistance);
+
+                RaycastHit hit = RaycastGround();
+                if (hit.point != Vector3.zero && fallDistance > 0.5f)
+                {
+                    landingEmitter.transform.position = hit.point;
+                    landingEmitter.Play();
+                }
+            }
+            falling = false;
+        }
+    }
 
     #endregion
 
