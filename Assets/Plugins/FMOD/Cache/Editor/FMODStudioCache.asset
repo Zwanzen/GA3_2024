@@ -1709,7 +1709,7 @@ MonoBehaviour:
   - {fileID: 4677152490814659433}
   StringsBanks:
   - {fileID: 4038073233029663505}
-  cacheTime: 638517233060737511
+  cacheTime: 638517319528983253
   cacheVersion: 131617
 --- !u!114 &152564166377372431
 MonoBehaviour:
@@ -2056,7 +2056,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Footsteps.bank
   Name: Footsteps
   StudioPath: bank:/Footsteps
-  lastModified: 638517233060737511
+  lastModified: 638517319528983253
   FileSizes:
   - Name: Desktop
     Value: 33888
@@ -2518,7 +2518,7 @@ MonoBehaviour:
   - {fileID: 2692854920856646400}
   IsStream: 0
   Is3D: 1
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 8
