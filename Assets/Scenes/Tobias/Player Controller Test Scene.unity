@@ -2055,10 +2055,35 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 271235593288997931, guid: af34b6ac3637bb54994d5bf8c72a12c7,
+        type: 3}
+      propertyPath: maxFallDistance
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1574528202618130735, guid: af34b6ac3637bb54994d5bf8c72a12c7,
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723808018977227250, guid: af34b6ac3637bb54994d5bf8c72a12c7,
+        type: 3}
+      propertyPath: PlayEvent
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723808018977227250, guid: af34b6ac3637bb54994d5bf8c72a12c7,
+        type: 3}
+      propertyPath: Params.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723808018977227250, guid: af34b6ac3637bb54994d5bf8c72a12c7,
+        type: 3}
+      propertyPath: OverrideAttenuation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723808018977227250, guid: af34b6ac3637bb54994d5bf8c72a12c7,
+        type: 3}
+      propertyPath: Params.Array.data[0].Value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5175552802822892771, guid: af34b6ac3637bb54994d5bf8c72a12c7,
         type: 3}
