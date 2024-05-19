@@ -551,10 +551,12 @@ public class PlayerController : MonoBehaviour
 
         if (npcLookAt != null)
         {
-
-            interactText.gameObject.SetActive(true);
-            interactText.text = "Press E to interact with " + npcLookAt.GetComponent<NPCInteraction>().dialogue._name;
-            npcLookAt.GetComponent<NPCInteraction>().canInteract = true;
+            if (!npcLookAt.GetComponent<NPCInteraction>().endedDialogue)
+            {
+                interactText.gameObject.SetActive(true);
+                interactText.text = "Press E to interact with " + npcLookAt.GetComponent<NPCInteraction>().dialogue._name;
+                npcLookAt.GetComponent<NPCInteraction>().canInteract = true;
+            }
         }
 
     }

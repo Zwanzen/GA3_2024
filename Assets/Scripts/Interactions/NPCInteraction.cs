@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 
@@ -14,6 +15,10 @@ public class NPCInteraction : MonoBehaviour
     [SerializeField] private PlayerController player;
     [SerializeField] public Dialogue dialogue;
     [SerializeField] private Transform lookAtPosition;
+
+    [Space(20)]
+    [Header("End Interaction Event")]
+    public UnityEvent endInteractionEvent;
 
     private GameObject dialogueUI;
      private GameObject dialogueChoicesUI;
@@ -36,6 +41,7 @@ public class NPCInteraction : MonoBehaviour
         anim = _anim;
     }
 
+    public bool endedDialogue = false; 
     private bool canClick = false;
 
     //Private variables
@@ -147,6 +153,8 @@ public class NPCInteraction : MonoBehaviour
         player.ToggleInteraction(false, transform);
         anim.SetBool("Open", false);
         canClick = false;
+        endedDialogue = true;
+        endInteractionEvent.Invoke();
     }
 
     private void StartChoices()
