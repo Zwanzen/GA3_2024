@@ -1,6 +1,4 @@
 using Cinemachine;
-using FMOD.Studio;
-using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -89,8 +87,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float cameraShakeFrequencyMax = 2f;
     public Transform cameraHolder;
-    [SerializeField]
-    private float maxTilt = 10.0f;
 
 
     private float lookAngle;
@@ -123,16 +119,11 @@ public class PlayerController : MonoBehaviour
     [Space(20)]
     [Header("Sound")]
     [SerializeField]
-    private StudioEventEmitter footstepEmitter;
+    private FMODUnity.StudioEventEmitter footstepEmitter;
     [SerializeField]
-    private StudioEventEmitter landingEmitter;
+    private FMODUnity.StudioEventEmitter landingEmitter;
     [SerializeField]
-    private StudioEventEmitter jumpEmitter;
-    [SerializeField]
-    private EventReference SelectJumpAudio;
-    private EventInstance jumpAudio;
-    [SerializeField]
-    float maxFallDistance = 2.0f;
+    private FMODUnity.StudioEventEmitter jumpEmitter;
 
     private float footstepTimer;
     private Vector3 lastPosition;
@@ -161,10 +152,6 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
-
-
-        jumpAudio = RuntimeManager.CreateInstance(SelectJumpAudio);
-        RuntimeManager.AttachInstanceToGameObject(jumpAudio, landingEmitter.transform);
     }
 
     // Update is called once per frame
@@ -178,7 +165,7 @@ public class PlayerController : MonoBehaviour
         HandleCameraShake();
         HandleFootsteps();
         HandleLandingSound();
-        HandleCameraTilt();
+
     }
 
     public void LateUpdate()
@@ -637,6 +624,7 @@ public class PlayerController : MonoBehaviour
             {
                 // Calculate the fall distance to determine falling sound intensity
                 float fallDistance = fallFromPosition.y - transform.position.y;
+                Debug.Log(fallDistance);
 
                 // Place the landing emitter at the position of our feet
                 RaycastHit hit = RaycastGround();
@@ -646,13 +634,9 @@ public class PlayerController : MonoBehaviour
                 }
 
                 // Set the intensity, and play the landing sound
-                // FMOD IS WEIRD
-                float lerpedDistance = Mathf.Lerp(0.5f, 0.9f, fallDistance/maxFallDistance);
-                Debug.Log(lerpedDistance);
-                RuntimeManager.AttachInstanceToGameObject(jumpAudio, landingEmitter.transform);
-                jumpAudio.setParameterByName("FallHeight", lerpedDistance);
-                jumpAudio.start();
-
+                fallDistance = Mathf.Lerp(0, 1, fallDistance/2);
+                landingEmitter.SetParameter("FallHeight", fallDistance);
+                landingEmitter.Play();
             }
             else
             {
@@ -682,23 +666,6 @@ public class PlayerController : MonoBehaviour
         // Set the shake values to the camera
         cinCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = shakeAmplitude;
         cinCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = shakeFrequency;
-    }
-
-    private void HandleCameraTilt()
-    {
-        float input = Input.GetAxis("Horizontal");
-        if(input > 0)
-        {
-            cinCamera.m_Lens.Dutch = Mathf.Lerp(0, -maxTilt, input);
-        }else if (input < 0)
-        {
-            cinCamera.m_Lens.Dutch = Mathf.Lerp(0, maxTilt, input * -1);
-        }
-        else
-        {
-            cinCamera.m_Lens.Dutch = 0;
-        }
-
     }
 
     private void InstantiateCharacterSize()

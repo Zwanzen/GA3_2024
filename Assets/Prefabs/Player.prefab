@@ -635,7 +635,6 @@ MonoBehaviour:
   cameraShakeAmplitudeMax: 2.5
   cameraShakeFrequencyMax: 2.5
   cameraHolder: {fileID: 1011793306237034860}
-  maxTilt: 5
   npcLookAt: {fileID: 0}
   dialogueUI: {fileID: 4550875705522789396}
   dialogueChoicesUI: {fileID: 3639589219947155328}
@@ -653,14 +652,6 @@ MonoBehaviour:
   footstepEmitter: {fileID: 5470973914634796981}
   landingEmitter: {fileID: 2723808018977227250}
   jumpEmitter: {fileID: 7270091383882970005}
-  SelectJumpAudio:
-    Guid:
-      Data1: 328929476
-      Data2: 1317440469
-      Data3: -647354182
-      Data4: 654993199
-    Path: event:/Characters/Footsteps/Footsteps Landing
-  maxFallDistance: 2
   moveForceText: {fileID: 0}
   stopForceText: {fileID: 0}
   magText: {fileID: 0}
@@ -1307,7 +1298,9 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   AllowNonRigidbodyDoppler: 0
-  Params: []
+  Params:
+  - Name: FallHeight
+    Value: 0
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 8
