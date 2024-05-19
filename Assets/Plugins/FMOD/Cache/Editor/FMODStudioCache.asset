@@ -948,7 +948,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/General Ambience.bank
   Name: General Ambience
   StudioPath: bank:/General Ambience
-  lastModified: 638483563037778317
+  lastModified: 638483549418235676
   FileSizes:
   - Name: Desktop
     Value: 1549920
@@ -1155,7 +1155,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Props Interaction.bank
   Name: Props Interaction
   StudioPath: bank:/Props Interaction
-  lastModified: 638510283211995117
+  lastModified: 638498611211545770
   FileSizes:
   - Name: Desktop
     Value: 777792
@@ -1355,7 +1355,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638483563038274147
+  lastModified: 638483549419151019
   FileSizes:
   - Name: Desktop
     Value: 6181760
@@ -1655,6 +1655,7 @@ MonoBehaviour:
   - {fileID: -2203919514268191177}
   - {fileID: -3154856355711480994}
   - {fileID: -1983535384101858900}
+  - {fileID: 2692854920856646400}
   EditorEvents:
   - {fileID: -3829678978775068134}
   - {fileID: -6007721163422832705}
@@ -1702,12 +1703,13 @@ MonoBehaviour:
   - {fileID: 8987534389315063945}
   - {fileID: -8165663748966289430}
   - {fileID: 2205169621531399682}
+  - {fileID: 6362241881261863319}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4677152490814659433}
   StringsBanks:
   - {fileID: 4038073233029663505}
-  cacheTime: 638516782559220047
+  cacheTime: 638517233060737511
   cacheVersion: 131617
 --- !u!114 &152564166377372431
 MonoBehaviour:
@@ -1800,7 +1802,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank
   Name: Prop Ambience
   StudioPath: bank:/Prop Ambience
-  lastModified: 638516782559220047
+  lastModified: 638516528911787104
   FileSizes:
   - Name: Desktop
     Value: 2364544
@@ -2039,6 +2041,26 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &2692854920856646400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Footsteps.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Footsteps.bank
+  Name: Footsteps
+  StudioPath: bank:/Footsteps
+  lastModified: 638517233060737511
+  FileSizes:
+  - Name: Desktop
+    Value: 33888
+  Exists: 1
 --- !u!114 &3253143317827555472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2241,10 +2263,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638516782558990672
+  lastModified: 638517233059644000
   FileSizes:
   - Name: Desktop
-    Value: 3210
+    Value: 3310
   Exists: 1
 --- !u!114 &4333845490033308509
 MonoBehaviour:
@@ -2339,7 +2361,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638481922462125059
+  lastModified: 638517233059633889
   FileSizes:
   - Name: Desktop
     Value: 670
@@ -2474,6 +2496,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &6362241881261863319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Characters/Footsteps/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Characters/Footsteps/Footsteps
+  Guid:
+    Data1: 1730803828
+    Data2: 1143481866
+    Data3: 1537427077
+    Data4: -54791799
+  Banks:
+  - {fileID: 2692854920856646400}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 8
+  Length: 0
 --- !u!114 &6485215827140894721
 MonoBehaviour:
   m_ObjectHideFlags: 0
