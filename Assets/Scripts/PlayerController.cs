@@ -1,5 +1,7 @@
 using Cinemachine;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 
@@ -93,6 +95,7 @@ public class PlayerController : MonoBehaviour
 
     [Space(20)]
     [Header("Interactions")]
+    [SerializeField] private Transform npcLookAt;
     [SerializeField] private GameObject dialogueUI;
     [SerializeField] private GameObject dialogueChoicesUI;
     [SerializeField] private GameObject[] choiceButtons;
@@ -101,6 +104,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI continueText;
     [SerializeField] private TextMeshProUGUI interactText;
     [SerializeField] private Animator anim;
+
+    private float npcDist;
 
     public void InitializeNPC(NPCInteraction npc)
     {
@@ -142,6 +147,7 @@ public class PlayerController : MonoBehaviour
         if (!interacting)
         {
             HandleRotation();
+            CheckForInteractable();
         }   
         HandleCameraShake();
     }
@@ -341,6 +347,19 @@ public class PlayerController : MonoBehaviour
 
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
 
+            // Add force to the rigidbody below the player when jumping
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, Vector3.down, out hit, characterHeight + stepHeight, groundLayer))
+            {
+                Rigidbody hitBody = hit.rigidbody;
+
+                // Add force to the hit rigidbody
+                if (hitBody != null)
+                {
+                    hitBody.AddForceAtPosition(Vector3.up * jumpForce, hit.point);
+                }
+            }
+
             StartCoroutine(JumpDelay());
         }
     }
@@ -433,12 +452,8 @@ public class PlayerController : MonoBehaviour
 
     #endregion
 
-    #region Sound Systems
+    #region Interactions
 
-
-    #endregion
-
-    #region Other Functions
     public void ToggleInteraction(bool _int, Transform lookAt)
     {
         if (_int)
@@ -454,6 +469,83 @@ public class PlayerController : MonoBehaviour
             interacting = false;
         }
     }
+
+    // Function that checks if player is looking at an interactable object
+    private void CheckForInteractable()
+    {
+
+        Collider[] colliders = Physics.OverlapCapsule(cinCamera.transform.position + (cameraPivotTransform.forward * 0.75f),
+            (cameraPivotTransform.forward * 1.5f) + cinCamera.transform.position, 0.60f);
+
+        List<Collider> npcCollidersList = new List<Collider>();
+
+        foreach (Collider col in colliders)
+        {
+            if (col.CompareTag("NPC"))
+            {
+                npcCollidersList.Add(col);
+            }
+        }
+
+        // Check if collider has npc tag, then find the closest amongst the colliders
+        if (npcCollidersList.Count > 0)
+        {
+            SortClosest(npcCollidersList);
+        }
+        else
+        {
+            npcDist = 0;
+            interactText.gameObject.SetActive(false);
+            if(npcLookAt != null)
+            {
+                npcLookAt.GetComponent<NPCInteraction>().canInteract = false;
+                npcLookAt = null;
+            }
+            return;
+        }
+
+        if(npcLookAt != null)
+        {
+
+            interactText.gameObject.SetActive(true);
+            npcLookAt.GetComponent<NPCInteraction>().canInteract = true;
+        }
+
+    }
+
+    private void SortClosest(List<Collider> _colliders)
+    {
+        foreach (Collider col in _colliders)
+        {
+            if (col.CompareTag("NPC"))
+            {
+                if(npcLookAt == null)
+                {
+                    npcLookAt = col.transform;
+                    npcDist = Vector3.Distance(transform.position, npcLookAt.position);
+                }
+                else
+                {
+                    float dist = Vector3.Distance(transform.position, col.transform.position);
+                    if(dist < npcDist)
+                    {
+                        npcLookAt = col.transform;
+                        npcDist = dist;
+                    }
+                }
+            }
+        }
+    }
+
+
+    #endregion
+
+    #region Sound Systems
+
+
+    #endregion
+
+    #region Other Functions
 
     private void HandleCameraShake()
     {
@@ -482,6 +574,4 @@ public class PlayerController : MonoBehaviour
     }
 
     #endregion
-
-
 }

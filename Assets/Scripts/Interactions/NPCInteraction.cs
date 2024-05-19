@@ -41,8 +41,7 @@ public class NPCInteraction : MonoBehaviour
     //Private variables
     private const string interactTag = "NPC";
     private Queue<string> dialogueLines;
-    private bool canInteract = false;
-    private float triggerDistance = 2f;
+    [HideInInspector] public bool canInteract = false;
     private Animator anim;
 
 
@@ -62,8 +61,6 @@ public class NPCInteraction : MonoBehaviour
     private void Start()
     {
         dialogueLines = new Queue<string>();
-        interactText.text = "Press E to interact with " + dialogue._name;
-        triggerDistance = GetComponent<SphereCollider>().radius;
         anim.Play("Close", 0, 1f);
     }
 
@@ -149,11 +146,7 @@ public class NPCInteraction : MonoBehaviour
         dialogueChoicesUI.SetActive(false);
         player.ToggleInteraction(false, transform);
         anim.SetBool("Open", false);
-        if (triggerDistance >= Vector3.Distance(player.transform.position, transform.position))
-        {
-            canInteract = true;
-            interactText.gameObject.SetActive(true);
-        }
+        canClick = false;
     }
 
     private void StartChoices()
@@ -190,25 +183,5 @@ public class NPCInteraction : MonoBehaviour
     {
         dialogue = dialogue.choices[choice];
         StartDialogue(); 
-    }
-
-
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            interactText.gameObject.SetActive(true);
-            canInteract = true;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            interactText.gameObject.SetActive(false);
-            canInteract = false;
-        }
     }
 }

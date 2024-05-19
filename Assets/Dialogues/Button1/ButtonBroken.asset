@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f96de2a467794424c9da080f8fe7fd1d, type: 3}
   m_Name: ButtonBroken
   m_EditorClassIdentifier: 
-  _name: 
-  dialogueLines: []
+  _name: Button
+  dialogueLines:
+  - '*Broken'
   choices: []
   choiceText: []
