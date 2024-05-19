@@ -490,17 +490,12 @@ public class PlayerController : MonoBehaviour
         // Check if collider has npc tag, then find the closest amongst the colliders
         if (npcCollidersList.Count > 0)
         {
+            ResetClosest();
             SortClosest(npcCollidersList);
         }
         else
         {
-            npcDist = 0;
-            interactText.gameObject.SetActive(false);
-            if(npcLookAt != null)
-            {
-                npcLookAt.GetComponent<NPCInteraction>().canInteract = false;
-                npcLookAt = null;
-            }
+            ResetClosest();
             return;
         }
 
@@ -508,6 +503,7 @@ public class PlayerController : MonoBehaviour
         {
 
             interactText.gameObject.SetActive(true);
+            interactText.text = "Press E to interact with " + npcLookAt.GetComponent<NPCInteraction>().dialogue._name;
             npcLookAt.GetComponent<NPCInteraction>().canInteract = true;
         }
 
@@ -537,6 +533,16 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void ResetClosest()
+    {
+        npcDist = 0;
+        interactText.gameObject.SetActive(false);
+        if (npcLookAt != null)
+        {
+            npcLookAt.GetComponent<NPCInteraction>().canInteract = false;
+            npcLookAt = null;
+        }
+    }
 
     #endregion
 
