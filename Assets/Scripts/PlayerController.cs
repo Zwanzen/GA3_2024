@@ -612,7 +612,12 @@ public class PlayerController : MonoBehaviour
 
             // Then decide if we can play the footstep sound
             footstepTimer += Time.deltaTime;
-            if (footstepTimer >= 0.5f)
+            if (footstepTimer >= 0.5f && !crouch)
+            {
+                footstepEmitter.Play();
+                footstepTimer = 0;
+            }
+            else if(footstepTimer >= 0.75f && crouch)
             {
                 footstepEmitter.Play();
                 footstepTimer = 0;
@@ -644,20 +649,25 @@ public class PlayerController : MonoBehaviour
             {
                 // Calculate the fall distance to determine falling sound intensity
                 float fallDistance = fallFromPosition.y - transform.position.y;
+                Debug.Log(fallDistance);
 
-                // Place the landing emitter at the position of our feet
-                RaycastHit hit = RaycastGround(0.1f);
-                if (hit.point != Vector3.zero && fallDistance > 0.5f)
+                // Stops it from playing landing sound when crouching
+                if (fallDistance > 0.2f)
                 {
-                    landingEmitter.transform.position = hit.point;
-                }
+                    // Place the landing emitter at the position of our feet
+                    RaycastHit hit = RaycastGround(0.1f);
+                    if (hit.point != Vector3.zero && fallDistance > 0.5f)
+                    {
+                        landingEmitter.transform.position = hit.point;
+                    }
 
-                // Set the intensity, and play the landing sound
-                // FMOD IS WEIRD
-                float lerpedDistance = Mathf.Lerp(0.5f, 0.9f, fallDistance/maxFallDistance);
-                RuntimeManager.AttachInstanceToGameObject(jumpAudio, landingEmitter.transform);
-                jumpAudio.setParameterByName("FallHeight", lerpedDistance);
-                jumpAudio.start();
+                    // Set the intensity, and play the landing sound
+                    // FMOD IS WEIRD
+                    float lerpedDistance = Mathf.Lerp(0.5f, 0.9f, fallDistance / maxFallDistance);
+                    RuntimeManager.AttachInstanceToGameObject(jumpAudio, landingEmitter.transform);
+                    jumpAudio.setParameterByName("FallHeight", lerpedDistance);
+                    jumpAudio.start();
+                }
 
             }
             else
