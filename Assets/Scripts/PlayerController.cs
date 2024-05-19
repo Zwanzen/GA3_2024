@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Transform capsuleHolder;
 
+    private float startedCharacterHeight;
+
     [Space(20)]
     [Header("Movement Variables")]
     [SerializeField]
@@ -37,6 +39,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float springDampener = 10.0f;
 
+    private float startMoveForce;
+    private float startMaxSpeed;
+
     [Space(20)]
     [Header("Counter Movement")]
     [SerializeField]
@@ -47,6 +52,8 @@ public class PlayerController : MonoBehaviour
     private float counterMovementDirVelMultiplier = 1.0f;
 
     private Vector3 right;
+    private bool crouch;
+    private float crouchTimer;
 
     [Space(20)]
     [Header("Jump Variables")]
@@ -162,6 +169,10 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
 
+        startedCharacterHeight = characterHeight;
+        startMoveForce = moveForce;
+        startMaxSpeed = maxSpeed;
+
 
         jumpAudio = RuntimeManager.CreateInstance(SelectJumpAudio);
         RuntimeManager.AttachInstanceToGameObject(jumpAudio, landingEmitter.transform);
@@ -179,6 +190,7 @@ public class PlayerController : MonoBehaviour
         HandleFootsteps();
         HandleLandingSound();
         HandleCameraTilt();
+        CrouchHandler();
     }
 
     public void LateUpdate()
@@ -208,6 +220,12 @@ public class PlayerController : MonoBehaviour
             Stopping();
         }
 
+        // Should be implemented as a sliding function instead
+        if (IsGrounded() && crouch && rb.velocity.magnitude > maxSpeed)
+        {
+            Stopping();
+        }
+
         if (IsGrounded() && !jumping)
         {
             Floating();
@@ -216,8 +234,8 @@ public class PlayerController : MonoBehaviour
 
     private void Floating()
     {
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, characterHeight + stepHeight, groundLayer))
+        RaycastHit hit = RaycastGround(2f);
+        if (hit.point != Vector3.zero)
         {
             Vector3 vel = rb.velocity;
 
@@ -282,11 +300,6 @@ public class PlayerController : MonoBehaviour
             moveDir = moveDir * gradualForce * AirMultiplier(airMultiplier);
             rb.AddForce(moveDir);
         }
-        else
-        {
-            // Can be removed, but useful for determening if we apply too much force
-            //Debug.Log("over max speed: " + (dirVel - maxSpeed));
-        }
     }
 
     // Small method to calculate counter movement direction
@@ -338,12 +351,6 @@ public class PlayerController : MonoBehaviour
         Vector3 rbVel = new Vector3(rb.velocity.x, 0, rb.velocity.z);
         float rbMag = rbVel.magnitude;
         Vector3 stopDir = -rbVel.normalized;
-
-        // Only apply stopping force if the player is moving
-        if (rbMag > 0.1f)
-        {
-
-        }
 
         // Calculate gradual stop force depending on current speed
         float stopVel = Mathf.Lerp(0, stopForce, rbMag / maxSpeed);
@@ -482,10 +489,10 @@ public class PlayerController : MonoBehaviour
 
     // Could be implemented in many functions using raycasts
     // Also modifiable
-    private RaycastHit RaycastGround()
+    private RaycastHit RaycastGround(float lengthMultiplier)
     {
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, characterHeight + (characterHeight * 0.1f), groundLayer))
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, characterHeight + (characterHeight * lengthMultiplier), groundLayer))
         {
             return hit;
         }
@@ -597,7 +604,7 @@ public class PlayerController : MonoBehaviour
         {
             // Place the footstep emitter at the position of our feet
             // This would make more sense if i could fully develope the player controller
-            RaycastHit hit = RaycastGround();
+            RaycastHit hit = RaycastGround(0.1f);
             if (hit.point != Vector3.zero)
             {
                 footstepEmitter.transform.position = hit.point;
@@ -639,7 +646,7 @@ public class PlayerController : MonoBehaviour
                 float fallDistance = fallFromPosition.y - transform.position.y;
 
                 // Place the landing emitter at the position of our feet
-                RaycastHit hit = RaycastGround();
+                RaycastHit hit = RaycastGround(0.1f);
                 if (hit.point != Vector3.zero && fallDistance > 0.5f)
                 {
                     landingEmitter.transform.position = hit.point;
@@ -648,7 +655,6 @@ public class PlayerController : MonoBehaviour
                 // Set the intensity, and play the landing sound
                 // FMOD IS WEIRD
                 float lerpedDistance = Mathf.Lerp(0.5f, 0.9f, fallDistance/maxFallDistance);
-                Debug.Log(lerpedDistance);
                 RuntimeManager.AttachInstanceToGameObject(jumpAudio, landingEmitter.transform);
                 jumpAudio.setParameterByName("FallHeight", lerpedDistance);
                 jumpAudio.start();
@@ -701,16 +707,51 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void InstantiateCharacterSize()
+    private void CrouchHandler()
     {
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, characterHeight + (characterHeight * 0.1f), groundLayer))
+        float crouchMultiplier = 1.3f;
+
+        // Input and single impulse changes
+        // Not the best
+        if (Input.GetKeyDown(KeyCode.C))
         {
-            float y = hit.point.y;
-            transform.position = new(transform.position.x, characterHeight + y, transform.position.z);
+            crouch = true;
+            maxSpeed = startMaxSpeed / 2;
+            moveForce = startMoveForce / 2;
+            crouchTimer = 0;
+        }
+        else if (Input.GetKeyUp(KeyCode.C))
+        {
+            crouch = false;
+            maxSpeed = startMaxSpeed;
+            moveForce = startMoveForce;
+            crouchTimer = 0;
         }
 
-        capsuleHolder.localScale = new(characterWidth, characterHeight / 2 - ((stepHeight / 2) + 0.02f), characterWidth);
+        // What actually runs
+        if (crouch)
+        {
+            crouchTimer += Time.deltaTime;
+
+            characterHeight = Mathf.Lerp(characterHeight, startedCharacterHeight / crouchMultiplier, crouchTimer);
+            capsuleHolder.localScale = new(characterWidth, (characterHeight / 2 - ((stepHeight / 2) + 0.02f)), characterWidth);
+        }
+        else
+        {
+            crouchTimer += Time.deltaTime;
+
+            characterHeight = Mathf.Lerp(characterHeight, startedCharacterHeight , crouchTimer);
+            capsuleHolder.localScale = new(characterWidth, (characterHeight / 2 - ((stepHeight / 2) + 0.02f)), characterWidth);
+        }
+    }
+
+    private void InstantiateCharacterSize()
+    {
+        RaycastHit hit = RaycastGround(0.5f);
+        float y = hit.point.y;
+        transform.position = new(transform.position.x, characterHeight + y, transform.position.z);
+
+        capsuleHolder.localScale = new(characterWidth, (characterHeight / 2 - ((stepHeight / 2) + 0.02f)), characterWidth);
         transform.localScale = new(characterWidth, 1, characterWidth);
 
         rb = GetComponent<Rigidbody>();

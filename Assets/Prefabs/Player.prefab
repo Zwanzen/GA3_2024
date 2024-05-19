@@ -612,8 +612,8 @@ MonoBehaviour:
   stopForce: 50
   airMultiplier: 0.1
   rotationSpeed: 720
-  springStrenght: 400
-  springDampener: 40
+  springStrenght: 500
+  springDampener: 30
   rightShiftMultiplier: 5
   counterDotThreshold: 0.999
   counterMovementDirVelMultiplier: 1
