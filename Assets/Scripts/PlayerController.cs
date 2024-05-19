@@ -1,10 +1,7 @@
 using Cinemachine;
-using Cinemachine.Utility;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using TMPro;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -16,7 +13,7 @@ public class PlayerController : MonoBehaviour
     private float characterHeight = 1.8f;
     [SerializeField, Range(0.0f, 2.0f)]
     private float characterWidth = 1.0f;
-    [SerializeField, Range(0.1f,0.8f)]
+    [SerializeField, Range(0.1f, 0.8f)]
     private float stepHeight = 0.5f;
     [SerializeField]
     private Transform capsuleHolder;
@@ -42,7 +39,7 @@ public class PlayerController : MonoBehaviour
     [Header("Counter Movement")]
     [SerializeField]
     private float rightShiftMultiplier = 10.0f;
-    [SerializeField, Range(0.9000f,0.9999f)]
+    [SerializeField, Range(0.9000f, 0.9999f)]
     private float counterDotThreshold = 0.995f;
     [SerializeField, Range(0.1f, 1.0f)]
     private float counterMovementDirVelMultiplier = 1.0f;
@@ -125,6 +122,8 @@ public class PlayerController : MonoBehaviour
     private FMODUnity.StudioEventEmitter footstepEmitter;
     [SerializeField]
     private FMODUnity.StudioEventEmitter landingEmitter;
+    [SerializeField]
+    private FMODUnity.StudioEventEmitter jumpEmitter;
 
     private float footstepTimer;
     private Vector3 lastPosition;
@@ -162,7 +161,7 @@ public class PlayerController : MonoBehaviour
         {
             HandleRotation();
             CheckForInteractable();
-        }   
+        }
         HandleCameraShake();
         HandleFootsteps();
         HandleLandingSound();
@@ -171,7 +170,7 @@ public class PlayerController : MonoBehaviour
 
     public void LateUpdate()
     {
-        if(!interacting)
+        if (!interacting)
         {
             Jump();
         }
@@ -187,11 +186,11 @@ public class PlayerController : MonoBehaviour
 
     private void HandleMovement()
     {
-        if(MoveVector() != Vector3.zero && !interacting)
+        if (MoveVector() != Vector3.zero && !interacting)
         {
             Moving();
         }
-        else if(IsGrounded())
+        else if (IsGrounded())
         {
             Stopping();
         }
@@ -211,7 +210,7 @@ public class PlayerController : MonoBehaviour
 
             Vector3 otherVel = Vector3.zero;
             Rigidbody hitBody = hit.rigidbody;
-            if(hitBody != null)
+            if (hitBody != null)
             {
                 otherVel = hitBody.velocity;
             }
@@ -278,7 +277,7 @@ public class PlayerController : MonoBehaviour
     }
 
     // Small method to calculate counter movement direction
-    private Vector3 CalculateCounterMovement (Vector3 moveDir, Vector3 rbVel, float dot, float dirVel)
+    private Vector3 CalculateCounterMovement(Vector3 moveDir, Vector3 rbVel, float dot, float dirVel)
     {
         // Counter vel for better control only when moving forward to not confuse the counter movement
         if (dot > 0.1f)
@@ -306,9 +305,9 @@ public class PlayerController : MonoBehaviour
             float counterDot = Vector3.Dot(moveDir.normalized, rbVel.normalized);
             if (counterDot < counterDotThreshold && counterDot > 0.001f)
             {
-                Vector3 gradualAngleShift = right * (counterDot * rightShiftMultiplier) * ((dirVel/maxSpeed) / counterMovementDirVelMultiplier);
+                Vector3 gradualAngleShift = right * (counterDot * rightShiftMultiplier) * ((dirVel / maxSpeed) / counterMovementDirVelMultiplier);
                 moveDir += gradualAngleShift;
-                
+
             }
 
             return moveDir;
@@ -345,7 +344,7 @@ public class PlayerController : MonoBehaviour
         if (IsGrounded() && !jumping)
         {
             jumpTimer += Time.deltaTime;
-            if(jumpTimer >= jumpDelay)
+            if (jumpTimer >= jumpDelay)
             {
                 canJump = true;
             }
@@ -377,6 +376,7 @@ public class PlayerController : MonoBehaviour
                 }
             }
 
+            PlayJumpEmitter();
             StartCoroutine(JumpDelay());
         }
     }
@@ -529,7 +529,7 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        if(npcLookAt != null)
+        if (npcLookAt != null)
         {
 
             interactText.gameObject.SetActive(true);
@@ -545,7 +545,7 @@ public class PlayerController : MonoBehaviour
         {
             if (col.CompareTag("NPC"))
             {
-                if(npcLookAt == null)
+                if (npcLookAt == null)
                 {
                     npcLookAt = col.transform;
                     npcDist = Vector3.Distance(transform.position, npcLookAt.position);
@@ -553,7 +553,7 @@ public class PlayerController : MonoBehaviour
                 else
                 {
                     float dist = Vector3.Distance(transform.position, col.transform.position);
-                    if(dist < npcDist)
+                    if (dist < npcDist)
                     {
                         npcLookAt = col.transform;
                         npcDist = dist;
@@ -580,12 +580,12 @@ public class PlayerController : MonoBehaviour
 
     private void HandleFootsteps()
     {
-        if(IsGrounded() && MoveVector() != Vector3.zero)
+        if (IsGrounded() && MoveVector() != Vector3.zero)
         {
             // Place the footstep emitter at the position of our feet
             // This would make more sense if i could fully develope the player controller
             RaycastHit hit = RaycastGround();
-            if(hit.point != Vector3.zero)
+            if (hit.point != Vector3.zero)
             {
                 footstepEmitter.transform.position = hit.point;
             }
@@ -606,11 +606,12 @@ public class PlayerController : MonoBehaviour
 
     private void HandleLandingSound()
     {
-        // Check if we are moving negative in the y direction
-        if(rb.velocity.y < 0 && !IsGrounded())
+        // If we're not grounded, Start fall checking
+        if (!IsGrounded())
         {
-            // If we just started falling, save the position
-            if (!falling)
+            // As long as we're moving upwards, we raise the fall from position
+            // When moving downwards, this will calculate the fall distance
+            if (rb.velocity.y > 0)
             {
                 fallFromPosition = transform.position;
             }
@@ -618,21 +619,38 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            // If we were falling, play the landing sound
+            // If we were falling, play the landing sound, then make sure we're not falling anymore
             if (falling)
             {
+                // Calculate the fall distance to determine falling sound intensity
                 float fallDistance = fallFromPosition.y - transform.position.y;
                 Debug.Log(fallDistance);
 
+                // Place the landing emitter at the position of our feet
                 RaycastHit hit = RaycastGround();
                 if (hit.point != Vector3.zero && fallDistance > 0.5f)
                 {
                     landingEmitter.transform.position = hit.point;
-                    landingEmitter.Play();
                 }
+
+                // Set the intensity, and play the landing sound
+                fallDistance = Mathf.Lerp(0, 1, fallDistance/2);
+                landingEmitter.SetParameter("FallHeight", fallDistance);
+                landingEmitter.Play();
+            }
+            else
+            {
+                // If we were not falling, in case of us never going upwards before falling
+                // We set the fall from position to the current position
+                fallFromPosition = transform.position;
             }
             falling = false;
         }
+    }
+
+    private void PlayJumpEmitter()
+    {
+        jumpEmitter.Play();
     }
 
     #endregion
