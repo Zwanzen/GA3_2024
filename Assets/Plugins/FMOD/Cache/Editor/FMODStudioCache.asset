@@ -1182,10 +1182,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Props Interaction.bank
   Name: Props Interaction
   StudioPath: bank:/Props Interaction
-  lastModified: 638498611211545770
+  lastModified: 638518412894803341
   FileSizes:
   - Name: Desktop
-    Value: 777792
+    Value: 891200
   Exists: 1
 --- !u!114 &-2181386607191122262
 MonoBehaviour:
@@ -1785,13 +1785,38 @@ MonoBehaviour:
   - {fileID: 3211945608125388728}
   - {fileID: -1754225568977441930}
   - {fileID: -5186433027524420826}
+  - {fileID: 4236907601896256236}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4677152490814659433}
   StringsBanks:
   - {fileID: 4038073233029663505}
-  cacheTime: 638517382529698134
+  cacheTime: 638518412894803341
   cacheVersion: 131617
+--- !u!114 &76691187249736920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FX - Oxygen Re-established/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3871982834
+    data2: 2785124848
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &152564166377372431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2371,11 +2396,39 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638517360448330392
+  lastModified: 638518381412201442
   FileSizes:
   - Name: Desktop
-    Value: 3460
+    Value: 3512
   Exists: 1
+--- !u!114 &4236907601896256236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Interaction/FX - Oxygen Re-established
+  m_EditorClassIdentifier: 
+  Path: event:/Props Interaction/FX - Oxygen Re-established
+  Guid:
+    Data1: -2145737317
+    Data2: 1200930917
+    Data3: -2024049279
+    Data4: 1109243587
+  Banks:
+  - {fileID: -2203919514268191177}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 76691187249736920}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 19280
 --- !u!114 &4333845490033308509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2469,7 +2522,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638517360448309792
+  lastModified: 638518381412181499
   FileSizes:
   - Name: Desktop
     Value: 670

@@ -153,11 +153,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectAudio:
     Guid:
-      Data1: 1422651468
-      Data2: 1321398717
-      Data3: 313296555
-      Data4: -1295978550
-    Path: event:/Props Looping/FX - Air Vent Large
+      Data1: -2145737317
+      Data2: 1200930917
+      Data3: -2024049279
+      Data4: 1109243587
+    Path: event:/Props Interaction/FX - Oxygen Re-established
   SoundOcclusionWidening: 1
   PlayerOcclusionWidening: 1
   OcclusionLayer:
