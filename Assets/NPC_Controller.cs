@@ -51,6 +51,9 @@ public class NPC_Controller : MonoBehaviour
     {
         if (agent.remainingDistance <= 0.1f)
         {
+            anim.SetBool("Walking", false);
+
+
             if (canRotate)
             {
                 RotateToWaypoint();
@@ -76,7 +79,7 @@ public class NPC_Controller : MonoBehaviour
         else
         {
             StartCoroutine(StartMove());
-
+            anim.SetBool("Talking", false);
         }
     }
 
@@ -91,6 +94,9 @@ public class NPC_Controller : MonoBehaviour
         npcInteraction.dialogue = dialogues[currentWaypoint];
         canRotate = true;
         isWaiting = false;
+
+        anim.SetBool("Walking", true);
+
     }
 
     private void RotateToWaypoint()
@@ -112,6 +118,8 @@ public class NPC_Controller : MonoBehaviour
         canRotate = false;
         rotateToPlayerTimer = 0f;
         rotateToPlayer = true;
+
+        anim.SetBool("Talking", true);
     }
 
     private void RotateTowardsPlayer()
