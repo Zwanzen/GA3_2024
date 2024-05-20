@@ -8,8 +8,6 @@ public class NPC_Controller : MonoBehaviour
 {
     [Space(20)]
     [Header("Agent Variables")]
-    [SerializeField] private float moveSpeed = 3.5f;
-    [SerializeField] private float rotationSpeed = 0.5f;
     [SerializeField, Range(0.1f,1.0f)] private float endRotationSpeed = 0.5f;
     [SerializeField] private float delayTime = 1f;
 

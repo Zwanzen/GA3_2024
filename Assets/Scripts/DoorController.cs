@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using FMODUnity;
+using System.Collections.Generic;
 
 public class DoorController : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class DoorController : MonoBehaviour
 
     void Start()
     {
+
         // Get the Animator component attached to the door if it exists
         doorAnimator = doorObject.GetComponent<Animator>();
 
@@ -42,8 +44,17 @@ public class DoorController : MonoBehaviour
         doorLight = doorObject.GetComponentInChildren<Light>();
 
         // Close the door at the start
-        doorAnimator.SetBool("doorActivate", false);
-        isOpen = false;
+        // If it should be closed - Bias
+        //doorAnimator.SetBool("doorActivate", false);
+        //isOpen = false;
+        if (!isOpen)
+        {
+            CloseDoor();
+        }
+        else
+        {
+            OpenDoor();
+        }
     }
 
     void Update()
@@ -60,6 +71,15 @@ public class DoorController : MonoBehaviour
 
     void HandleAutomaticDoor()
     {
+        if(inTrigger.Count > 0)
+        {
+            isPlayerInRange = true;
+        }
+        else
+        {
+            isPlayerInRange = false;
+        }
+
         if (isPlayerInRange && !isOpen && !isLocked)
         {
             OpenDoor();
@@ -146,28 +166,21 @@ public class DoorController : MonoBehaviour
         }
     }
 
-    // OnTriggerEnter is called when the Collider other enters the trigger
-    void OnTriggerEnter(Collider other)
+    private List<Collider> inTrigger = new List<Collider>();
+
+    private void OnTriggerEnter(Collider other)
     {
-        // Check if the colliding object is the player
-        if (other.CompareTag("Player"))
+        if ((other.CompareTag("Player") || other.CompareTag("NPC")) && !inTrigger.Contains(other))
         {
-            isPlayerInRange = true;
+            inTrigger.Add(other);
         }
     }
 
-    // OnTriggerExit is called when the Collider other has stopped touching the trigger
-    void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other)
     {
-        // Check if the colliding object is the player
-        if (other.CompareTag("Player"))
+        if (inTrigger.Contains(other))
         {
-            isPlayerInRange = false;
-
-            if (automaticDoor && isOpen)
-            {
-                CloseDoor();
-            }
+            inTrigger.Remove(other);
         }
     }
 }

@@ -81,7 +81,6 @@ public class NPCInteraction : MonoBehaviour
     private void Start()
     {
         dialogueLines = new Queue<string>();
-        anim.Play("Close", 0, 1f);
         if(lookAtPosition == null)
         {
             lookAtPosition = transform;
@@ -213,7 +212,11 @@ public class NPCInteraction : MonoBehaviour
         anim.SetBool("Open", false);
         canClick = false;
         endedDialogue = true;
-        endInteractionEvent.Invoke();
+
+        if(dialogue.pushNextDialogue)
+        {
+            endInteractionEvent.Invoke();
+        }
     }
 
     private void StartChoices()

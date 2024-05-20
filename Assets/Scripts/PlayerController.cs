@@ -162,6 +162,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         InstantiateCharacterSize();
+        lookAngle = transform.localEulerAngles.y;
     }
 
     // Start is called before the first frame update
@@ -169,6 +170,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
+        anim.Play("Close", 0, 1f);
 
         startedCharacterHeight = characterHeight;
         startMoveForce = moveForce;
@@ -318,13 +320,6 @@ public class PlayerController : MonoBehaviour
             {
                 right *= -1;
             }
-
-            // Mirroring the rbVel to get the exact opposite direction
-            // Then setting the movement direction to the reflected direction
-            // This will quickly alight the player with the wanted direction the larger the difference
-            // Between the rbVel and the wanted direction
-
-            //moveDir = -Vector3.Reflect(rbVel.normalized, moveDir.normalized);
 
             // To make the player align faster when the diffrerence is small
             // We gradually shift angle of counterDir to faster align with input direction the

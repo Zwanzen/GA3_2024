@@ -82,7 +82,7 @@ MonoBehaviour:
         serializedVersion: 2
         m_Bits: 0
       supportFabricConvolution: 0
-      maxDirectionalLightsOnScreen: 61
+      maxDirectionalLightsOnScreen: 150
       maxPunctualLightsOnScreen: 563
       maxAreaLightsOnScreen: 164
       maxCubeReflectionOnScreen: 32
@@ -92,7 +92,7 @@ MonoBehaviour:
       maxLocalVolumetricFogSize: 32
       maxLocalVolumetricFogOnScreen: 64
     hdShadowInitParams:
-      maxShadowRequests: 128
+      maxShadowRequests: 256
       directionalShadowsDepthBits: 16
       shadowFilteringQuality: 2
       areaShadowFilteringQuality: 0

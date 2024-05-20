@@ -287,7 +287,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5, y: 8, z: 3}
+  m_Size: {x: 5, y: 8, z: 4.9}
   m_Center: {x: 0, y: 1.5, z: 0}
 --- !u!114 &2226848679448014038
 MonoBehaviour:
@@ -303,9 +303,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorObject: {fileID: 1182285933139604}
   isOpen: 0
-  isPlayerInRange: 0
   automaticDoor: 1
-  requiresKey: 0
+  isLocked: 0
   keyToOpen: 101
   doorOpenSoundEvent: event:/Props Interaction/FX - Door Sliding Up
   doorCloseSoundEvent: event:/Props Interaction/FX - Door Sliding Down
+  lockedMessage: The door is locked.

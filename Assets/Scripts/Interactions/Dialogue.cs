@@ -11,4 +11,6 @@ public class Dialogue : ScriptableObject
     public Dialogue[] choices;
     public string[] choiceText;
 
+    public bool pushNextDialogue = true;
+
 }
