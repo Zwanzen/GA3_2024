@@ -224,7 +224,7 @@ public class PlayerController : MonoBehaviour
         }
 
         // Should be implemented as a sliding function instead
-        if (IsGrounded() && crouch && rb.velocity.magnitude > maxSpeed)
+        if (IsGrounded() && rb.velocity.magnitude > maxSpeed)
         {
             Stopping();
         }
