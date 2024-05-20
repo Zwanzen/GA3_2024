@@ -10,7 +10,7 @@ using UnityEngine.UI;
 public class NPCInteraction : MonoBehaviour
 {
     [Header("NPC & Ref")]
-    [SerializeField] private PlayerController player;
+    [SerializeField] public PlayerController player;
     [SerializeField] public Dialogue dialogue;
     [SerializeField] private Transform lookAtPosition;
 
@@ -36,6 +36,8 @@ public class NPCInteraction : MonoBehaviour
     private TextMeshProUGUI interactText;
     private KeycardController keycardController;
 
+    private NPC_Controller npcController;
+
     public void Initialize(GameObject _dialogueUI, GameObject _dialogueChoicesUI, GameObject[] _choiceButtons,
         TextMeshProUGUI _nameText, TextMeshProUGUI _dialogueText, TextMeshProUGUI _continueText, TextMeshProUGUI _interactText,
         Animator _anim, KeycardController _keycardController)
@@ -52,7 +54,8 @@ public class NPCInteraction : MonoBehaviour
 
     }
 
-    private bool endedDialogue = false; 
+    public bool endedDialogue = false;
+    public bool isInteracting = false;
     private bool canClick = false;
 
     //Private variables
@@ -82,6 +85,12 @@ public class NPCInteraction : MonoBehaviour
         if(lookAtPosition == null)
         {
             lookAtPosition = transform;
+        }
+
+        var npc = GetComponent<NPC_Controller>();
+        if(npc != null)
+        {
+            npcController = npc;
         }
     }
 
@@ -143,6 +152,8 @@ public class NPCInteraction : MonoBehaviour
         dialogueChoicesUI.SetActive(false);
         continueText.text = "Click to continue...";
         nameText.text = dialogue._name;
+        isInteracting = true;
+        npcController.IsInteracting();
 
 
         foreach (string line in dialogue.dialogueLines)
@@ -195,6 +206,7 @@ public class NPCInteraction : MonoBehaviour
 
     private void EndDialogue()
     {
+        isInteracting = false;
         dialogueUI.SetActive(false);
         dialogueChoicesUI.SetActive(false);
         player.ToggleInteraction(false, transform);
