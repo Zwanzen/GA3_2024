@@ -1555,6 +1555,12 @@ MonoBehaviour:
   player: {fileID: 648914289}
   dialogue: {fileID: 11400000, guid: a93be63c2092c894186b96cb4ca84053, type: 2}
   lookAtPosition: {fileID: 1761785841}
+  endInteractionEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  keycardType: 0
+  endedDialogue: 0
+  isInteracting: 0
   canInteract: 0
 --- !u!54 &1761785843
 Rigidbody:
