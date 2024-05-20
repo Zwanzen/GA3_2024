@@ -120,6 +120,11 @@ public class NPC_Controller : MonoBehaviour
         anim.SetBool("Talking", true);
     }
 
+    public void StopInteracting()
+    {
+        anim.SetBool("Talking", false);
+    }
+
     private void RotateTowardsPlayer()
     {
         rotateToPlayerTimer += Time.deltaTime * endRotationSpeed;

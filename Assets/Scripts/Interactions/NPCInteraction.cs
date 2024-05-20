@@ -152,7 +152,10 @@ public class NPCInteraction : MonoBehaviour
         continueText.text = "Click to continue...";
         nameText.text = dialogue._name;
         isInteracting = true;
-        npcController.IsInteracting();
+        if(npcController != null)
+        {
+            npcController.IsInteracting();
+        }
 
 
         foreach (string line in dialogue.dialogueLines)
@@ -213,10 +216,16 @@ public class NPCInteraction : MonoBehaviour
         canClick = false;
         endedDialogue = true;
 
-        if(dialogue.pushNextDialogue)
+        if (npcController != null)
         {
-            endInteractionEvent.Invoke();
+            if (dialogue.pushNextDialogue)
+            {
+                npcController.StopInteracting();
+                npcController.MoveToNextWaypoint();
+            }
+            npcController.StopInteracting();
         }
+        endInteractionEvent.Invoke();
     }
 
     private void StartChoices()
