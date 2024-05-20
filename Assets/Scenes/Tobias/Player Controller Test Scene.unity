@@ -2164,11 +2164,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4550875705522789396, guid: af34b6ac3637bb54994d5bf8c72a12c7,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5175552802822892771, guid: af34b6ac3637bb54994d5bf8c72a12c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2218,18 +2213,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9170305150444481733, guid: af34b6ac3637bb54994d5bf8c72a12c7,
-        type: 3}
-      propertyPath: m_text
-      value: Test test TEst TEus test test ttttest test et ets  ttttessssstt test
-        tes tttt test test test test test test test terere er erererer errerer erreeeeeeee
-        ewewew weeweewee ewewewewe ewewewewewewewewewe wewew weewew wewewe...
-      objectReference: {fileID: 0}
-    - target: {fileID: 9170305150444481733, guid: af34b6ac3637bb54994d5bf8c72a12c7,
-        type: 3}
-      propertyPath: m_fontSize
-      value: 18.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

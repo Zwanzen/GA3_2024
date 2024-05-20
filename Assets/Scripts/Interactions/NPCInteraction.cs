@@ -157,6 +157,7 @@ public class NPCInteraction : MonoBehaviour
         canClick = true;
         dialogueUI.SetActive(true);
         dialogueChoicesUI.SetActive(false);
+        continueText.text = "Click to continue...";
         nameText.text = dialogue._name;
         isInteracting = true;
         if(npcController != null)
@@ -204,6 +205,11 @@ public class NPCInteraction : MonoBehaviour
         string line = dialogueLines.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeLine(line));
+
+        if (dialogueLines.Count == 0 && dialogue.choices.Length == 0)
+        {
+            continueText.text = "End Conversation";
+        }
 
         currentLine++;
     }
@@ -273,11 +279,6 @@ public class NPCInteraction : MonoBehaviour
     // The UI button has to ref this and send int depending on what choice button it is.
     public void SelectedChoice(int choice)
     {
-        if (dialogue.dontContinue)
-        {
-            EndDialogue();
-            return;
-        }
         dialogue = dialogue.choices[choice];
         StartDialogue(); 
     }
