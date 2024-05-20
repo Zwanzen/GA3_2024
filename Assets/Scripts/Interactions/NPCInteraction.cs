@@ -1,3 +1,4 @@
+using MoreMountains.Feedbacks;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,9 +7,6 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-
-[RequireComponent(typeof(SphereCollider))]
-[RequireComponent(typeof(Rigidbody))]
 public class NPCInteraction : MonoBehaviour
 {
     [Header("NPC & Ref")]
@@ -17,19 +15,30 @@ public class NPCInteraction : MonoBehaviour
     [SerializeField] private Transform lookAtPosition;
 
     [Space(20)]
-    [Header("End Interaction Event")]
+    [Header("Interaction Controls")]
     public UnityEvent endInteractionEvent;
+    [SerializeField] private KeycardType keycardType;
+
+    private enum KeycardType
+    {
+        None,
+        Red,
+        Green,
+        Blue
+    }
 
     private GameObject dialogueUI;
-     private GameObject dialogueChoicesUI;
-     private GameObject[] choiceButtons;
-     private TextMeshProUGUI nameText;
-     private TextMeshProUGUI dialogueText;
-     private TextMeshProUGUI continueText;
-     private TextMeshProUGUI interactText;
+    private GameObject dialogueChoicesUI;
+    private GameObject[] choiceButtons;
+    private TextMeshProUGUI nameText;
+    private TextMeshProUGUI dialogueText;
+    private TextMeshProUGUI continueText;
+    private TextMeshProUGUI interactText;
+    private KeycardController keycardController;
 
     public void Initialize(GameObject _dialogueUI, GameObject _dialogueChoicesUI, GameObject[] _choiceButtons,
-        TextMeshProUGUI _nameText, TextMeshProUGUI _dialogueText, TextMeshProUGUI _continueText, TextMeshProUGUI _interactText, Animator _anim)
+        TextMeshProUGUI _nameText, TextMeshProUGUI _dialogueText, TextMeshProUGUI _continueText, TextMeshProUGUI _interactText,
+        Animator _anim, KeycardController _keycardController)
     {
         dialogueUI = _dialogueUI;
         dialogueChoicesUI = _dialogueChoicesUI;
@@ -39,9 +48,11 @@ public class NPCInteraction : MonoBehaviour
         continueText = _continueText;
         interactText = _interactText;
         anim = _anim;
+        keycardController = _keycardController;
+
     }
 
-    public bool endedDialogue = false; 
+    private bool endedDialogue = false; 
     private bool canClick = false;
 
     //Private variables
@@ -68,6 +79,10 @@ public class NPCInteraction : MonoBehaviour
     {
         dialogueLines = new Queue<string>();
         anim.Play("Close", 0, 1f);
+        if(lookAtPosition == null)
+        {
+            lookAtPosition = transform;
+        }
     }
 
     private void Update()
@@ -82,6 +97,38 @@ public class NPCInteraction : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && canClick)
         {
             DisplayNextLine();
+        }
+    }
+
+    // Check all requirements for interaction
+    public bool CheckInteract()
+    {
+
+        if(endedDialogue)
+        {
+            return false;
+        }
+
+        if(keycardType == KeycardType.None)
+        {
+            return true;
+        }
+
+        if (keycardType == KeycardType.Red && keycardController.HasRedKeycard)
+        {
+            return true;
+        }
+        else if (keycardType == KeycardType.Green && keycardController.HasGreenKeycard)
+        {
+            return true;
+        }
+        else if (keycardType == KeycardType.Blue && keycardController.HasBlueKeycard)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 

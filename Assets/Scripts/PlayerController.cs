@@ -114,12 +114,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI continueText;
     [SerializeField] private TextMeshProUGUI interactText;
     [SerializeField] private Animator anim;
+    [SerializeField] private KeycardController keycardController;
 
     private float npcDist;
 
     public void InitializeNPC(NPCInteraction npc)
     {
-        npc.Initialize(dialogueUI, dialogueChoicesUI, choiceButtons, nameText, dialogueText, continueText, interactText, anim);
+        npc.Initialize(dialogueUI, dialogueChoicesUI, choiceButtons, nameText, dialogueText, continueText, interactText, anim, keycardController);
     }
 
     bool interacting;
@@ -551,7 +552,7 @@ public class PlayerController : MonoBehaviour
 
         if (npcLookAt != null)
         {
-            if (!npcLookAt.GetComponent<NPCInteraction>().endedDialogue)
+            if (npcLookAt.GetComponent<NPCInteraction>().CheckInteract())
             {
                 interactText.gameObject.SetActive(true);
                 interactText.text = "Press E to interact with " + npcLookAt.GetComponent<NPCInteraction>().dialogue._name;
