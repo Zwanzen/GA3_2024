@@ -148,10 +148,10 @@ Light:
   m_GameObject: {fileID: 45858579625917373}
   m_Enabled: 1
   serializedVersion: 10
-  m_Type: 0
+  m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.37504622, b: 0.3160377, a: 1}
-  m_Intensity: 17.43506
+  m_Intensity: 159.15494
   m_Range: 8
   m_SpotAngle: 170
   m_InnerSpotAngle: 17
@@ -192,12 +192,12 @@ Light:
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 2
-  m_AreaSize: {x: 0.125, y: 1}
+  m_AreaSize: {x: 0.1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 8}
-  m_UseBoundingSphereOverride: 0
+  m_UseBoundingSphereOverride: 1
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_AffectDiffuse: 1
   m_AffectSpecular: 1
   m_NonLightmappedOnly: 0
-  m_ShapeWidth: 0.125
+  m_ShapeWidth: 0.1
   m_ShapeHeight: 1
   m_AspectRatio: 1
   m_ShapeRadius: 0.025
