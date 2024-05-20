@@ -176,6 +176,7 @@ public class PlayerController : MonoBehaviour
         startMoveForce = moveForce;
         startMaxSpeed = maxSpeed;
 
+        continueText.text = "Click to continue...";
 
         jumpAudio = RuntimeManager.CreateInstance(SelectJumpAudio);
         RuntimeManager.AttachInstanceToGameObject(jumpAudio, landingEmitter.transform);
