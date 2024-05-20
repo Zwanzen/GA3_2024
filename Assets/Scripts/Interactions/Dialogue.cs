@@ -1,3 +1,4 @@
+using FMODUnity;
 using UnityEngine;
 
 
@@ -5,7 +6,7 @@ using UnityEngine;
 public class Dialogue : ScriptableObject
 {
     public string _name;
-    // FMOD SOUND REFERENCE HERE
+    public EventReference[] dialogueSounds;
     [TextArea(3, 10)]
     public string[] dialogueLines;
     public Dialogue[] choices;

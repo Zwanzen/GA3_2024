@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Blue Door Interface
   m_EditorClassIdentifier: 
   _name: Console Interface
+  dialogueSounds: []
   dialogueLines: []
   choices:
-  - {fileID: 11400000, guid: 0be6db8f31e880a43813887d1b050e0b, type: 2}
+  - {fileID: 11400000, guid: 2c4bf125ffc9d8f4f8b803f57c77dc2d, type: 2}
   choiceText:
   - '[Open Door]     [Requires Blue Keycard]'
+  pushNextDialogue: 1

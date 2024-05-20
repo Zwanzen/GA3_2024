@@ -1,8 +1,10 @@
+using FMODUnity;
 using MoreMountains.Feedbacks;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -37,6 +39,7 @@ public class NPCInteraction : MonoBehaviour
     private KeycardController keycardController;
 
     private NPC_Controller npcController;
+    private StudioEventEmitter audioEmitter;
 
     public void Initialize(GameObject _dialogueUI, GameObject _dialogueChoicesUI, GameObject[] _choiceButtons,
         TextMeshProUGUI _nameText, TextMeshProUGUI _dialogueText, TextMeshProUGUI _continueText, TextMeshProUGUI _interactText,
@@ -63,6 +66,8 @@ public class NPCInteraction : MonoBehaviour
     private Queue<string> dialogueLines;
     [HideInInspector] public bool canInteract = false;
     private Animator anim;
+
+    private int currentLine = 0;
 
 
 
@@ -91,6 +96,8 @@ public class NPCInteraction : MonoBehaviour
         {
             npcController = npc;
         }
+
+        audioEmitter = this.AddComponent<StudioEventEmitter>();
     }
 
     private void Update()
@@ -144,6 +151,7 @@ public class NPCInteraction : MonoBehaviour
     public void StartDialogue()
     {
         dialogueLines.Clear();
+        currentLine = 0;
         anim.SetBool("Open", true);
         player.ToggleInteraction(true, lookAtPosition);
         canClick = true;
@@ -185,6 +193,15 @@ public class NPCInteraction : MonoBehaviour
             return;
         }
 
+        Debug.Log(dialogue.dialogueSounds.Length + " " + currentLine);
+        if (dialogue.dialogueSounds.Length > 0)
+        {
+            audioEmitter.Stop();
+            audioEmitter.EventReference = dialogue.dialogueSounds[currentLine];
+            audioEmitter.Play();
+        }
+
+
         string line = dialogueLines.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeLine(line));
@@ -193,6 +210,8 @@ public class NPCInteraction : MonoBehaviour
         {
             continueText.text = "End Conversation";
         }
+
+        currentLine++;
     }
 
     IEnumerator TypeLine(string line)
