@@ -82,7 +82,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Dialogue.bank
   Name: Dialogue
   StudioPath: bank:/Dialogue
-  lastModified: 638518795914821377
+  lastModified: 638518870678492624
   FileSizes:
   - Name: Desktop
     Value: 3094528
@@ -2195,7 +2195,7 @@ MonoBehaviour:
   - {fileID: 4677152490814659433}
   StringsBanks:
   - {fileID: 4038073233029663505}
-  cacheTime: 638518795914821377
+  cacheTime: 638518870678492624
   cacheVersion: 131617
 --- !u!114 &76691187249736920
 MonoBehaviour:
