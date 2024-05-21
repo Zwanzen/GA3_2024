@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f96de2a467794424c9da080f8fe7fd1d, type: 3}
+  m_Name: Crew B 1
+  m_EditorClassIdentifier: 
+  noInteraction: 0
+  _name: Crew Member
+  dialogueSounds:
+  - Guid:
+      Data1: 1208280418
+      Data2: 1149413337
+      Data3: 396009651
+      Data4: -43834292
+    Path: event:/Dialogue/Dialogue Crewmember 10 Player refuses help
+  - Guid:
+      Data1: 1420877508
+      Data2: 1078118184
+      Data3: -505950562
+      Data4: 960917797
+    Path: event:/Dialogue/Dialogue Crewmember 10 How to leave
+  - Guid:
+      Data1: 505317202
+      Data2: 1184877297
+      Data3: 62045345
+      Data4: 790052945
+    Path: event:/Dialogue/Dialogue Crewmember 10 You need a keycard as well
+  dialogueLines:
+  - Regrettable. Well, I am a man of my word so I will not stop you from leaving.
+    But with the ongoing situation, I cannot assist you.
+  - This is normally the job for a crew, but you'll need to open the hangar doors
+    by yourself via the control on the second floor. Then race downstairs and get
+    inside one of the fighter jets before the hangar decompresses and the doors open.
+  - Oh, and you'll need to find the access card for the hangar bay's control room,
+    but I have no idea where it is. You're one your own.
+  choices:
+  - {fileID: 11400000, guid: a6fa353ff46ba6e46af0400705770a12, type: 2}
+  choiceText:
+  - Thank you, and good luck!
+  dontContinueChoices: 1
+  pushNextWaypoint: 0

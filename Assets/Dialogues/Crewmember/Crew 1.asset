@@ -41,7 +41,7 @@ MonoBehaviour:
     Path: event:/Dialogue/Dialogue Crewmember 01 You're our best shot
   dialogueLines:
   - 'Hey! HEY! Wake up, we need you!! '
-  - "The ship\u2019s AI\u2019s gone haywire and is threatening to doom us ALL!!"
+  - "The ship\u2019s AI\u2019s gone rampant and is threatening to doom us ALL!!"
   - You said you can hack *anything*, right?
   - "Well in that case, you\u2019re our best shot at survival! Help us, and we'll
     let you go on your merry, criminal way, as if nothing ever happened."

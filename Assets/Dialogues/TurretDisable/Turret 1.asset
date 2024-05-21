@@ -19,6 +19,7 @@ MonoBehaviour:
   - '[Connecting...]'
   - '[Connecting...]'
   - '[Connecting...]'
+  - '[Connected]'
   choices:
   - {fileID: 11400000, guid: dd979bf04afead34ebb06acfd2fe9c1f, type: 2}
   choiceText:
