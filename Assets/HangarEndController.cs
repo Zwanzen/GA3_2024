@@ -13,6 +13,7 @@ public class HangarEndController : MonoBehaviour
     [Space(10)]
     private bool ending = false;
     private bool ended = false;
+    private bool reversed = false;
     public UnityEvent endEvent;
 
     private float fadeTimer = 0f;
@@ -24,10 +25,16 @@ public class HangarEndController : MonoBehaviour
 
     private void Update()
     {
-        if (ended)
+        if (ended && !reversed)
         {
             fadeTimer += Time.deltaTime;
-            volume.weight = fadeTimer / 2f;
+            volume.weight = Mathf.Lerp(0, 1, fadeTimer / 2f);
+        }
+
+        if(reversed)
+        {
+            fadeTimer -= Time.deltaTime;
+            volume.weight = Mathf.Lerp(0, 1, fadeTimer / 2f);
         }
     }
 
@@ -45,11 +52,17 @@ public class HangarEndController : MonoBehaviour
         }
     }
 
+    public void PlayAnim()
+    {
+        Animator anim = GetComponent<Animator>();
+        anim.SetBool("End", true);
+    }
+
     private IEnumerator EndCamera()
     {
         yield return new WaitForSeconds(2f);
         endCamera.SetActive(true);
         player.SetActive(false);
-        volume.weight = 0f;
+        reversed = true;
     }
 }
