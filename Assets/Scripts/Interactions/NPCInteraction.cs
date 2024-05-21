@@ -192,7 +192,6 @@ public class NPCInteraction : MonoBehaviour
             return;
         }
 
-        Debug.Log(dialogue.dialogueSounds.Length + " " + currentLine);
         if (dialogue.dialogueSounds.Length > 0)
         {
             audioEmitter.Stop();
@@ -231,12 +230,11 @@ public class NPCInteraction : MonoBehaviour
 
         if (npcController != null)
         {
-            if (dialogue.pushNextDialogue)
+            npcController.StopInteracting();
+            if (dialogue.pushNextWaypoint)
             {
-                npcController.StopInteracting();
                 npcController.MoveToNextWaypoint();
             }
-            npcController.StopInteracting();
         }
         endInteractionEvent.Invoke();
     }
@@ -273,7 +271,7 @@ public class NPCInteraction : MonoBehaviour
     // The UI button has to ref this and send int depending on what choice button it is.
     public void SelectedChoice(int choice)
     {
-        if (dialogue.dontContinue)
+        if (dialogue.dontContinueChoices)
         {
             EndDialogue();
             return;

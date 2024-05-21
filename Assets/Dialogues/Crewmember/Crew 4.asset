@@ -20,4 +20,5 @@ MonoBehaviour:
   choices:
   - {fileID: 11400000, guid: c244d9508499a0e4dad1194536561680, type: 2}
   choiceText: []
-  pushNextDialogue: 0
+  dontContinueChoices: 1
+  pushNextWaypoint: 1

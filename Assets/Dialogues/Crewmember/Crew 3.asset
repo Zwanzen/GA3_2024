@@ -21,4 +21,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e8d02733f7dfe35468ca9ba6fcc0b0bc, type: 2}
   choiceText:
   - I'll do my best
-  pushNextDialogue: 0
+  dontContinueChoices: 1
+  pushNextWaypoint: 1

@@ -22,7 +22,9 @@ MonoBehaviour:
     is by overriding the oxygen chamber
   - I know you have some hacking skills
   - Come with me if you want to survive
-  choices: []
+  choices:
+  - {fileID: 11400000, guid: 5bbddad7d202246498e64bcf0ee7c088, type: 2}
   choiceText:
   - Sure buddy
-  pushNextDialogue: 1
+  dontContinueChoices: 1
+  pushNextWaypoint: 1

@@ -92,6 +92,15 @@ public class DoorController : MonoBehaviour
 
     void HandleManualDoor()
     {
+        if (inTrigger.Count > 0)
+        {
+            isPlayerInRange = true;
+        }
+        else
+        {
+            isPlayerInRange = false;
+        }
+
         if (isPlayerInRange && Input.GetKeyDown(keyToOpen))
         {
             if (isLocked)

@@ -20,4 +20,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 912ef733f0eeacc4f876cb0cba784723, type: 2}
   choiceText:
   - Yes sir
-  pushNextDialogue: 0
+  dontContinueChoices: 1
+  pushNextWaypoint: 1

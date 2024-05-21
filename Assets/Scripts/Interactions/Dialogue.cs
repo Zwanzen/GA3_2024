@@ -12,7 +12,7 @@ public class Dialogue : ScriptableObject
     public Dialogue[] choices;
     public string[] choiceText;
 
-    public bool dontContinue = false;
-    public bool pushNextDialogue = true;
+    public bool dontContinueChoices = false;
+    public bool pushNextWaypoint = true;
 
 }

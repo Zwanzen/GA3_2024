@@ -18,4 +18,5 @@ MonoBehaviour:
   - Now show me what ur good for
   choices: []
   choiceText: []
-  pushNextDialogue: 0
+  dontContinueChoices: 1
+  pushNextWaypoint: 1
