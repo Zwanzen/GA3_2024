@@ -82,10 +82,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Dialogue.bank
   Name: Dialogue
   StudioPath: bank:/Dialogue
-  lastModified: 638518739578902888
+  lastModified: 638518757441204746
   FileSizes:
   - Name: Desktop
-    Value: 2997888
+    Value: 2981472
   Exists: 1
 --- !u!114 &-8654500355549552999
 MonoBehaviour:
@@ -128,10 +128,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Dialogue/Dialogue Crewmember 03 One more favor
   Guid:
-    Data1: 912529954
-    Data2: 1267891147
-    Data3: 719230655
-    Data4: -564949520
+    Data1: -829958516
+    Data2: 1106127099
+    Data3: 1681698996
+    Data4: -1616484572
   Banks:
   - {fileID: -8898204423921838099}
   IsStream: 1
@@ -140,7 +140,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 10000
+  Length: 12066
 --- !u!114 &-8165663748966289430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -456,33 +456,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 10007
---- !u!114 &-6724256731453915616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue Crewmember 03 Help the crew or not
-  m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue Crewmember 03 Help the crew or not
-  Guid:
-    Data1: -829958516
-    Data2: 1106127099
-    Data3: 1681698996
-    Data4: -1616484572
-  Banks:
-  - {fileID: -8898204423921838099}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 15483
 --- !u!114 &-6644514324374715052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1780,33 +1753,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-1417338582459333905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue Crewmember 02 Turret and keycard info
-  m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue Crewmember 02 Turret and keycard info
-  Guid:
-    Data1: 581786441
-    Data2: 1176473870
-    Data3: 536672420
-    Data4: -1938440564
-  Banks:
-  - {fileID: -8898204423921838099}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 15166
 --- !u!114 &-1233395192234925074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2166,14 +2112,12 @@ MonoBehaviour:
   - {fileID: -86552174895313392}
   - {fileID: 569647905299079674}
   - {fileID: -5337537370859882732}
-  - {fileID: -1417338582459333905}
   - {fileID: -5955107452977257999}
   - {fileID: -6190125115977386840}
   - {fileID: -8654500355549552999}
   - {fileID: 5131158483989878096}
   - {fileID: 7474393214412780707}
   - {fileID: 8113475434218948063}
-  - {fileID: -6724256731453915616}
   - {fileID: 6471787685137914112}
   - {fileID: 7017902189169110130}
   - {fileID: 6807292508860532953}
@@ -2185,12 +2129,13 @@ MonoBehaviour:
   - {fileID: 5176859269333667876}
   - {fileID: -4020375945681641577}
   - {fileID: -1746485540155003998}
+  - {fileID: 1217206880984320913}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4677152490814659433}
   StringsBanks:
   - {fileID: 4038073233029663505}
-  cacheTime: 638518739578902888
+  cacheTime: 638518757441204746
   cacheVersion: 131617
 --- !u!114 &76691187249736920
 MonoBehaviour:
@@ -2441,6 +2386,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &1217206880984320913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Dialogue Crewmember 02 Turret Challenge
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Dialogue Crewmember 02 Turret Challenge
+  Guid:
+    Data1: 581786441
+    Data2: 1176473870
+    Data3: 536672420
+    Data4: -1938440564
+  Banks:
+  - {fileID: -8898204423921838099}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10579
 --- !u!114 &2064221735539098931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2930,10 +2902,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638518739577347976
+  lastModified: 638518757439518296
   FileSizes:
   - Name: Desktop
-    Value: 5054
+    Value: 4984
   Exists: 1
 --- !u!114 &4236907601896256236
 MonoBehaviour:
@@ -3056,7 +3028,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638518739577327858
+  lastModified: 638518757439498346
   FileSizes:
   - Name: Desktop
     Value: 670

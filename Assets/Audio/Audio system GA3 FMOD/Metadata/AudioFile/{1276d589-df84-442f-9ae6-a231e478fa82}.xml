@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{1276d589-df84-442f-9ae6-a231e478fa82}">
+		<property name="assetPath">
+			<value>Dialogue/Dialogue Crewmember 04 Now onto the Hydroponics.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>13.139591836734693</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d43037b8-6550-4082-ad65-b5b16eaec78b}</destination>
+		</relationship>
+	</object>
+</objects>

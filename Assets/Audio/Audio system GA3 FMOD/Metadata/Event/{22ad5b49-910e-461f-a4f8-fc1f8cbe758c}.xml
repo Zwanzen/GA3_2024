@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{22ad5b49-910e-461f-a4f8-fc1f8cbe758c}">
 		<property name="name">
-			<value>Dialogue Crewmember 02 Turret and keycard info</value>
+			<value>Dialogue Crewmember 02 Turret Challenge</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -60,7 +60,7 @@
 	<object class="MarkerTrack" id="{650b6f33-9046-4a8a-bb78-c5bddcd4a9b8}" />
 	<object class="GroupTrack" id="{76e16820-cf28-45a6-b8af-c09eb27dcbd3}">
 		<relationship name="modules">
-			<destination>{534d6f33-9a84-4e96-8d20-464c7b22d8ce}</destination>
+			<destination>{f9e51e57-fe0d-4df6-a74f-a04b7ee4b700}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{0a4ecdfa-20d1-4c67-bed4-af8c583498b2}</destination>
@@ -68,7 +68,7 @@
 	</object>
 	<object class="Timeline" id="{004ab778-148d-4054-be88-a4d9d24e41d9}">
 		<relationship name="modules">
-			<destination>{534d6f33-9a84-4e96-8d20-464c7b22d8ce}</destination>
+			<destination>{f9e51e57-fe0d-4df6-a74f-a04b7ee4b700}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{f1400edd-d407-4247-9ae0-5c76a6384ba6}">
@@ -88,12 +88,12 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{32ab4701-4b23-4be7-afb1-9f14d21bb3ef}" />
-	<object class="SingleSound" id="{534d6f33-9a84-4e96-8d20-464c7b22d8ce}">
+	<object class="SingleSound" id="{f9e51e57-fe0d-4df6-a74f-a04b7ee4b700}">
 		<property name="length">
-			<value>15.166666666666666</value>
+			<value>10.579591836734695</value>
 		</property>
 		<relationship name="audioFile">
-			<destination>{4f20e0a4-f0f0-4920-b72d-2cf918db8014}</destination>
+			<destination>{8c05384e-e773-4670-854d-40da55c115b4}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{0a4ecdfa-20d1-4c67-bed4-af8c583498b2}">
