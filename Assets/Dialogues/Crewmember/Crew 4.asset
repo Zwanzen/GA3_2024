@@ -12,13 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f96de2a467794424c9da080f8fe7fd1d, type: 3}
   m_Name: Crew 4
   m_EditorClassIdentifier: 
+  noInteraction: 0
   _name: Crew Member
-  dialogueSounds: []
+  dialogueSounds:
+  - Guid:
+      Data1: 645459987
+      Data2: 1198501229
+      Data3: -1314383196
+      Data4: -786718765
+    Path: event:/Dialogue/Dialogue Crewmember 02 Onto Hydroponics
   dialogueLines:
-  - Great!
-  - You take that keycard on the ground, you'll need it to bypass the door
-  choices:
-  - {fileID: 11400000, guid: c244d9508499a0e4dad1194536561680, type: 2}
+  - 'Well done! Now onto the Hydroponics: You should pick up that keycard on the
+    ground next to my fallen crewmember. It''ll give  you access to Hydroponics.
+    I just hope you fare better than she did.
+
+'
+  choices: []
   choiceText: []
   dontContinueChoices: 1
-  pushNextWaypoint: 1
+  pushNextWaypoint: 0

@@ -12,19 +12,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f96de2a467794424c9da080f8fe7fd1d, type: 3}
   m_Name: Crew 1
   m_EditorClassIdentifier: 
+  noInteraction: 0
   _name: Crew Member
-  dialogueSounds: []
+  dialogueSounds:
+  - Guid:
+      Data1: 540963313
+      Data2: 1131406899
+      Data3: -632618075
+      Data4: -123471009
+    Path: event:/Dialogue/Dialogue Crewmember 01 Wake up
+  - Guid:
+      Data1: -1176128446
+      Data2: 1092721894
+      Data3: 1037998992
+      Data4: -1414691454
+    Path: event:/Dialogue/Dialogue Crewmember 01 AI Gone Rampant
+  - Guid:
+      Data1: -2071391324
+      Data2: 1312556703
+      Data3: -493061215
+      Data4: 1795727576
+    Path: event:/Dialogue/Dialogue Crewmember 01 Can you hack it
+  - Guid:
+      Data1: -321496825
+      Data2: 1126499955
+      Data3: 1773428140
+      Data4: 1568878132
+    Path: event:/Dialogue/Dialogue Crewmember 01 You're our best shot
   dialogueLines:
-  - 'You are on a transport ship.... '
-  - Ai has been infested with a virus
-  - I had to wake you up, we have a small chance of survival
-  - The ships Ai has turned of the oxygen chamber, the only way to save ourselfs
-    is by overriding the oxygen chamber
-  - I know you have some hacking skills
-  - Come with me if you want to survive
-  choices:
-  - {fileID: 11400000, guid: 5bbddad7d202246498e64bcf0ee7c088, type: 2}
-  choiceText:
-  - Sure buddy
+  - 'Hey! HEY! Wake up, we need you!! '
+  - "The ship\u2019s AI\u2019s gone haywire and is threatening to doom us ALL!!"
+  - You said you can hack *anything*, right?
+  - "Well in that case, you\u2019re our best shot at survival! Help us, and we'll
+    let you go on your merry, criminal way, as if nothing ever happened."
+  choices: []
+  choiceText: []
   dontContinueChoices: 1
   pushNextWaypoint: 1

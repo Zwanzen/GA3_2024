@@ -12,13 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f96de2a467794424c9da080f8fe7fd1d, type: 3}
   m_Name: Crew 5
   m_EditorClassIdentifier: 
+  noInteraction: 1
   _name: Crew Member
   dialogueSounds: []
-  dialogueLines:
-  - Now open the door through that interface using the keycard
-  choices:
-  - {fileID: 11400000, guid: 912ef733f0eeacc4f876cb0cba784723, type: 2}
-  choiceText:
-  - Yes sir
+  dialogueLines: []
+  choices: []
+  choiceText: []
   dontContinueChoices: 1
-  pushNextWaypoint: 1
+  pushNextWaypoint: 0

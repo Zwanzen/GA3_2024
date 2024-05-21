@@ -67,7 +67,7 @@ public class NPCInteraction : MonoBehaviour
     [HideInInspector] public bool canInteract = false;
     private Animator anim;
 
-    private int currentLine = 0;
+    private int currentLine = -1;
 
 
 
@@ -124,6 +124,11 @@ public class NPCInteraction : MonoBehaviour
             return false;
         }
 
+        if(dialogue.noInteraction)
+        {
+            return false;
+        }
+
         if(keycardType == KeycardType.None)
         {
             return true;
@@ -151,7 +156,7 @@ public class NPCInteraction : MonoBehaviour
     public void StartDialogue()
     {
         dialogueLines.Clear();
-        currentLine = 0;
+        currentLine = -1;
         anim.SetBool("Open", true);
         player.ToggleInteraction(true, lookAtPosition);
         canClick = true;
@@ -175,9 +180,10 @@ public class NPCInteraction : MonoBehaviour
 
     private void DisplayNextLine()
     {
+        currentLine++;
 
 
-        if(dialogueLines.Count == 0)
+        if (dialogueLines.Count == 0)
         {
 
             if (dialogue.choices.Length > 0)
@@ -195,16 +201,17 @@ public class NPCInteraction : MonoBehaviour
         if (dialogue.dialogueSounds.Length > 0)
         {
             audioEmitter.Stop();
+            audioEmitter = gameObject.AddComponent<StudioEventEmitter>();
             audioEmitter.EventReference = dialogue.dialogueSounds[currentLine];
             audioEmitter.Play();
         }
+
 
 
         string line = dialogueLines.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeLine(line));
 
-        currentLine++;
     }
 
     IEnumerator TypeLine(string line)
@@ -237,6 +244,8 @@ public class NPCInteraction : MonoBehaviour
             }
         }
         endInteractionEvent.Invoke();
+
+        audioEmitter.Stop();
     }
 
     private void StartChoices()

@@ -12,12 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f96de2a467794424c9da080f8fe7fd1d, type: 3}
   m_Name: Crew 2
   m_EditorClassIdentifier: 
+  noInteraction: 0
   _name: Crew Member
-  dialogueSounds: []
+  dialogueSounds:
+  - Guid:
+      Data1: -1845330048
+      Data2: 1228592667
+      Data3: 1604010628
+      Data4: 1127617522
+    Path: event:/Dialogue/Dialogue Crewmember 02 First thing's first
+  - Guid:
+      Data1: 269226384
+      Data2: 1319046670
+      Data3: -8705638
+      Data4: -1419181565
+    Path: event:/Dialogue/Dialogue Crewmember 02 Stop the oxygen leak
   dialogueLines:
-  - This way to the O2 chamber
-  choices:
-  - {fileID: 11400000, guid: 040e754aedd7fd14d831b7afc0d3d495, type: 2}
-  choiceText:
-  - Sure buddy
-  pushNextDialogue: 1
+  - "Okay, so first thing's first: The ship's AI has stopped the flow of oxygen in
+    Hydroponics. You need to re-establish the flow before WE ALL pass out!! \r\n"
+  - Once inside, get on a computer console and work your magic!
+  choices: []
+  choiceText: []
+  dontContinueChoices: 0
+  pushNextWaypoint: 1
