@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f96de2a467794424c9da080f8fe7fd1d, type: 3}
   m_Name: Introduction
   m_EditorClassIdentifier: 
+  noInteraction: 0
   _name: Test Person
+  dialogueSounds: []
   dialogueLines:
   - 'Test 1 '
   - 'Test 2
@@ -35,3 +37,5 @@ MonoBehaviour:
   - Be happy
   - Smile
   - What are u?
+  dontContinueChoices: 0
+  pushNextWaypoint: 1

@@ -8,6 +8,7 @@ public class StartController : MonoBehaviour
 
     [SerializeField] Volume v;
     private float timer = 0f;
+    bool started = false;
 
     private void Start()
     {
@@ -16,9 +17,17 @@ public class StartController : MonoBehaviour
 
     private void Update()
     {
-        timer += Time.deltaTime;
+        if (!started)
+        {
+            timer += Time.deltaTime;
 
-        v.weight = Mathf.Lerp(1, 0, timer / 4);
+            v.weight = Mathf.Lerp(1, 0, timer / 4);
+
+            if(timer >= 4)
+            {
+                started = true;
+            }
+        }
     }
 
 
