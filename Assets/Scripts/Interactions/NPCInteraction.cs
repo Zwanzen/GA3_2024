@@ -245,6 +245,7 @@ public class NPCInteraction : MonoBehaviour
         }
         endInteractionEvent.Invoke();
 
+        StopAllCoroutines();
         audioEmitter.Stop();
     }
 

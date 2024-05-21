@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f96de2a467794424c9da080f8fe7fd1d, type: 3}
   m_Name: Hangar Start
   m_EditorClassIdentifier: 
+  noInteraction: 0
   _name: Hangar Control Panel
   dialogueSounds: []
-  dialogueLines: []
+  dialogueLines:
+  - '[Restricted Access]'
   choices:
-  - {fileID: 11400000, guid: 1355ce32015cbec40ae5e63496058689, type: 2}
+  - {fileID: 11400000, guid: 4f75cdb7760ee5a45aa0d9fcd8f30053, type: 2}
   choiceText:
-  - '[Start Hangar Decompression]'
+  - '[Use Keycard]'
   dontContinueChoices: 0
-  pushNextWaypoint: 1
+  pushNextWaypoint: 0

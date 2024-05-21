@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f96de2a467794424c9da080f8fe7fd1d, type: 3}
+  m_Name: Crew A 1
+  m_EditorClassIdentifier: 
+  noInteraction: 0
+  _name: Crew Member
+  dialogueSounds:
+  - Guid:
+      Data1: 33386674
+      Data2: 1211945734
+      Data3: -1262150480
+      Data4: 944757842
+    Path: event:/Dialogue/Dialogue Crewmember 04 Agree to help
+  dialogueLines:
+  - 'Oh, that''s wonderful! Thank you! We have no time to loose: let''s move to the
+    Bridge!'
+  choices: []
+  choiceText: []
+  dontContinueChoices: 1
+  pushNextWaypoint: 1

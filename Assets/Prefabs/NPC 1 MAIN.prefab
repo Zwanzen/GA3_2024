@@ -5135,8 +5135,8 @@ GameObject:
   - component: {fileID: 5968396142725842648}
   - component: {fileID: 2713862266475175281}
   - component: {fileID: 4050246590632302216}
-  - component: {fileID: 5636943765655208862}
   - component: {fileID: 2374034462796272900}
+  - component: {fileID: 5636943765655208862}
   m_Layer: 8
   m_Name: NPC 1 MAIN
   m_TagString: NPC
@@ -5274,26 +5274,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &5636943765655208862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8600399920718368888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f81be499b61bde40a9f22a638fb2966, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 2
-  rotationSpeed: 200
-  endRotationSpeed: 0.5
-  delayTime: 1.5
-  waypoints:
-  - {fileID: 0}
-  dialogues:
-  - {fileID: 11400000, guid: a93be63c2092c894186b96cb4ca84053, type: 2}
 --- !u!114 &2374034462796272900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5328,6 +5308,24 @@ MonoBehaviour:
   endedDialogue: 0
   isInteracting: 0
   canInteract: 0
+--- !u!114 &5636943765655208862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8600399920718368888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f81be499b61bde40a9f22a638fb2966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endRotationSpeed: 0.5
+  delayTime: 1.5
+  waypoints:
+  - {fileID: 0}
+  dialogues:
+  - {fileID: 11400000, guid: a93be63c2092c894186b96cb4ca84053, type: 2}
 --- !u!1 &8607981016309960742
 GameObject:
   m_ObjectHideFlags: 0

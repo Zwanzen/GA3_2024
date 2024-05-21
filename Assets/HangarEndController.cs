@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,7 @@ public class HangarEndController : MonoBehaviour
     [SerializeField] private GameObject endCamera;
     [SerializeField] private Volume volume;
     [SerializeField] private GameObject player;
+    [SerializeField] private StudioEventEmitter endSound;
 
     [Space(10)]
     private bool ending = false;
@@ -64,5 +66,6 @@ public class HangarEndController : MonoBehaviour
         endCamera.SetActive(true);
         player.SetActive(false);
         reversed = true;
+        endSound.Play();
     }
 }

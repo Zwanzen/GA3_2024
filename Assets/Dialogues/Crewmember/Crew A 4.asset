@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f96de2a467794424c9da080f8fe7fd1d, type: 3}
+  m_Name: Crew A 4
+  m_EditorClassIdentifier: 
+  noInteraction: 0
+  _name: Crew Member
+  dialogueSounds:
+  - Guid:
+      Data1: 544278820
+      Data2: 1319479506
+      Data3: -845244746
+      Data4: -1487090967
+    Path: event:/Dialogue/Dialogue Crewmember 06 Turrets disabled
+  dialogueLines:
+  - Great job! This gives us a fighting chance! Let's hurry to the Bridge!
+  choices: []
+  choiceText: []
+  dontContinueChoices: 0
+  pushNextWaypoint: 1

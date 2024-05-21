@@ -12,31 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f96de2a467794424c9da080f8fe7fd1d, type: 3}
   m_Name: Processing
   m_EditorClassIdentifier: 
+  noInteraction: 0
   _name: Hangar Control Panel
-  dialogueSounds:
-  - Guid:
-      Data1: 249209992
-      Data2: 1178933050
-      Data3: 1353762445
-      Data4: 1727643294
-    Path: event:/Props Interaction/FX - Door Sliding Down
-  - Guid:
-      Data1: 249209992
-      Data2: 1178933050
-      Data3: 1353762445
-      Data4: 1727643294
-    Path: event:/Props Interaction/FX - Door Sliding Down
-  - Guid:
-      Data1: 249209992
-      Data2: 1178933050
-      Data3: 1353762445
-      Data4: 1727643294
-    Path: event:/Props Interaction/FX - Door Sliding Down
+  dialogueSounds: []
   dialogueLines:
   - '[Loading...]'
   - '[Loading...]'
   - '[Loading...]'
+  - '[DECOMPRESSION STARTED]'
   choices: []
   choiceText: []
   dontContinueChoices: 0
-  pushNextWaypoint: 1
+  pushNextWaypoint: 0

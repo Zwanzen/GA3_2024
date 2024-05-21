@@ -12,31 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f96de2a467794424c9da080f8fe7fd1d, type: 3}
   m_Name: DoorActivated 1
   m_EditorClassIdentifier: 
-  _name: Button
-  dialogueSounds:
-  - Guid:
-      Data1: -960055687
-      Data2: 1078630929
-      Data3: -839823176
-      Data4: 1236546963
-    Path: event:/Props Interaction/FX - Door Hinged Closing
-  - Guid:
-      Data1: -960055687
-      Data2: 1078630929
-      Data3: -839823176
-      Data4: 1236546963
-    Path: event:/Props Interaction/FX - Door Hinged Closing
-  - Guid:
-      Data1: -960055687
-      Data2: 1078630929
-      Data3: -839823176
-      Data4: 1236546963
-    Path: event:/Props Interaction/FX - Door Hinged Closing
+  noInteraction: 0
+  _name: Console Interface
+  dialogueSounds: []
   dialogueLines:
-  - '[Input Accepted]'
-  - '[Input Accepted]'
-  - '[Input Accepted]'
+  - '[Keycard Accepted]'
   choices: []
   choiceText:
   - 
-  pushNextDialogue: 0
+  dontContinueChoices: 0
+  pushNextWaypoint: 1
