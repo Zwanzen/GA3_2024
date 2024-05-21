@@ -1753,6 +1753,34 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-1417840805866704062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Looping/FX - Alarm
+  m_EditorClassIdentifier: 
+  Path: event:/Props Looping/FX - Alarm
+  Guid:
+    Data1: -1838115707
+    Data2: 1124079237
+    Data3: 108854675
+    Data4: 2019530862
+  Banks:
+  - {fileID: 1035693365860309677}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 5472265804508179734}
+  MinDistance: 1
+  MaxDistance: 50
+  Length: 6000
 --- !u!114 &-1233395192234925074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2130,12 +2158,13 @@ MonoBehaviour:
   - {fileID: -4020375945681641577}
   - {fileID: -1746485540155003998}
   - {fileID: 1217206880984320913}
+  - {fileID: -1417840805866704062}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4677152490814659433}
   StringsBanks:
   - {fileID: 4038073233029663505}
-  cacheTime: 638518757441204746
+  cacheTime: 638518788553189609
   cacheVersion: 131617
 --- !u!114 &76691187249736920
 MonoBehaviour:
@@ -2306,10 +2335,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Prop Ambience.bank
   Name: Prop Ambience
   StudioPath: bank:/Prop Ambience
-  lastModified: 638516528911787104
+  lastModified: 638518788553189609
   FileSizes:
   - Name: Desktop
-    Value: 2364544
+    Value: 2535776
   Exists: 1
 --- !u!114 &1065810116750121637
 MonoBehaviour:
@@ -2902,10 +2931,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638518757439518296
+  lastModified: 638518776697385722
   FileSizes:
   - Name: Desktop
-    Value: 4984
+    Value: 5032
   Exists: 1
 --- !u!114 &4236907601896256236
 MonoBehaviour:
@@ -3028,7 +3057,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638518757439498346
+  lastModified: 638518776697360546
   FileSizes:
   - Name: Desktop
     Value: 670
@@ -3169,6 +3198,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4179
+--- !u!114 &5472265804508179734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FX - Alarm/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3871982834
+    data2: 2785124848
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &5639058608275956644
 MonoBehaviour:
   m_ObjectHideFlags: 0
