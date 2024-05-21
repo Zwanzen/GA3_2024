@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{60ae18e6-fbf3-40c7-b744-383302b7d6de}">
 		<property name="name">
-			<value>Dialogue AI 03 Escaping</value>
+			<value>Dialogue AI 11 Planning to Escape</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>

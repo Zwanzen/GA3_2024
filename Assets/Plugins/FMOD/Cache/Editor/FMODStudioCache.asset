@@ -82,12 +82,12 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Dialogue.bank
   Name: Dialogue
   StudioPath: bank:/Dialogue
-  lastModified: 638518679148575230
+  lastModified: 638518739578902888
   FileSizes:
   - Name: Desktop
-    Value: 2934272
+    Value: 2997888
   Exists: 1
---- !u!114 &-8727827305280229880
+--- !u!114 &-8654500355549552999
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,14 +97,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue Crewmember 02 Can you hack it
+  m_Name: event:/Dialogue/Dialogue Crewmember 10 Player refuses help
   m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue Crewmember 02 Can you hack it
+  Path: event:/Dialogue/Dialogue Crewmember 10 Player refuses help
   Guid:
-    Data1: -2071391324
-    Data2: 1312556703
-    Data3: -493061215
-    Data4: 1795727576
+    Data1: 1208280418
+    Data2: 1149413337
+    Data3: 396009651
+    Data4: -43834292
   Banks:
   - {fileID: -8898204423921838099}
   IsStream: 1
@@ -113,7 +113,34 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2000
+  Length: 9000
+--- !u!114 &-8554259387271013281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Dialogue Crewmember 03 One more favor
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Dialogue Crewmember 03 One more favor
+  Guid:
+    Data1: 912529954
+    Data2: 1267891147
+    Data3: 719230655
+    Data4: -564949520
+  Banks:
+  - {fileID: -8898204423921838099}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10000
 --- !u!114 &-8165663748966289430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,33 +221,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-7875825028210331756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue Crewmember 05 Oxygen fixed
-  m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue Crewmember 05 Oxygen fixed
-  Guid:
-    Data1: 1936023605
-    Data2: 1161321073
-    Data3: -2044056439
-    Data4: 2089647214
-  Banks:
-  - {fileID: -8898204423921838099}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2458
 --- !u!114 &-7847094403204634858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -429,33 +429,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8940
---- !u!114 &-6831567967614755002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue Crewmember 10 Enter the Bridge
-  m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue Crewmember 10 Enter the Bridge
-  Guid:
-    Data1: -1444542000
-    Data2: 1101683049
-    Data3: -1138500445
-    Data4: 1152754845
-  Banks:
-  - {fileID: -8898204423921838099}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4458
 --- !u!114 &-6789343505743518355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,7 +456,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 10007
---- !u!114 &-6686943407832643973
+--- !u!114 &-6724256731453915616
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -493,14 +466,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue Crewmember 04 Turret and keycard info
+  m_Name: event:/Dialogue/Dialogue Crewmember 03 Help the crew or not
   m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue Crewmember 04 Turret and keycard info
+  Path: event:/Dialogue/Dialogue Crewmember 03 Help the crew or not
   Guid:
-    Data1: 581786441
-    Data2: 1176473870
-    Data3: 536672420
-    Data4: -1938440564
+    Data1: -829958516
+    Data2: 1106127099
+    Data3: 1681698996
+    Data4: -1616484572
   Banks:
   - {fileID: -8898204423921838099}
   IsStream: 1
@@ -509,7 +482,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 15166
+  Length: 15483
 --- !u!114 &-6644514324374715052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -538,33 +511,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6844
---- !u!114 &-6641898121142832560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue Crewmember 04 Stop the oxygen leak
-  m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue Crewmember 04 Stop the oxygen leak
-  Guid:
-    Data1: 269226384
-    Data2: 1319046670
-    Data3: -8705638
-    Data4: -1419181565
-  Banks:
-  - {fileID: -8898204423921838099}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3466
 --- !u!114 &-6593149527827945773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -668,6 +614,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5074
+--- !u!114 &-6190125115977386840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Dialogue AI 12 Successfylly Escaping
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Dialogue AI 12 Successfylly Escaping
+  Guid:
+    Data1: -1218004136
+    Data2: 1271593789
+    Data3: -204140129
+    Data4: 33006694
+  Banks:
+  - {fileID: -8898204423921838099}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10083
 --- !u!114 &-6065210139507204321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -748,7 +721,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-5918382218220537101
+--- !u!114 &-5955107452977257999
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -758,14 +731,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue Crewmember 06 One more favor
+  m_Name: event:/Dialogue/Dialogue Crewmember 10 You need a keycard as well
   m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue Crewmember 06 One more favor
+  Path: event:/Dialogue/Dialogue Crewmember 10 You need a keycard as well
   Guid:
-    Data1: 912529954
-    Data2: 1267891147
-    Data3: 719230655
-    Data4: -564949520
+    Data1: 505317202
+    Data2: 1184877297
+    Data3: 62045345
+    Data4: 790052945
   Banks:
   - {fileID: -8898204423921838099}
   IsStream: 1
@@ -774,8 +747,8 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 10000
---- !u!114 &-5890308264587794947
+  Length: 7333
+--- !u!114 &-5857371811331751115
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -785,23 +758,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue Crewmember 13 How to leave
+  m_Name: event:/Dialogue/Dialogue AI 02 Greeting
   m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue Crewmember 13 How to leave
+  Path: event:/Dialogue/Dialogue AI 02 Greeting
   Guid:
-    Data1: 1420877508
-    Data2: 1078118184
-    Data3: -505950562
-    Data4: 960917797
+    Data1: 1135320082
+    Data2: 1250665255
+    Data3: -1254967648
+    Data4: -469781575
   Banks:
   - {fileID: -8898204423921838099}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 12500
+  Length: 15500
 --- !u!114 &-5704787642666727377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -912,6 +885,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 9519
+--- !u!114 &-5337537370859882732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Dialogue AI 03 Oxygen Fixed
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Dialogue AI 03 Oxygen Fixed
+  Guid:
+    Data1: 36773698
+    Data2: 1096576842
+    Data3: 312870586
+    Data4: -1402796756
+  Banks:
+  - {fileID: -8898204423921838099}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 17000
 --- !u!114 &-5186433027524420826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -986,33 +986,6 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1522080
   Exists: 1
---- !u!114 &-4863126368317212816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue Crewmember 08 Turrets info
-  m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue Crewmember 08 Turrets info
-  Guid:
-    Data1: -1866974045
-    Data2: 1196158707
-    Data3: 739339402
-    Data4: -1241052402
-  Banks:
-  - {fileID: -8898204423921838099}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 11500
 --- !u!114 &-4597186811517335497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1037,33 +1010,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-4518065034444792325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue Crewmember 07 Agree to help
-  m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue Crewmember 07 Agree to help
-  Guid:
-    Data1: 33386674
-    Data2: 1211945734
-    Data3: -1262150480
-    Data4: 944757842
-  Banks:
-  - {fileID: -8898204423921838099}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4541
 --- !u!114 &-4163284187221975639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1092,6 +1038,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &-4020375945681641577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Dialogue AI 11 Planning to Escape
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Dialogue AI 11 Planning to Escape
+  Guid:
+    Data1: 1622022374
+    Data2: 1086847987
+    Data3: 859325623
+    Data4: -556353790
+  Banks:
+  - {fileID: -8898204423921838099}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11250
 --- !u!114 &-3829678978775068134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1147,33 +1120,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6661
---- !u!114 &-3499739264075867726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue AI 03 Escaping
-  m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue AI 03 Escaping
-  Guid:
-    Data1: 1622022374
-    Data2: 1086847987
-    Data3: 859325623
-    Data4: -556353790
-  Banks:
-  - {fileID: -8898204423921838099}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 11250
 --- !u!114 &-3479505935572616646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1457,33 +1403,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-2264575379074590218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue Crewmember 12 Player Resets AI
-  m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue Crewmember 12 Player Resets AI
-  Guid:
-    Data1: -2014805853
-    Data2: 1297443615
-    Data3: 294766484
-    Data4: -1386680976
-  Banks:
-  - {fileID: -8898204423921838099}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5958
 --- !u!114 &-2203919514268191177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1755,33 +1674,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2246
---- !u!114 &-1792693546761977388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue Crewmember 11 NPC rushes Player
-  m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue Crewmember 11 NPC rushes Player
-  Guid:
-    Data1: -2101960739
-    Data2: 1213855867
-    Data3: 107708338
-    Data4: -1859686954
-  Banks:
-  - {fileID: -8898204423921838099}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4179
 --- !u!114 &-1754225568977441930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1810,6 +1702,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 8
   Length: 0
+--- !u!114 &-1746485540155003998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Dialogue Crewmember 05 Good luck
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Dialogue Crewmember 05 Good luck
+  Guid:
+    Data1: -2026729473
+    Data2: 1135312013
+    Data3: 337952431
+    Data4: 631962348
+  Banks:
+  - {fileID: -8898204423921838099}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 835
 --- !u!114 &-1712067943225549724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1861,6 +1780,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-1417338582459333905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Dialogue Crewmember 02 Turret and keycard info
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Dialogue Crewmember 02 Turret and keycard info
+  Guid:
+    Data1: 581786441
+    Data2: 1176473870
+    Data3: 536672420
+    Data4: -1938440564
+  Banks:
+  - {fileID: -8898204423921838099}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 15166
 --- !u!114 &-1233395192234925074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1889,6 +1835,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-1075803840190195259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Dialogue Crewmember 04 Agree to help
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Dialogue Crewmember 04 Agree to help
+  Guid:
+    Data1: 33386674
+    Data2: 1211945734
+    Data3: -1262150480
+    Data4: 944757842
+  Banks:
+  - {fileID: -8898204423921838099}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4541
 --- !u!114 &-1016182208735009663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2035,33 +2008,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-780381809206215832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue AI 04 Escaping
-  m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue AI 04 Escaping
-  Guid:
-    Data1: -1218004136
-    Data2: 1271593789
-    Data3: -204140129
-    Data4: 33006694
-  Banks:
-  - {fileID: -8898204423921838099}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 10083
 --- !u!114 &-657343616184523245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2113,6 +2059,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-86552174895313392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Dialogue Crewmember 06 Turrets disabled
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Dialogue Crewmember 06 Turrets disabled
+  Guid:
+    Data1: 544278820
+    Data2: 1319479506
+    Data3: -845244746
+    Data4: -1487090967
+  Banks:
+  - {fileID: -8898204423921838099}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4458
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2185,38 +2158,39 @@ MonoBehaviour:
   - {fileID: -1754225568977441930}
   - {fileID: -5186433027524420826}
   - {fileID: 4236907601896256236}
-  - {fileID: 552876189289119468}
-  - {fileID: 4333638366440668576}
-  - {fileID: -5918382218220537101}
-  - {fileID: 8173429533770165604}
-  - {fileID: -7875825028210331756}
-  - {fileID: 6597126878277407229}
   - {fileID: -657343616184523245}
-  - {fileID: -6686943407832643973}
-  - {fileID: 678553457837644403}
-  - {fileID: -780381809206215832}
-  - {fileID: 666287973887045134}
-  - {fileID: 4745781701717641830}
-  - {fileID: 7232847653764443507}
-  - {fileID: 7868884538273639458}
-  - {fileID: 1496848047555083275}
-  - {fileID: -6641898121142832560}
-  - {fileID: -4863126368317212816}
-  - {fileID: -2264575379074590218}
-  - {fileID: -8727827305280229880}
-  - {fileID: -4518065034444792325}
-  - {fileID: -5890308264587794947}
-  - {fileID: -6831567967614755002}
-  - {fileID: -1792693546761977388}
-  - {fileID: -3499739264075867726}
   - {fileID: 5639058608275956644}
-  - {fileID: 7653460631670469767}
+  - {fileID: 3214555991509449795}
+  - {fileID: -5857371811331751115}
+  - {fileID: -8554259387271013281}
+  - {fileID: -86552174895313392}
+  - {fileID: 569647905299079674}
+  - {fileID: -5337537370859882732}
+  - {fileID: -1417338582459333905}
+  - {fileID: -5955107452977257999}
+  - {fileID: -6190125115977386840}
+  - {fileID: -8654500355549552999}
+  - {fileID: 5131158483989878096}
+  - {fileID: 7474393214412780707}
+  - {fileID: 8113475434218948063}
+  - {fileID: -6724256731453915616}
+  - {fileID: 6471787685137914112}
+  - {fileID: 7017902189169110130}
+  - {fileID: 6807292508860532953}
+  - {fileID: 2305693279044215729}
+  - {fileID: 6784646336541941490}
+  - {fileID: -1075803840190195259}
+  - {fileID: 2209718261898649060}
+  - {fileID: 970731145278070160}
+  - {fileID: 5176859269333667876}
+  - {fileID: -4020375945681641577}
+  - {fileID: -1746485540155003998}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4677152490814659433}
   StringsBanks:
   - {fileID: 4038073233029663505}
-  cacheTime: 638518679148575230
+  cacheTime: 638518739578902888
   cacheVersion: 131617
 --- !u!114 &76691187249736920
 MonoBehaviour:
@@ -2294,7 +2268,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &552876189289119468
+--- !u!114 &569647905299079674
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2304,77 +2278,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue Crewmember 02 You're our best shot
+  m_Name: event:/Dialogue/Dialogue Crewmember 03 Oxygen fixed
   m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue Crewmember 02 You're our best shot
+  Path: event:/Dialogue/Dialogue Crewmember 03 Oxygen fixed
   Guid:
-    Data1: -321496825
-    Data2: 1126499955
-    Data3: 1773428140
-    Data4: 1568878132
+    Data1: 1936023605
+    Data2: 1161321073
+    Data3: -2044056439
+    Data4: 2089647214
   Banks:
   - {fileID: -8898204423921838099}
-  IsStream: 1
+  IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 8546
---- !u!114 &666287973887045134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue Crewmember 13 Player refuses help
-  m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue Crewmember 13 Player refuses help
-  Guid:
-    Data1: 1208280418
-    Data2: 1149413337
-    Data3: 396009651
-    Data4: -43834292
-  Banks:
-  - {fileID: -8898204423921838099}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 28833
---- !u!114 &678553457837644403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue Crewmember 13 You need a keycard as well
-  m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue Crewmember 13 You need a keycard as well
-  Guid:
-    Data1: 505317202
-    Data2: 1184877297
-    Data3: 62045345
-    Data4: 790052945
-  Banks:
-  - {fileID: -8898204423921838099}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 7333
+  Length: 2458
 --- !u!114 &864904902641796500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2399,6 +2319,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &970731145278070160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Dialogue Crewmember 07 Enter the Bridge
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Dialogue Crewmember 07 Enter the Bridge
+  Guid:
+    Data1: -1444542000
+    Data2: 1101683049
+    Data3: -1138500445
+    Data4: 1152754845
+  Banks:
+  - {fileID: -8898204423921838099}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4458
 --- !u!114 &1035693365860309677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2494,33 +2441,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &1496848047555083275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue Crewmember 06 Help the crew or not
-  m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue Crewmember 06 Help the crew or not
-  Guid:
-    Data1: -829958516
-    Data2: 1106127099
-    Data3: 1681698996
-    Data4: -1616484572
-  Banks:
-  - {fileID: -8898204423921838099}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 15483
 --- !u!114 &2064221735539098931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2576,6 +2496,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 39191
+--- !u!114 &2209718261898649060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Dialogue Crewmember 10 How to leave
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Dialogue Crewmember 10 How to leave
+  Guid:
+    Data1: 1420877508
+    Data2: 1078118184
+    Data3: -505950562
+    Data4: 960917797
+  Banks:
+  - {fileID: -8898204423921838099}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12500
 --- !u!114 &2221350478494026718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2604,6 +2551,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 25215
+--- !u!114 &2305693279044215729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Dialogue Crewmember 09 Player Resets AI
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Dialogue Crewmember 09 Player Resets AI
+  Guid:
+    Data1: -2014805853
+    Data2: 1297443615
+    Data3: 294766484
+    Data4: -1386680976
+  Banks:
+  - {fileID: -8898204423921838099}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5958
 --- !u!114 &2491010655477698542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2727,6 +2701,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 8
   Length: 0
+--- !u!114 &3214555991509449795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Dialogue Crewmember 01 You're our best shot
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Dialogue Crewmember 01 You're our best shot
+  Guid:
+    Data1: -321496825
+    Data2: 1126499955
+    Data3: 1773428140
+    Data4: 1568878132
+  Banks:
+  - {fileID: -8898204423921838099}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8546
 --- !u!114 &3253143317827555472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2929,10 +2930,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638518673351751127
+  lastModified: 638518739577347976
   FileSizes:
   - Name: Desktop
-    Value: 4930
+    Value: 5054
   Exists: 1
 --- !u!114 &4236907601896256236
 MonoBehaviour:
@@ -2962,33 +2963,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 19280
---- !u!114 &4333638366440668576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue AI 01 Greeting
-  m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue AI 01 Greeting
-  Guid:
-    Data1: 1135320082
-    Data2: 1250665255
-    Data3: -1254967648
-    Data4: -469781575
-  Banks:
-  - {fileID: -8898204423921838099}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 32666
 --- !u!114 &4333845490033308509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3082,38 +3056,11 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638518673351731159
+  lastModified: 638518739577327858
   FileSizes:
   - Name: Desktop
     Value: 670
   Exists: 1
---- !u!114 &4745781701717641830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue Crewmember 08 Briefing
-  m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue Crewmember 08 Briefing
-  Guid:
-    Data1: -699781273
-    Data2: 1196398367
-    Data3: -1342426215
-    Data4: -1624413279
-  Banks:
-  - {fileID: -8898204423921838099}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 11708
 --- !u!114 &4770447264804162598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3196,6 +3143,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 8
   Length: 1000
+--- !u!114 &5131158483989878096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Dialogue Crewmember 05 The machine room
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Dialogue Crewmember 05 The machine room
+  Guid:
+    Data1: -699781273
+    Data2: 1196398367
+    Data3: -1342426215
+    Data4: -1624413279
+  Banks:
+  - {fileID: -8898204423921838099}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11708
+--- !u!114 &5176859269333667876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Dialogue Crewmember 08 NPC rushes Player
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Dialogue Crewmember 08 NPC rushes Player
+  Guid:
+    Data1: -2101960739
+    Data2: 1213855867
+    Data3: 107708338
+    Data4: -1859686954
+  Banks:
+  - {fileID: -8898204423921838099}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4179
 --- !u!114 &5639058608275956644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3271,6 +3272,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &6471787685137914112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Dialogue Crewmember 02 Stop the oxygen leak
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Dialogue Crewmember 02 Stop the oxygen leak
+  Guid:
+    Data1: 269226384
+    Data2: 1319046670
+    Data3: -8705638
+    Data4: -1419181565
+  Banks:
+  - {fileID: -8898204423921838099}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3466
 --- !u!114 &6485215827140894721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3327,33 +3355,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 10
   Length: 5020
---- !u!114 &6597126878277407229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue AI 02 Oxygen Fixed
-  m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue AI 02 Oxygen Fixed
-  Guid:
-    Data1: 36773698
-    Data2: 1096576842
-    Data3: 312870586
-    Data4: -1402796756
-  Banks:
-  - {fileID: -8898204423921838099}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 35125
 --- !u!114 &6747820975276866780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3406,7 +3407,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 8
   Length: 0
---- !u!114 &7232847653764443507
+--- !u!114 &6784646336541941490
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3416,14 +3417,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue Crewmember 03 First thing's first
+  m_Name: event:/Dialogue/Dialogue Crewmember 01 Can you hack it
   m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue Crewmember 03 First thing's first
+  Path: event:/Dialogue/Dialogue Crewmember 01 Can you hack it
   Guid:
-    Data1: -1845330048
-    Data2: 1228592667
-    Data3: 1604010628
-    Data4: 1127617522
+    Data1: -2071391324
+    Data2: 1312556703
+    Data3: -493061215
+    Data4: 1795727576
   Banks:
   - {fileID: -8898204423921838099}
   IsStream: 1
@@ -3432,7 +3433,61 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 9400
+  Length: 2000
+--- !u!114 &6807292508860532953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue Speaker System - Sequence started
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue Speaker System - Sequence started
+  Guid:
+    Data1: 343958947
+    Data2: 1141869284
+    Data3: -535841128
+    Data4: 455633834
+  Banks:
+  - {fileID: -8898204423921838099}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10000
+--- !u!114 &7017902189169110130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Dialogue Crewmember 05 Turrets info
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Dialogue Crewmember 05 Turrets info
+  Guid:
+    Data1: -1866974045
+    Data2: 1196158707
+    Data3: 739339402
+    Data4: -1241052402
+  Banks:
+  - {fileID: -8898204423921838099}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11500
 --- !u!114 &7241532075766406932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3488,6 +3543,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 9542
+--- !u!114 &7474393214412780707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Dialogue Crewmember 02 First thing's first
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Dialogue Crewmember 02 First thing's first
+  Guid:
+    Data1: -1845330048
+    Data2: 1228592667
+    Data3: 1604010628
+    Data4: 1127617522
+  Banks:
+  - {fileID: -8898204423921838099}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9400
 --- !u!114 &7482901054137685150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3540,33 +3622,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8186
---- !u!114 &7653460631670469767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue Crewmember 08 Good luck
-  m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue Crewmember 08 Good luck
-  Guid:
-    Data1: -2026729473
-    Data2: 1135312013
-    Data3: 337952431
-    Data4: 631962348
-  Banks:
-  - {fileID: -8898204423921838099}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 835
 --- !u!114 &7847881701775080558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3591,33 +3646,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &7868884538273639458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue AI 05 Reset
-  m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue AI 05 Reset
-  Guid:
-    Data1: 370589577
-    Data2: 1107009428
-    Data3: 1301860485
-    Data4: 1045747570
-  Banks:
-  - {fileID: -8898204423921838099}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 17562
 --- !u!114 &8026915874292793383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3672,7 +3700,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6358
---- !u!114 &8173429533770165604
+--- !u!114 &8113475434218948063
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3682,23 +3710,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/Dialogue Crewmember 09 Turrets disabled
+  m_Name: event:/Dialogue/Dialogue AI 09 Reset
   m_EditorClassIdentifier: 
-  Path: event:/Dialogue/Dialogue Crewmember 09 Turrets disabled
+  Path: event:/Dialogue/Dialogue AI 09 Reset
   Guid:
-    Data1: 544278820
-    Data2: 1319479506
-    Data3: -845244746
-    Data4: -1487090967
+    Data1: 370589577
+    Data2: 1107009428
+    Data3: 1301860485
+    Data4: 1045747570
   Banks:
   - {fileID: -8898204423921838099}
-  IsStream: 0
-  Is3D: 1
+  IsStream: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 4458
+  Length: 17562
 --- !u!114 &8742184513527510912
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{82b69fdd-f87b-4859-b27f-6b06d66d2791}">
 		<property name="name">
-			<value>Dialogue Crewmember 11 NPC rushes Player</value>
+			<value>Dialogue Crewmember 08 NPC rushes Player</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>

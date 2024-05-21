@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{4804e562-a7d9-4482-b3a0-9a174c2463fd}">
 		<property name="name">
-			<value>Dialogue Crewmember 13 Player refuses help</value>
+			<value>Dialogue Crewmember 10 Player refuses help</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -62,7 +62,6 @@
 		<relationship name="modules">
 			<destination>{6203f472-2e1a-4d68-87e0-8c51b90e47b3}</destination>
 			<destination>{5912318e-6792-473b-a6a0-a00e99e50794}</destination>
-			<destination>{49129bcd-5afb-4a4b-aa0c-80b146b42d12}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{2b2282bd-046a-4422-b897-0f8cd74126ca}</destination>
@@ -72,7 +71,6 @@
 		<relationship name="modules">
 			<destination>{6203f472-2e1a-4d68-87e0-8c51b90e47b3}</destination>
 			<destination>{5912318e-6792-473b-a6a0-a00e99e50794}</destination>
-			<destination>{49129bcd-5afb-4a4b-aa0c-80b146b42d12}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{f9a4a88c-1543-4386-b008-56319f2e2496}">
@@ -109,20 +107,6 @@
 		</property>
 		<property name="timelockedOffset">
 			<value>6</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{c271bc5a-bc56-4f78-8fd6-61264d1dba35}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{49129bcd-5afb-4a4b-aa0c-80b146b42d12}">
-		<property name="start">
-			<value>9</value>
-		</property>
-		<property name="length">
-			<value>19.833333333333332</value>
-		</property>
-		<property name="timelockedOffset">
-			<value>9.5</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{c271bc5a-bc56-4f78-8fd6-61264d1dba35}</destination>

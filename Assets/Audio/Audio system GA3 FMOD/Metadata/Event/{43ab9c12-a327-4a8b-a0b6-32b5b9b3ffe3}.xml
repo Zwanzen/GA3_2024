@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{43ab9c12-a327-4a8b-a0b6-32b5b9b3ffe3}">
 		<property name="name">
-			<value>Dialogue AI 01 Greeting</value>
+			<value>Dialogue AI 02 Greeting</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -90,7 +90,7 @@
 	<object class="MixerBusPanner" id="{ad54cb7d-80b8-4f4e-92f2-49f481446237}" />
 	<object class="SingleSound" id="{6bae04be-6722-48a9-83b6-93dcfaf46cf0}">
 		<property name="length">
-			<value>32.666666666666664</value>
+			<value>15.5</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{cecaaa8f-0117-4393-a8de-8291119084e1}</destination>

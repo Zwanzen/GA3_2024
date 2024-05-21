@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{1e1e8752-caf1-469f-a1bc-b2035140172f}">
 		<property name="name">
-			<value>Dialogue Crewmember 13 You need a keycard as well</value>
+			<value>Dialogue Crewmember 10 You need a keycard as well</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>

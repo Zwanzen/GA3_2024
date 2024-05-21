@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{87e880a3-6b1f-4d55-94c7-911170ed58ad}">
 		<property name="name">
-			<value>Dialogue Crewmember 12 Player Resets AI</value>
+			<value>Dialogue Crewmember 09 Player Resets AI</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>

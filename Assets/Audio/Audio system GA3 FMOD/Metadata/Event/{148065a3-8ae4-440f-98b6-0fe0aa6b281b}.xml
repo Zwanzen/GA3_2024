@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{148065a3-8ae4-440f-98b6-0fe0aa6b281b}">
 		<property name="name">
-			<value>Dialogue Warning System</value>
+			<value>Dialogue Speaker System - Sequence started</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>
 		</property>
 		<relationship name="folder">
-			<destination>{70e67695-74b6-427c-8275-27f3d1ce2f89}</destination>
+			<destination>{30131f89-e3f3-47ce-b0fb-b80841cbd50a}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{4ced7f85-4526-40e5-bcca-76a7d830739d}</destination>

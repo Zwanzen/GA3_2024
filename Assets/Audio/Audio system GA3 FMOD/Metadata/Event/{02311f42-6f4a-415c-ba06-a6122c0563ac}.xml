@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{02311f42-6f4a-415c-ba06-a6122c0563ac}">
 		<property name="name">
-			<value>Dialogue AI 02 Oxygen Fixed</value>
+			<value>Dialogue AI 03 Oxygen Fixed</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -90,7 +90,7 @@
 	<object class="MixerBusPanner" id="{77b1ac52-1ffb-4a4a-a3cc-e11b926b852c}" />
 	<object class="SingleSound" id="{4e04a9d5-c77b-4cf4-98e0-7bc7d278d2a0}">
 		<property name="length">
-			<value>35.125</value>
+			<value>17</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{09743c66-b32e-47e5-9901-53299521a51f}</destination>
