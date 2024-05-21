@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Rendering;
 
 public class HangarEndController : MonoBehaviour
 {
     [SerializeField] private GameObject endCamera;
+    [SerializeField] private Volume volume;
+    [SerializeField] private GameObject player;
 
     [Space(10)]
     private bool ending = false;
@@ -23,7 +26,8 @@ public class HangarEndController : MonoBehaviour
     {
         if (ended)
         {
-            
+            fadeTimer += Time.deltaTime;
+            volume.weight = fadeTimer / 2f;
         }
     }
 
@@ -31,12 +35,12 @@ public class HangarEndController : MonoBehaviour
     {
         if (ending)
         {
-            if (other.CompareTag("Player"))
+            if (other.CompareTag("Player") && !ended)
             {
                 // End the game
                 endEvent.Invoke();
                 ended = true;
-
+                StartCoroutine(EndCamera());
             }
         }
     }
@@ -45,5 +49,7 @@ public class HangarEndController : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         endCamera.SetActive(true);
+        player.SetActive(false);
+        volume.weight = 0f;
     }
 }
