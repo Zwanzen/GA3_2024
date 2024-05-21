@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{c271bc5a-bc56-4f78-8fd6-61264d1dba35}">
+		<property name="assetPath">
+			<value>Dialogue/Dialogue Crewmember 14 Player Leaving.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>29.333333333333332</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d43037b8-6550-4082-ad65-b5b16eaec78b}</destination>
+		</relationship>
+	</object>
+</objects>
