@@ -82,10 +82,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Dialogue.bank
   Name: Dialogue
   StudioPath: bank:/Dialogue
-  lastModified: 638518757441204746
+  lastModified: 638518795914821377
   FileSizes:
   - Name: Desktop
-    Value: 2981472
+    Value: 3094528
   Exists: 1
 --- !u!114 &-8654500355549552999
 MonoBehaviour:
@@ -402,6 +402,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-7292046787320563841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Dialogue AI 03 Taunt
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Dialogue AI 03 Taunt
+  Guid:
+    Data1: 18478397
+    Data2: 1290834767
+    Data3: -1717541708
+    Data4: 1519810348
+  Banks:
+  - {fileID: -8898204423921838099}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 18125
 --- !u!114 &-7261297685694872440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2159,12 +2186,16 @@ MonoBehaviour:
   - {fileID: -1746485540155003998}
   - {fileID: 1217206880984320913}
   - {fileID: -1417840805866704062}
+  - {fileID: 8165529017415893516}
+  - {fileID: 9002714924192232399}
+  - {fileID: -7292046787320563841}
+  - {fileID: 5611859056630717419}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4677152490814659433}
   StringsBanks:
   - {fileID: 4038073233029663505}
-  cacheTime: 638518788553189609
+  cacheTime: 638518795914821377
   cacheVersion: 131617
 --- !u!114 &76691187249736920
 MonoBehaviour:
@@ -2931,10 +2962,10 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638518776697385722
+  lastModified: 638518795912971623
   FileSizes:
   - Name: Desktop
-    Value: 5032
+    Value: 5226
   Exists: 1
 --- !u!114 &4236907601896256236
 MonoBehaviour:
@@ -3057,7 +3088,7 @@ MonoBehaviour:
   Path: Assets/Audio/Audio system GA3 FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638518776697360546
+  lastModified: 638518795912956561
   FileSizes:
   - Name: Desktop
     Value: 670
@@ -3222,6 +3253,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &5611859056630717419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Dialogue Crewmember 03 Thank you
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Dialogue Crewmember 03 Thank you
+  Guid:
+    Data1: -1522852261
+    Data2: 1139461329
+    Data3: -1585914447
+    Data4: -1144308633
+  Banks:
+  - {fileID: -8898204423921838099}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10000
 --- !u!114 &5639058608275956644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3752,6 +3810,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 17562
+--- !u!114 &8165529017415893516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Dialogue Crewmember 02 Onto Hydroponics
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Dialogue Crewmember 02 Onto Hydroponics
+  Guid:
+    Data1: 645459987
+    Data2: 1198501229
+    Data3: -1314383196
+    Data4: -786718765
+  Banks:
+  - {fileID: -8898204423921838099}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 13139
 --- !u!114 &8742184513527510912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3886,3 +3971,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 8
   Length: 1730
+--- !u!114 &9002714924192232399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Dialogue AI 02 Taunt
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Dialogue AI 02 Taunt
+  Guid:
+    Data1: -624345551
+    Data2: 1271492682
+    Data3: -261874021
+    Data4: -1028247289
+  Banks:
+  - {fileID: -8898204423921838099}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16666
